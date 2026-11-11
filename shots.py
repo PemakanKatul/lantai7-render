@@ -365,6 +365,23 @@ def fr(shot, t):
     return max(1, min(round(t * FPS) + 1, round((shot["t1"] - shot["t0"]) * FPS)))
 
 
+def fcurves(idb):
+    """all F-curves of an ID (Blender 4.4+ slotted actions or legacy)"""
+    ad = getattr(idb, "animation_data", None)
+    if not ad or not ad.action:
+        return []
+    a = ad.action
+    if hasattr(a, "fcurves"):
+        return list(a.fcurves)
+    out = []
+    for L in a.layers:
+        for st in L.strips:
+            cb = st.channelbag(ad.action_slot) if ad.action_slot else None
+            if cb:
+                out += list(cb.fcurves)
+    return out
+
+
 def key_bones(arm, f):
     for pb in arm.pose.bones:
         pb.keyframe_insert("rotation_quaternion", frame=f)
@@ -445,11 +462,10 @@ def animate(sc, shot, actors, cams, marks):
                 arm.delta_scale = (1, 1, 1 + 0.008 * math.sin(tt * 2 * math.pi / 3.2 + ph))
                 arm.delta_rotation_euler = (0, 0, R(0.7 * math.sin(tt * 2 * math.pi / 5.1 + ph)))
                 arm.keyframe_insert("delta_scale", frame=ff); arm.keyframe_insert("delta_rotation_euler", frame=ff)
-            if arm.animation_data and arm.animation_data.action:
-                for fc in arm.animation_data.action.fcurves:
-                    if fc.data_path.startswith("delta_"):
-                        for kp in fc.keyframe_points:
-                            kp.interpolation = "CONSTANT"
+            for fc in fcurves(arm):
+                if fc.data_path.startswith("delta_"):
+                    for kp in fc.keyframe_points:
+                        kp.interpolation = "CONSTANT"
         if c.get("jitter"):        # trembling
             a, b = c["jitter"]
             for ff in range(fr(shot, a), fr(shot, b)):
@@ -473,9 +489,11 @@ def animate(sc, shot, actors, cams, marks):
             elif d["prop"] == "hide":
                 o.hide_render = bool(v); o.keyframe_insert("hide_render", frame=f)
         if d["prop"] in ("emit", "hide"):
-            for fc in (o.animation_data.action.fcurves if o.animation_data and o.animation_data.action else []):
-                for kp in fc.keyframe_points:
-                    kp.interpolation = "CONSTANT"
+            targets = [o] + ([m.node_tree for m in o.data.materials if m and m.node_tree] if d["prop"] == "emit" else [])
+            for idb in targets:
+                for fc in fcurves(idb):
+                    for kp in fc.keyframe_points:
+                        kp.interpolation = "CONSTANT"
     sc.frame_set(1)
 
 
