@@ -1,0 +1,47 @@
+name: render
+on:
+  push:
+    branches: [main]
+    paths: ["farm/trigger.txt"]
+permissions:
+  contents: write
+concurrency:
+  group: render
+  cancel-in-progress: true
+jobs:
+  worker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        i: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: deps
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libxi6 libxkbcommon0 libsm6 libgl1 libegl1 >/dev/null
+          pip install -q -r requirements.txt
+      - name: render share
+        env:
+          SAMPLES: "12"
+        run: |
+          N=$(grep -oP '(?<=workers=)\d+' farm/trigger.txt || echo 20)
+          if [ "${{ matrix.i }}" -lt "$N" ]; then python3 farm.py run ${{ matrix.i }} $N; else echo idle; mkdir -p logs out; echo idle > logs/worker_${{ matrix.i }}.log; fi
+      - name: publish results
+        if: always()
+        run: |
+          B=out-${{ matrix.i }}
+          git config user.name render-bot
+          git config user.email render-bot@users.noreply.github.com
+          mkdir -p /tmp/pub && cp -r out/*.mp4 logs /tmp/pub/ 2>/dev/null || true
+          git checkout --orphan $B
+          git rm -rq --cached . || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -r /tmp/pub/* . 2>/dev/null || true
+          echo "run ${{ github.run_id }} commit ${{ github.sha }}" > RUN.txt
+          git add -A && git commit -qm "results worker ${{ matrix.i }} run ${{ github.run_id }}" && git push -qf origin $B
