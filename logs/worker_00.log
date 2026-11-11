@@ -2,3 +2,4 @@ worker 0/20 shots [68, 79, 82, 90, 100, 121, 142]
 shot 68 OK 407s
 shot 79 OK 1776s
 shot 82 OK 689s
+shot 90 OK 601s
