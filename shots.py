@@ -246,11 +246,11 @@ def cam_on(arm, kind="close", side=0.3, up=0.0, dist=None, lens=None):
     s = arm.scale.x
     hp = head_point(arm)
     if kind == "close":
-        d, ln, tgt = dist or 0.95, lens or 50, hp + Vector((0, 0, -0.02 * s))
+        d, ln, tgt = dist or 1.5, lens or 50, hp + Vector((0, 0, 0.0))
     elif kind == "xclose":
-        d, ln, tgt = dist or 0.62, lens or 60, hp + Vector((0, 0, -0.01 * s))
+        d, ln, tgt = dist or 1.05, lens or 55, hp + Vector((0, 0, -0.02 * s))
     elif kind == "medium":
-        d, ln, tgt = dist or 1.9, lens or 40, arm.matrix_world @ Vector((0, 0, 0.62))
+        d, ln, tgt = dist or 2.6, lens or 40, arm.matrix_world @ Vector((0, 0, 0.62))
     elif kind == "full":
         d, ln, tgt = dist or 3.2, lens or 35, arm.matrix_world @ Vector((0, 0, 0.5))
     elif kind == "feet":

@@ -1,1 +1,1 @@
-shots=2-32,34-168 workers=20 tag=w2
+shots=1-4,6-15,19-28,30-32,34-43,45-168 workers=20 tag=w3
