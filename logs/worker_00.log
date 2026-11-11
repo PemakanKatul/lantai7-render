@@ -57,3 +57,4 @@ AttributeError: 'Action' object has no attribute 'fcurves'
 shot 88 OK 86s
 shot 121 OK 1030s
 shot 142 OK 54s
+done 1243s
