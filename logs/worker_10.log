@@ -17,3 +17,21 @@ Traceback (most recent call last):
               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'Action' object has no attribute 'fcurves'
 
+shot 45 FAIL 3s
+00:00.486  cycles           | WARNING CUEW initialization failed: Error opening the library
+
+Traceback (most recent call last):
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 583, in <module>
+    work, nfr = render_shot(shot, out, frames)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 525, in render_shot
+    sc, cam, dyn, actors = build(shot)
+                           ~~~~~^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 348, in build
+    animate(sc, shot, actors, cams, marks)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 449, in animate
+    for fc in arm.animation_data.action.fcurves:
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Action' object has no attribute 'fcurves'
+
