@@ -1,1 +1,1 @@
-shots=33,20,124 workers=3
+shots=1-32,34-168 workers=20 tag=w1

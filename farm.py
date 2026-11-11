@@ -38,6 +38,15 @@ def buckets(plan, N):
     return [sorted(b[1]) for b in B]
 
 
+def publish(i):
+    """push finished shots + log to this worker's result branch (a git worktree at /tmp/pub)"""
+    pub = "/tmp/pub"
+    if not os.path.isdir(pub):
+        return
+    subprocess.run(f"cp -f out/shot_*.mp4 {pub}/ 2>/dev/null; cp -rf logs {pub}/; cd {pub} && git add -A && "
+                   f"git commit -qm 'progress worker {i}' && git push -qf origin HEAD", shell=True)
+
+
 if __name__ == "__main__":
     plan = json.load(open(os.path.join(HERE, "plan.json")))
     if sys.argv[1] == "show":
@@ -63,4 +72,6 @@ if __name__ == "__main__":
         if not ok:
             log.write(r.stdout[-3000:] + "\n" + r.stderr[-6000:] + "\n")
         log.flush()
-    log.write(f"done {time.time() - T0:.0f}s\n")
+        publish(i)
+    log.write(f"done {time.time() - T0:.0f}s\n"); log.flush()
+    publish(i)

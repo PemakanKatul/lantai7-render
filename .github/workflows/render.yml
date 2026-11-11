@@ -7,7 +7,7 @@ permissions:
   contents: write
 concurrency:
   group: render
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   worker:
     runs-on: ubuntu-latest
@@ -26,6 +26,12 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libxi6 libxkbcommon0 libsm6 libgl1 libegl1 >/dev/null
           pip install -q -r requirements.txt
+      - name: result branch
+        run: |
+          TAG=$(grep -oP '(?<=tag=)\w+' farm/trigger.txt || echo w)
+          git config --global user.name render-bot
+          git config --global user.email render-bot@users.noreply.github.com
+          git worktree add --orphan -b out-$TAG-${{ matrix.i }} /tmp/pub
       - name: render share
         env:
           SAMPLES: "12"
@@ -35,13 +41,6 @@ jobs:
       - name: publish results
         if: always()
         run: |
-          B=out-${{ matrix.i }}
-          git config user.name render-bot
-          git config user.email render-bot@users.noreply.github.com
-          mkdir -p /tmp/pub && cp -r out/*.mp4 logs /tmp/pub/ 2>/dev/null || true
-          git checkout --orphan $B
-          git rm -rq --cached . || true
-          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
-          cp -r /tmp/pub/* . 2>/dev/null || true
-          echo "run ${{ github.run_id }} commit ${{ github.sha }}" > RUN.txt
-          git add -A && git commit -qm "results worker ${{ matrix.i }} run ${{ github.run_id }}" && git push -qf origin $B
+          mkdir -p logs; cp -f out/shot_*.mp4 /tmp/pub/ 2>/dev/null || true; cp -rf logs /tmp/pub/ || true
+          echo "run ${{ github.run_id }} commit ${{ github.sha }}" > /tmp/pub/RUN.txt
+          cd /tmp/pub && git add -A && (git commit -qm "final worker ${{ matrix.i }}" || true) && git push -qf origin HEAD

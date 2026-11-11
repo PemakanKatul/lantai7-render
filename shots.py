@@ -438,11 +438,18 @@ def animate(sc, shot, actors, cams, marks):
         # breathing (delta channels so they never fight the main keys)
         if c.get("breathe", c.get("as", who) != "hantu"):
             ph = (hash(who) % 100) / 100 * 6.28
-            for ff in range(1, nfr + 1, 3):
+            # stepped like stop-motion "boil": the pose only changes every 4th frame, so held
+            # frames in between are identical and are not rendered again
+            for ff in range(1, nfr + 1, 4):
                 tt = (ff - 1) / FPS
                 arm.delta_scale = (1, 1, 1 + 0.008 * math.sin(tt * 2 * math.pi / 3.2 + ph))
                 arm.delta_rotation_euler = (0, 0, R(0.7 * math.sin(tt * 2 * math.pi / 5.1 + ph)))
                 arm.keyframe_insert("delta_scale", frame=ff); arm.keyframe_insert("delta_rotation_euler", frame=ff)
+            if arm.animation_data and arm.animation_data.action:
+                for fc in arm.animation_data.action.fcurves:
+                    if fc.data_path.startswith("delta_"):
+                        for kp in fc.keyframe_points:
+                            kp.interpolation = "CONSTANT"
         if c.get("jitter"):        # trembling
             a, b = c["jitter"]
             for ff in range(fr(shot, a), fr(shot, b)):
