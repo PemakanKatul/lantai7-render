@@ -1,0 +1,35 @@
+name: cta
+on:
+  push:
+    branches: [main]
+    paths: ["farm/cta_trigger.txt"]
+permissions:
+  contents: write
+jobs:
+  worker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        r: ["70-74", "75-79", "80-86", "87-94", "95-102"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: deps
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libxi6 libxkbcommon0 libsm6 libgl1 libegl1 >/dev/null
+          pip install -q -r requirements.txt
+      - name: render frames
+        run: python3 -I shots.py 900 plan=cta_plan.json out=out samples=12 frames=${{ matrix.r }}
+      - name: publish
+        if: always()
+        run: |
+          git config --global user.name render-bot
+          git config --global user.email render-bot@users.noreply.github.com
+          git worktree add --orphan -b cta-${{ matrix.r }} /tmp/pub
+          cp -f out/work_900/f_*.png /tmp/pub/ 2>/dev/null || true
+          cd /tmp/pub && git add -A && (git commit -qm "cta ${{ matrix.r }}" || true) && git push -qf origin HEAD

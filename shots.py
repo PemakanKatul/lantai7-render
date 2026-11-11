@@ -594,7 +594,7 @@ SAMPLES = 16
 if __name__ == "__main__":
     args = dict(a.split("=", 1) for a in sys.argv[2:] if "=" in a)
     SAMPLES = int(args.get("samples", 16))
-    plan = json.load(open(os.path.join(HERE, "plan.json")))
+    plan = json.load(open(args.get("plan", os.path.join(HERE, "plan.json"))))
     shot = next(s for s in plan["shots"] if s["id"] == int(sys.argv[1]))
     out = args.get("out", os.path.join(HERE, "out"))
     frames = tuple(int(x) for x in args["frames"].split("-")) if "frames" in args else None
