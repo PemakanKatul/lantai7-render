@@ -1,3 +1,4 @@
 worker 15/20 shots [9, 15, 25, 50, 69, 91, 114, 155]
 shot 9 OK 359s
 shot 15 OK 21s
+shot 25 OK 759s
