@@ -19,3 +19,4 @@ Traceback (most recent call last):
 AttributeError: 'Action' object has no attribute 'fcurves'
 
 shot 39 OK 61s
+shot 42 OK 60s
