@@ -1,1 +1,1 @@
-shots=26,63,96,110,150,12 workers=6 tag=bt2 plan=plan_bm.json
+all workers=20 tag=bm1 plan=plan_bm.json
