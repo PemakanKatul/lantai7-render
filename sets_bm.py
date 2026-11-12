@@ -492,16 +492,17 @@ def buku(lines=(), title=False, style="open"):
     else:
         cb("bk_cov", (0.62, 0.44, 0.02), (0, 0, 0.78), cv, bev=0.01)
         for s in (-1, 1):
-            cb(f"bk_page{s}", (0.29, 0.41, 0.02), (s * 0.152, 0, 0.797), (0.60, 0.56, 0.44), rot=(0, s * -3, 0), bev=0.008)
+            cb(f"bk_page{s}", (0.29, 0.41, 0.02), (s * 0.152, 0, 0.797), (0.60, 0.56, 0.44), bev=0.004)
         clay.blob("bk_mold", (-0.27, 0.15, 0.785), (0.06, 0.05, 0.008), C((0.18, 0.22, 0.12), 2.0, 0.9))
     if title:
         text("bk_spine", "BANGSAL MELATI 1979-1987", (0, -0.0, 0.81), 0.03, (0.75, 0.66, 0.4), rot=(0, 0, 0))
-    ink = (0.03, 0.04, 0.10)
+    ink = (0.010, 0.012, 0.035)
     for i, ln in enumerate(lines):
-        col = (0.25, 0.03, 0.02) if ln.startswith("!") else ink
-        zz = 0.779 if style == "kertas" else 0.809
+        col = (0.12, 0.012, 0.008) if ln.startswith("!") else ink
+        zz = 0.7775 if style == "kertas" else 0.8072
         t = text(f"bk_l{i}", ln.lstrip("!"), (0.025, 0.17 - i * 0.03, zz), 0.0135 if not ln.startswith("#") else 0.015, col, rot=(0, 0, 0))
-        t.data.align_x = "LEFT"; t.data.extrude = 0.0003
+        t.data.align_x = "LEFT"; t.data.extrude = 0.0
+        t.visible_shadow = False
         if ln.startswith("#"):
             t.data.body = ln.lstrip("#")
     lib.point_light("bk_lamp", (0.4, 0.3, 1.25), 25, (1.0, 0.78, 0.5), 0.1)
