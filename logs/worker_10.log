@@ -1,3 +1,4 @@
 worker 10/20 shots [34, 77, 78, 128, 133, 150, 178]
 shot 34 OK 4148s
 shot 77 OK 70s
+shot 78 OK 1392s
