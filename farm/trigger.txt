@@ -1,1 +1,1 @@
-all workers=20 tag=bm1 plan=plan_bm.json
+shots=7,9-10,15-18,21,24-29,32-34,38-40,48,52,56,58-59,61-68,70-82,85,87-90,92-105,108-135,137-140,142-188 workers=20 tag=bm2 plan=plan_bm.json

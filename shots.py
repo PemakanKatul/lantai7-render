@@ -433,6 +433,13 @@ def build(shot):
     else:
         cam_spec = cs
     cam = lib.camera(*cam_spec)
+    if isinstance(cs, dict) and "on" in cs and cs.get("fill", True):
+        # soft face light from the camera side so faces read in dark rooms
+        hp_ = head_point(actors[cs["on"]][0])
+        cl = Vector(cam_spec[0])
+        d = (cl - hp_).length
+        lp_ = cl + Vector((0, 0, 0.35)) + (hp_ - cl).normalized() * 0.2
+        lib.area_light("face_fill", tuple(lp_), tuple(hp_), cs.get("fill_power", 7.0) * d * d, 0.6, (1.0, 0.9, 0.8))
     if shot.get("dof"):
         lib.dof(cam, shot["dof"][0], shot["dof"][1])
     animate(sc, shot, actors, cams, marks)

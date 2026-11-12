@@ -85,11 +85,11 @@ beat(1, 39, LOR, "long", move="push_slow", sfx=[(0, "hum_tube")])
 beat(2, 0, LOR, "long", [A("sari_p", (0, 12, 0), 0, "netral", walk=[[0, 6.0]], keys=[(0, "move", [0, 12, 0, 0]), (6.0, "move", [0, 5, 0, 0])])],
      move="static", sfx=[(0, "steps")])
 beat(2, 8, JAGA, "wide", [SARI_DESK], move="push_slow")
-beat(2, 18, JAGA, on("sari_p", "close", side=0.25), [SARI_DESK], move="push_slow")
+beat(2, 18, JAGA, on("sari_p", "close", side=0.25), [A("sari_p", (0.2, 0.75, 0), 10, "netral")], move="push_slow")
 beat(2, 31, JAGA, "wide", [SARI_DESK, A("wiwik", "door", None, "netral", walk=[[0, 3.0]],
                                         keys=[(0, "move", [0.9, -1.6, 0, 180]), (3.0, "move", [0.4, 0.0, 0, 185])])],
      move="static", sfx=[(0, "door_open")])
-beat(2, 47, JAGA, on("wiwik", "medium", side=0.4), [A("sari_p", (0.2, 0.75, 0), 10, "netral"),
+beat(2, 47, JAGA, [[-1.7, 0.45, 1.3], [0.3, 0.35, 0.95], 30], [A("sari_p", (0.2, 0.75, 0), 10, "netral"),
                                                     A("wiwik", (0.4, 0.0, 0), 185, "netral", pose="give", prop="papers")], sfx=[(0, "keys")])
 beat(2, 60, JAGA, on("wiwik", "close", side=0.3), [A("wiwik", (0.4, 0.0, 0), 185, "netral", talk=[["w60", "e61"]])], move="push")
 # ================================================================== 3. the rules
@@ -130,7 +130,7 @@ beat(8, 0, HAR, on("harun", "xclose", side=0.4), [dict(HARUN, expr="tidur", talk
 beat(8, 15, JAGA, "wide", [A("sari_p", "desk", None, "cemas", keys=[(1.5, "look", [1.0, -2.2, 1.1])])])
 beat(8, 20, LOR_DARK, "clock", move="push")
 beat(8, 31, LOR_DARK, "door", move="static", sfx=[(0.3, "knock"), (0.8, "knock"), (1.3, "knock"), (3.0, "knock"), (3.5, "knock"), (4.0, "knock")])
-beat(8, 40, JAGA, on("sari_p", "close", side=0.3), [A("sari_p", "desk", None, "cemas")])
+beat(8, 40, JAGA, on("sari_p", "close", side=0.3), [A("sari_p", (0.2, 0.75, 0), 10, "cemas")])
 beat(8, 46, LOR_DARK, "long", [A("sari_p", "start", None, "cemas")], move="push_slow")
 # ================================================================== 9. the drawer and the register
 beat(9, 0, JAGA, "cab", [A("sari_p", "cab", None, "netral", pose="papers")])
@@ -155,35 +155,35 @@ beat(11, 42, BK(["Pasien meninggal."]), "page", move="push_slow")
 beat(12, 0, BK(["Pasien meninggal.", "", "!Saya yang mengunci pintunya.", "!Saya dengar dia minta tolong.", "!Saya tidak buka.",
                 "!Tertanda,  W."]), "page", move="push_slow")
 beat(12, 21, BK(["!Saya tidak buka.", "!Tertanda,  W."]), "page", move="push", music=[("w22", "sting_soft")])
-beat(12, 23, JAGA, on("sari_p", "close", side=0.3), [A("sari_p", "desk", None, "takut", blink=False)], move="push_slow")
+beat(12, 23, JAGA, on("sari_p", "close", side=0.3), [A("sari_p", (0.2, 0.75, 0), 10, "takut", blink=False)], move="push_slow")
 # ================================================================== 13-16. in Bu Wiwik's car
 beat(13, 0, EXT_D, "car", [A("sari_p", "car_side", 150, "cemas", pose="give", prop="papers")], sfx=[(0, "evening")], music=[(0, "drone_low")])
 beat(13, 8, EXT_D, on("sari_p", "medium", side=0.5), [A("sari_p", "car_side", 150, "cemas", pose="give", prop="papers"),
                                                     A("wiwik", (2.1, 23.0, 0), -10, "netral")])
 beat(13, 16, EXT_D, on("wiwik", "close", side=0.3), [A("wiwik", (2.1, 23.0, 0), -10, "takut", blink=False)], move="push")
 beat(13, 20, CAR, "front", [WIW_CAR, SARI_CAR], sfx=[(0, "car_door")])
-beat(13, 26, CAR, "wiwik", [WIW_CAR, SARI_CAR], move="push_slow")
-beat(13, 31, CAR, "wiwik", [dict(WIW_CAR, talk=[["w31", "e36"]])], move="push_slow")
+beat(13, 26, CAR, on("wiwik", "close", dist=1.35, side=0.12), [WIW_CAR, SARI_CAR], move="push_slow")
+beat(13, 31, CAR, on("wiwik", "close", dist=1.35, side=0.12), [dict(WIW_CAR, talk=[["w31", "e36"]])], move="push_slow")
 beat(13, 40, CAR, "two", [dict(WIW_CAR, talk=[["w40", "e55"]]), SARI_CAR])
-beat(14, 0, CAR, "wiwik", [dict(WIW_CAR, talk=[["w0", "e13"]])])
+beat(14, 0, CAR, on("wiwik", "close", dist=1.35, side=0.12), [dict(WIW_CAR, talk=[["w0", "e13"]])])
 beat(14, 5, LOR_DARK, "door", move="static", sfx=[(0.1, "knock"), (0.5, "knock"), (0.9, "knock"), (2.4, "knock"), (2.8, "knock"), (3.2, "knock")],
      fx=[["old", 0, 99]])
-beat(14, 11, CAR, "wiwik", [dict(WIW_CAR, expr="nangis", talk=[["w11", "e20"]])], move="push")
+beat(14, 11, CAR, on("wiwik", "close", dist=1.35, side=0.12), [dict(WIW_CAR, expr="nangis", talk=[["w11", "e20"]])], move="push")
 beat(14, 21, CAR, "two", [dict(WIW_CAR, expr="nangis"), SARI_CAR])
-beat(14, 25, CAR, "wiwik", [dict(WIW_CAR, expr="cemas", talk=[["w25", "e41"]])])
+beat(14, 25, CAR, on("wiwik", "close", dist=1.35, side=0.12), [dict(WIW_CAR, expr="cemas", talk=[["w25", "e41"]])])
 beat(14, 42, K4, "wall", move="push_slow", sfx=[(0.2, "knock_heavy"), (1.0, "knock_heavy")], fx=[["old", 0, 99]], music=[(0, "sting_soft")])
-beat(14, 48, CAR, "wiwik", [dict(WIW_CAR, expr="takut", talk=[["w48", "e66"]])], move="push")
-beat(15, 0, CAR, "sari", [WIW_CAR, dict(SARI_CAR, talk=[["w0", "e3"]])])
-beat(15, 4, CAR, "wiwik", [dict(WIW_CAR, keys=[(0.6, "expr", "takut")])], move="push")
+beat(14, 48, CAR, on("wiwik", "close", dist=1.35, side=0.12), [dict(WIW_CAR, expr="takut", talk=[["w48", "e66"]])], move="push")
+beat(15, 0, CAR, on("sari_p", "close", dist=1.35, side=-0.12), [WIW_CAR, dict(SARI_CAR, talk=[["w0", "e3"]])])
+beat(15, 4, CAR, on("wiwik", "close", dist=1.35, side=0.12), [dict(WIW_CAR, keys=[(0.6, "expr", "takut")])], move="push")
 beat(15, 8, CAR, "two", [dict(WIW_CAR, talk=[["w8", "e19"]]), SARI_CAR])
 beat(15, 20, BANG, "entry", [A("hantu", (0.0, 9.0, 0), 0)], move="push_slow", fx=[["old", 0, 99]], music=[(0, "sting_soft")])
-beat(15, 30, CAR, "wiwik", [dict(WIW_CAR, talk=[["w30", "e48"]])], move="push_slow")
-beat(16, 0, CAR, "wiwik", [dict(WIW_CAR, talk=[["w3", "e20"]])])
+beat(15, 30, CAR, on("wiwik", "close", dist=1.35, side=0.12), [dict(WIW_CAR, talk=[["w30", "e48"]])], move="push_slow")
+beat(16, 0, CAR, on("wiwik", "close", dist=1.35, side=0.12), [dict(WIW_CAR, talk=[["w3", "e20"]])])
 beat(16, 9, K4, "low", move="push_slow")
 beat(16, 21, CAR, "front", [dict(WIW_CAR, expr="takut"), dict(SARI_CAR, expr="takut")], sfx=[(0, "cold_wind")])
-beat(16, 28, CAR, "wiwik", [dict(WIW_CAR, expr="takut", talk=[["w28", "e34"], ["w38", "e45"]])], move="push")
+beat(16, 28, CAR, on("wiwik", "close", dist=1.35, side=0.12), [dict(WIW_CAR, expr="takut", talk=[["w28", "e34"], ["w38", "e45"]])], move="push")
 beat(16, 46, LOR_DARK, "door", move="push_slow", sfx=[(0.4, "knock"), (0.8, "knock"), (1.2, "knock")])
-beat(16, 53, CAR, "sari", [WIW_CAR, dict(SARI_CAR, expr="takut", blink=False)], move="push")
+beat(16, 53, CAR, on("sari_p", "close", dist=1.35, side=-0.12), [WIW_CAR, dict(SARI_CAR, expr="takut", blink=False)], move="push")
 # ================================================================== 17-18. the chain is broken
 beat(17, 0, EXT_N, "road", move="push_slow", sfx=[(0, "rain_heavy"), (1.0, "thunder")], music=[(0, "drone_in")])
 beat(17, 5, LOR_DARK, "long", move="static", fx=[["dark", "w10", 0.7], ["dark", 3.6, 0.5]], sfx=[("w10", "power_off"), (3.6, "power_off")])
@@ -198,8 +198,8 @@ beat(17, 44, LOR_WET, "low", move="push_slow", sfx=[(0, "drip")])
 beat(17, 54, LOR_WET, on("sari_p", "close", side=0.3), [A("sari_p", "mid", None, "cemas", prop="torch", pose="torch")], move="push_slow")
 beat(17, 63, LOR_WET, "end", [A("sari_p", (0.35, 19.5, 0), 180, "cemas", prop="torch", pose="torch"),
                               A("darto", (-0.35, 19.2, 0), 180, "cemas", prop="torch", pose="torch")], music=[(0, "tension")])
-beat(18, 0, LOR_WET, "chain", move="push")
-beat(18, 9, LOR_WET, "chain", move="push_slow", music=[("w14", "sting_soft")])
+beat(18, 0, LOR_WET, "chain", move="push", set_over=dict(exposure=2.4))
+beat(18, 9, LOR_WET, "chain", move="push_slow", set_over=dict(exposure=2.4), music=[("w14", "sting_soft")])
 beat(18, 23, LOR_OPEN, "door", move="push_slow", sfx=[(0, "creak")])
 beat(18, 28, LOR_OPEN, on("darto", "close", side=0.3), [A("darto", "door_out", 0, "takut", prop="torch", pose="torch", talk=[["w28", "e28"], ["w32", "e36"]])])
 beat(18, 37, LOR_OPEN, "end", [A("darto", (-0.5, 21.0, 0), 180, "takut", prop="torch", pose="torch"),
@@ -210,9 +210,9 @@ beat(19, 0, LOR_OPEN, on("sari_p", "xclose", side=0.2), [A("sari_p", "near_door"
 beat(19, 16, LOR_OPEN, on("sari_p", "medium", side=-0.3), [A("sari_p", "near_door", 0, "netral", prop="torch", pose="torch")], music=[(0, "drone_low")])
 beat(19, 23, BANG, "entry", [A("sari_p", "entry", 180, "cemas", prop="torch", pose="torch", walk=[[0, 99]],
                               keys=[(0, "move", [0.0, 0.8, 0, 180]), (7.0, "move", [0.0, 4.5, 0, 180])])], move="static", sfx=[(0, "steps_slow")])
-beat(19, 30, BANG, "beds", move="pan_r")
-beat(19, 40, BANG, "cal", move="push")
-beat(19, 55, BANG, "wchair", move="push_slow")
+beat(19, 30, BANG, "beds", move="pan_r", set_over=dict(exposure=3.4))
+beat(19, 40, BANG, "cal", move="push", set_over=dict(exposure=3.4))
+beat(19, 55, BANG, "wchair", move="push_slow", set_over=dict(exposure=3.6))
 beat(20, 0, BANG, "k4", [A("sari_p", (0.0, 8.0, 0), 180, "cemas", prop="torch", pose="torch", walk=[[0, 99]],
                           keys=[(0, "move", [0.0, 8.0, 0, 180]), (4.0, "move", [0.0, 10.8, 0, 180])])], move="static")
 beat(20, 5, K4, "side", [dict(SARI_K4, keys=[(0, "move", [0.15, 0.3, 0, 180]), (2.0, "move", [0.15, 0.7, 0, 180])], walk=[[0, 2.0]])], move="static")
@@ -251,9 +251,9 @@ beat(23, 47, K4, "corner", move="static", fx=[["glitch", 0, 0.6]], set_over=dict
 RUN = dict(walk_style="run", prop="torch", pose="torch")
 beat(24, 0, BANG, "back", [A("sari_p", (0.0, 10.0, 0), 0, "takut", walk=[[0, 99]], keys=[(0, "move", [0.0, 10.0, 0, 0]), (2.2, "move", [0.0, 8.0, 0, 0])], **RUN)],
      move="shake", sfx=[(0, "run")])
-beat(24, 2, BANG, "entry", move="dolly_zoom", sfx=[(0, "run")])
+beat(24, 2, BANG, "entry", move="dolly_zoom", set_over=dict(exposure=3.0), sfx=[(0, "run")])
 beat(24, 12, BANG, on("sari_p", "close", side=0.3), [A("sari_p", "mid", 0, "takut", walk=[[0, 99]], **RUN)], move="shake")
-beat(24, 27, BANG, "beds", move="pan_l", sfx=[(0.2, "knock"), (0.6, "knock"), (1.0, "knock")])
+beat(24, 27, BANG, "beds", move="pan_l", set_over=dict(exposure=3.2), sfx=[(0.2, "knock"), (0.6, "knock"), (1.0, "knock")])
 beat(24, 45, BANG, "back", [A("sari_p", (0.0, 8.0, 0), 0, "takut", walk=[[0, 99]], keys=[(0, "move", [0.0, 8.0, 0, 0]), (5.0, "move", [0.0, 5.0, 0, 0])], **RUN)],
      move="shake", sfx=[("w45", "knock"), ("w46", "knock"), ("w47", "knock")])
 FAKE = A("darto", "door_out", 180, "netral", prop="torch", pose="torch", noshadow=True, blink=False)
