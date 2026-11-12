@@ -500,7 +500,8 @@ def buku(lines=(), title=False, style="open"):
     for i, ln in enumerate(lines):
         col = (0.12, 0.012, 0.008) if ln.startswith("!") else ink
         zz = 0.7775 if style == "kertas" else 0.8072
-        t = text(f"bk_l{i}", ln.lstrip("!"), (0.025, 0.17 - i * 0.03, zz), 0.0135 if not ln.startswith("#") else 0.015, col, rot=(0, 0, 0))
+        y0 = min(0.17, 0.04 + (len(lines) - 1) * 0.03 / 2) if style != "kertas" else 0.17
+        t = text(f"bk_l{i}", ln.lstrip("!"), (0.025, y0 - i * 0.03, zz), 0.0135 if not ln.startswith("#") else 0.015, col, rot=(0, 0, 0))
         t.data.align_x = "LEFT"; t.data.extrude = 0.0
         t.visible_shadow = False
         if ln.startswith("#"):
