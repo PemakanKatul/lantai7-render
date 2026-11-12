@@ -4,3 +4,21 @@ shot 70 OK 5058s
 shot 92 OK 2472s
 shot 93 OK 2139s
 shot 108 OK 1597s
+shot 123 FAIL 33s
+00:00.484  cycles           | WARNING CUEW initialization failed: Error opening the library
+
+Traceback (most recent call last):
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 739, in <module>
+    work, nfr = render_shot(shot, out, frames)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 681, in render_shot
+    sc, cam, dyn, actors = build(shot)
+                           ~~~~~^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 445, in build
+    animate(sc, shot, actors, cams, marks)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 519, in animate
+    tgt = tuple(head_point(actors[tgt][0])) if tgt in actors else cams[tgt][0]
+                                                                  ~~~~^^^^^
+KeyError: 'sari_p'
+
