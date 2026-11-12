@@ -1,0 +1,7817 @@
+{
+ "fps": 12,
+ "size": [
+  960,
+  540
+ ],
+ "out_size": [
+  1920,
+  1080
+ ],
+ "duration": 1051.43,
+ "shots": [
+  {
+   "id": 1,
+   "seg": 1,
+   "w": 0,
+   "t0": 0.0,
+   "t1": 3.337,
+   "set": {
+    "name": "rs_ext",
+    "night": true,
+    "exposure": 2.4
+   },
+   "cam": "road",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "rain"
+    ],
+    [
+     0,
+     "wind"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "drone_in"
+    ]
+   ],
+   "fx": [],
+   "title": true,
+   "end": false,
+   "text": "Bangsal Melati. Di sebuah daerah di Jawa Tengah,"
+  },
+  {
+   "id": 2,
+   "seg": 1,
+   "w": 8,
+   "t0": 3.337,
+   "t1": 11.701,
+   "set": {
+    "name": "rs_ext",
+    "night": true,
+    "exposure": 2.4
+   },
+   "cam": "wide",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "pan_r",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "ada rumah sakit jiwa tua yang berdiri di lereng bukit, setengah jam dari kota, di ujung jalan yang dipagari pohon mahoni."
+  },
+  {
+   "id": 3,
+   "seg": 1,
+   "w": 29,
+   "t0": 11.701,
+   "t1": 18.597,
+   "set": {
+    "name": "rs_ext",
+    "night": true,
+    "exposure": 2.4
+   },
+   "cam": "facade",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Bangunan utamanya peninggalan Belanda. Temboknya tebal. Jendelanya tinggi, berteralis besi."
+  },
+  {
+   "id": 4,
+   "seg": 1,
+   "w": 39,
+   "t0": 18.597,
+   "t1": 27.39,
+   "set": {
+    "name": "lorong",
+    "exposure": 0.75
+   },
+   "cam": "long",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "hum_tube"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dan lorongnya begitu panjang... sampai ujungnya selalu terlihat agak gelap, walaupun lampunya menyala."
+  },
+  {
+   "id": 5,
+   "seg": 2,
+   "w": 0,
+   "t0": 27.39,
+   "t1": 30.556,
+   "set": {
+    "name": "lorong",
+    "exposure": 0.75
+   },
+   "cam": "long",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0,
+      12,
+      0
+     ],
+     "rot": 0,
+     "pose": "idle",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0,
+        12,
+        0,
+        0
+       ]
+      ],
+      [
+       6.0,
+       "move",
+       [
+        0,
+        5,
+        0,
+        0
+       ]
+      ]
+     ],
+     "expr": "netral",
+     "walk": [
+      [
+       0,
+       3.166
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0,
+     "steps"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sari baru dua minggu pindah tugas ke sana."
+  },
+  {
+   "id": 6,
+   "seg": 2,
+   "w": 8,
+   "t0": 30.556,
+   "t1": 34.484,
+   "set": {
+    "name": "jaga",
+    "exposure": 1.15
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "desk",
+     "rot": null,
+     "pose": "idle",
+     "keys": [],
+     "expr": "netral"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Umurnya dua puluh empat tahun, dan ia baru lulus profesi."
+  },
+  {
+   "id": 7,
+   "seg": 2,
+   "w": 18,
+   "t0": 34.484,
+   "t1": 39.681,
+   "set": {
+    "name": "jaga",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.25
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "desk",
+     "rot": null,
+     "pose": "idle",
+     "keys": [],
+     "expr": "netral"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ia menerima posisi perawat jaga malam, karena tidak ada orang lain yang mau."
+  },
+  {
+   "id": 8,
+   "seg": 2,
+   "w": 31,
+   "t0": 39.681,
+   "t1": 47.553,
+   "set": {
+    "name": "jaga",
+    "exposure": 1.15
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "desk",
+     "rot": null,
+     "pose": "idle",
+     "keys": [],
+     "expr": "netral"
+    },
+    {
+     "who": "wiwik",
+     "at": "door",
+     "rot": null,
+     "pose": "idle",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0.9,
+        -1.6,
+        0,
+        180
+       ]
+      ],
+      [
+       3.0,
+       "move",
+       [
+        0.4,
+        0.0,
+        0,
+        185
+       ]
+      ]
+     ],
+     "expr": "netral",
+     "walk": [
+      [
+       0,
+       3.0
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0,
+     "door_open"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Pada malam pertamanya, Bu Wiwik, perawat senior berumur hampir enam puluh tahun dengan rambut disanggul ketat,"
+  },
+  {
+   "id": 9,
+   "seg": 2,
+   "w": 47,
+   "t0": 47.553,
+   "t1": 54.716,
+   "set": {
+    "name": "jaga",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "wiwik",
+    "kind": "medium",
+    "side": 0.4
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.2,
+      0.75,
+      0
+     ],
+     "rot": 10,
+     "pose": "idle",
+     "keys": [],
+     "expr": "netral"
+    },
+    {
+     "who": "wiwik",
+     "at": [
+      0.4,
+      0.0,
+      0
+     ],
+     "rot": 185,
+     "pose": "give",
+     "keys": [],
+     "expr": "netral",
+     "prop": "papers"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "keys"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "menyerahkan kunci-kunci bangsal kepadanya. Bersama kunci itu, ada selembar kertas yang sudah menguning."
+  },
+  {
+   "id": 10,
+   "seg": 2,
+   "w": 60,
+   "t0": 54.716,
+   "t1": 57.73,
+   "set": {
+    "name": "jaga",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "wiwik",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": [
+      0.4,
+      0.0,
+      0
+     ],
+     "rot": 185,
+     "pose": "idle",
+     "keys": [],
+     "expr": "netral",
+     "talk": [
+      [
+       0.12,
+       1.256
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Baca. Hafalkan,\" kata Bu Wiwik."
+  },
+  {
+   "id": 11,
+   "seg": 3,
+   "w": 0,
+   "t0": 57.73,
+   "t1": 63.096,
+   "set": {
+    "name": "buku",
+    "lines": [
+     "#ATURAN JAGA MALAM - SAYAP TIMUR",
+     "1. Jangan masuk Bangsal Melati.",
+     "   Dengan alasan apa pun.",
+     "2. Ketukan setelah pukul 02.00:",
+     "   jangan didatangi.",
+     "3. Ada yang memanggil namamu",
+     "   dari lorong timur: jangan dijawab.",
+     "4. Pasien bertanya tentang \"Ibu\":",
+     "   alihkan pembicaraan."
+    ],
+    "style": "kertas",
+    "exposure": 1.3
+   },
+   "cam": "top",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "paper"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Isinya tulisan tangan yang rapi. Aturan jaga malam, sayap timur."
+  },
+  {
+   "id": 12,
+   "seg": 3,
+   "w": 10,
+   "t0": 63.096,
+   "t1": 73.519,
+   "set": {
+    "name": "buku",
+    "lines": [
+     "#ATURAN JAGA MALAM - SAYAP TIMUR",
+     "1. Jangan masuk Bangsal Melati.",
+     "   Dengan alasan apa pun.",
+     "2. Ketukan setelah pukul 02.00:",
+     "   jangan didatangi.",
+     "3. Ada yang memanggil namamu",
+     "   dari lorong timur: jangan dijawab.",
+     "4. Pasien bertanya tentang \"Ibu\":",
+     "   alihkan pembicaraan."
+    ],
+    "style": "kertas",
+    "exposure": 1.3
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "pan_d",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Satu. Jangan masuk Bangsal Melati. Dengan alasan apa pun. Dua. Kalau mendengar ketukan setelah pukul dua dini hari, jangan didatangi."
+  },
+  {
+   "id": 13,
+   "seg": 3,
+   "w": 30,
+   "t0": 73.519,
+   "t1": 80.284,
+   "set": {
+    "name": "lorong",
+    "dead": [
+     2,
+     3,
+     5
+    ],
+    "lights": 0.5,
+    "exposure": 1.0
+   },
+   "cam": "long",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "whisper_far"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tiga. Kalau ada yang memanggil namamu dari arah lorong timur... jangan dijawab."
+  },
+  {
+   "id": 14,
+   "seg": 3,
+   "w": 42,
+   "t0": 80.284,
+   "t1": 86.17,
+   "set": {
+    "name": "buku",
+    "lines": [
+     "#ATURAN JAGA MALAM - SAYAP TIMUR",
+     "1. Jangan masuk Bangsal Melati.",
+     "   Dengan alasan apa pun.",
+     "2. Ketukan setelah pukul 02.00:",
+     "   jangan didatangi.",
+     "3. Ada yang memanggil namamu",
+     "   dari lorong timur: jangan dijawab.",
+     "4. Pasien bertanya tentang \"Ibu\":",
+     "   alihkan pembicaraan."
+    ],
+    "style": "kertas",
+    "exposure": 1.3
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Empat. Kalau pasien bertanya tentang \"Ibu\", alihkan pembicaraan."
+  },
+  {
+   "id": 15,
+   "seg": 4,
+   "w": 0,
+   "t0": 86.17,
+   "t1": 90.1,
+   "set": {
+    "name": "jaga",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.35
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.2,
+      0.75,
+      0
+     ],
+     "rot": 10,
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum",
+     "talk": [
+      [
+       1.947,
+       4.05
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sari tertawa kecil. \"Ini... serius, Bu?\""
+  },
+  {
+   "id": 16,
+   "seg": 4,
+   "w": 6,
+   "t0": 90.1,
+   "t1": 94.667,
+   "set": {
+    "name": "jaga",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "wiwik",
+    "kind": "close",
+    "side": -0.2
+   },
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": [
+      0.4,
+      0.0,
+      0
+     ],
+     "rot": 185,
+     "pose": "idle",
+     "keys": [],
+     "expr": "netral",
+     "blink": false
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Bu Wiwik tidak tertawa. Ia menatap Sari lama sekali..."
+  },
+  {
+   "id": 17,
+   "seg": 4,
+   "w": 15,
+   "t0": 94.667,
+   "t1": 97.09,
+   "set": {
+    "name": "jaga",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.2,
+      0.75,
+      0
+     ],
+     "rot": 10,
+     "pose": "idle",
+     "keys": [
+      [
+       1.074,
+       "expr",
+       "cemas"
+      ]
+     ],
+     "expr": "senyum"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "sampai Sari berhenti tersenyum."
+  },
+  {
+   "id": 18,
+   "seg": 4,
+   "w": 19,
+   "t0": 97.09,
+   "t1": 103.98,
+   "set": {
+    "name": "jaga",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "wiwik",
+    "kind": "xclose",
+    "side": -0.15
+   },
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": [
+      0.4,
+      0.0,
+      0
+     ],
+     "rot": 185,
+     "pose": "idle",
+     "keys": [],
+     "expr": "netral",
+     "talk": [
+      [
+       0.12,
+       3.787
+      ],
+      [
+       3.787,
+       6.21
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [
+    [
+     3.787,
+     "sting_soft"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Perawat sebelum kamu juga ketawa,\" katanya pelan. \"Dia cuma bertahan sembilan hari.\""
+  },
+  {
+   "id": 19,
+   "seg": 5,
+   "w": 0,
+   "t0": 103.98,
+   "t1": 109.914,
+   "set": {
+    "name": "lorong",
+    "exposure": 0.75
+   },
+   "cam": "side",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "pan_r",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Pasien di sayap timur kebanyakan sudah tua, dan sudah puluhan tahun dirawat di sana."
+  },
+  {
+   "id": 20,
+   "seg": 5,
+   "w": 14,
+   "t0": 109.914,
+   "t1": 116.058,
+   "set": {
+    "name": "kamar_harun",
+    "exposure": 1.15
+   },
+   "cam": "back",
+   "cast": [
+    {
+     "who": "harun",
+     "at": "harun_bed",
+     "rot": null,
+     "pose": "sit",
+     "keys": [],
+     "expr": "capek",
+     "breathe": true
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "humming"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Salah satunya Pak Harun, kakek kurus berumur tujuh puluhan yang hampir tidak pernah bicara."
+  },
+  {
+   "id": 21,
+   "seg": 5,
+   "w": 28,
+   "t0": 116.058,
+   "t1": 122.552,
+   "set": {
+    "name": "kamar_harun",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "harun",
+    "kind": "close",
+    "side": 0.5
+   },
+   "cast": [
+    {
+     "who": "harun",
+     "at": "harun_bed",
+     "rot": null,
+     "pose": "sit",
+     "keys": [],
+     "expr": "capek",
+     "breathe": true
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Setiap malam, ia duduk di tepi ranjang, menghadap dinding, dan menyenandungkan lagu yang sama."
+  },
+  {
+   "id": 22,
+   "seg": 5,
+   "w": 42,
+   "t0": 122.552,
+   "t1": 128.44,
+   "set": {
+    "name": "kamar_harun",
+    "exposure": 1.15
+   },
+   "cam": "wall",
+   "cast": [
+    {
+     "who": "harun",
+     "at": "harun_bed",
+     "rot": null,
+     "pose": "sit",
+     "keys": [],
+     "expr": "capek",
+     "breathe": true
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Nadanya pelan dan sumbang... seperti lagu nina bobo yang dinyanyikan terbalik."
+  },
+  {
+   "id": 23,
+   "seg": 5,
+   "w": 53,
+   "t0": 128.44,
+   "t1": 135.11,
+   "set": {
+    "name": "kamar_harun",
+    "exposure": 1.15
+   },
+   "cam": "door",
+   "cast": [
+    {
+     "who": "harun",
+     "at": "harun_bed",
+     "rot": null,
+     "pose": "sit",
+     "keys": [],
+     "expr": "capek",
+     "breathe": true
+    },
+    {
+     "who": "sari_p",
+     "at": "sari_door",
+     "rot": null,
+     "pose": "papers",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        -1.0,
+        -1.6,
+        0,
+        180
+       ]
+      ],
+      [
+       2.0,
+       "move",
+       [
+        -0.4,
+        -0.6,
+        0,
+        200
+       ]
+      ]
+     ],
+     "expr": "netral",
+     "prop": "papers",
+     "walk": [
+      [
+       0,
+       2.0
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     4.304,
+     "hum_stop"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Malam kelima, Sari mengantarkan obat ke kamarnya. Pak Harun berhenti bersenandung."
+  },
+  {
+   "id": 24,
+   "seg": 6,
+   "w": 0,
+   "t0": 135.11,
+   "t1": 137.06,
+   "set": {
+    "name": "kamar_harun",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "harun",
+    "kind": "close",
+    "side": 0.55
+   },
+   "cast": [
+    {
+     "who": "harun",
+     "at": "harun_bed",
+     "rot": null,
+     "pose": "sit",
+     "keys": [],
+     "expr": "capek",
+     "breathe": true,
+     "talk": [
+      [
+       0.45,
+       1.005
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Suster baru, ya?\" tanyanya, tanpa menoleh."
+  },
+  {
+   "id": 25,
+   "seg": 6,
+   "w": 6,
+   "t0": 137.06,
+   "t1": 141.86,
+   "set": {
+    "name": "kamar_harun",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "medium",
+    "side": 0.2
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      -0.4,
+      -0.6,
+      0
+     ],
+     "rot": 120,
+     "pose": "papers",
+     "keys": [],
+     "expr": "senyum",
+     "prop": "papers",
+     "talk": [
+      [
+       0.12,
+       4.35
+      ]
+     ]
+    },
+    {
+     "who": "harun",
+     "at": "harun_bed",
+     "rot": null,
+     "pose": "sit",
+     "keys": [],
+     "expr": "capek",
+     "breathe": true
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Iya, Pak. Saya Sari.\""
+  },
+  {
+   "id": 26,
+   "seg": 6,
+   "w": 10,
+   "t0": 141.86,
+   "t1": 151.71,
+   "set": {
+    "name": "kamar_harun",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "harun",
+    "kind": "xclose",
+    "side": 0.45
+   },
+   "cast": [
+    {
+     "who": "harun",
+     "at": "harun_bed",
+     "rot": null,
+     "pose": "sit",
+     "keys": [],
+     "expr": "cemas",
+     "breathe": true,
+     "talk": [
+      [
+       0.12,
+       0.23
+      ],
+      [
+       1.72,
+       9.24
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Sari...\" Ia mengulang nama itu pelan-pelan, seperti mengecap rasanya. \"Jangan bilang namamu keras-keras di sini. Dia dengar.\""
+  },
+  {
+   "id": 27,
+   "seg": 7,
+   "w": 0,
+   "t0": 151.71,
+   "t1": 153.088,
+   "set": {
+    "name": "kamar_harun",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.2
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      -0.4,
+      -0.6,
+      0
+     ],
+     "rot": 120,
+     "pose": "papers",
+     "keys": [],
+     "expr": "cemas",
+     "prop": "papers",
+     "talk": [
+      [
+       0.45,
+       1.498
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Siapa, Pak?\""
+  },
+  {
+   "id": 28,
+   "seg": 7,
+   "w": 2,
+   "t0": 153.088,
+   "t1": 160.412,
+   "set": {
+    "name": "kamar_harun",
+    "exposure": 1.15
+   },
+   "cam": "back",
+   "cast": [
+    {
+     "who": "harun",
+     "at": "harun_bed",
+     "rot": null,
+     "pose": "sit",
+     "keys": [
+      [
+       4.167,
+       "pose",
+       "wallhand"
+      ]
+     ],
+     "expr": "capek",
+     "breathe": true
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Pak Harun mengangkat tangannya yang gemetar, lalu menempelkan telapaknya ke dinding kamar."
+  },
+  {
+   "id": 29,
+   "seg": 7,
+   "w": 14,
+   "t0": 160.412,
+   "t1": 160.845,
+   "set": {
+    "name": "kamar_harun",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "harun",
+    "kind": "xclose",
+    "side": 0.4
+   },
+   "cast": [
+    {
+     "who": "harun",
+     "at": "harun_bed",
+     "rot": null,
+     "pose": "wallhand",
+     "keys": [],
+     "expr": "cemas",
+     "breathe": true,
+     "talk": [
+      [
+       0.12,
+       0.553
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Ibu.\""
+  },
+  {
+   "id": 30,
+   "seg": 7,
+   "w": 15,
+   "t0": 160.845,
+   "t1": 166.419,
+   "set": {
+    "name": "lorong",
+    "dead": [
+     2,
+     3,
+     5
+    ],
+    "lights": 0.5,
+    "exposure": 1.0
+   },
+   "cam": "clock",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [
+    [
+     2.636,
+     "clock2"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Saat itu, jam dinding di lorong berbunyi dua kali. Pukul dua dini hari."
+  },
+  {
+   "id": 31,
+   "seg": 7,
+   "w": 28,
+   "t0": 166.419,
+   "t1": 170.186,
+   "set": {
+    "name": "lorong",
+    "dead": [
+     2,
+     3,
+     5
+    ],
+    "lights": 0.5,
+    "exposure": 1.0
+   },
+   "cam": "long",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "tension"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dari ujung lorong timur... dari arah"
+  },
+  {
+   "id": 32,
+   "seg": 7,
+   "w": 34,
+   "t0": 170.186,
+   "t1": 173.592,
+   "set": {
+    "name": "lorong",
+    "dead": [
+     2,
+     3,
+     5
+    ],
+    "lights": 0.5,
+    "exposure": 1.0
+   },
+   "cam": "chain",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "pintu Bangsal Melati yang dirantai..."
+  },
+  {
+   "id": 33,
+   "seg": 7,
+   "w": 39,
+   "t0": 173.592,
+   "t1": 177.37,
+   "set": {
+    "name": "lorong",
+    "dead": [
+     2,
+     3,
+     5
+    ],
+    "lights": 0.5,
+    "exposure": 1.0
+   },
+   "cam": "door",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     1.888,
+     "knock"
+    ],
+    [
+     2.321,
+     "knock"
+    ],
+    [
+     2.755,
+     "knock"
+    ]
+   ],
+   "music": [
+    [
+     1.888,
+     "sting"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "terdengar... Tok. Tok. Tok."
+  },
+  {
+   "id": 34,
+   "seg": 8,
+   "w": 0,
+   "t0": 177.37,
+   "t1": 185.86,
+   "set": {
+    "name": "kamar_harun",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "harun",
+    "kind": "xclose",
+    "side": 0.4
+   },
+   "cast": [
+    {
+     "who": "harun",
+     "at": "harun_bed",
+     "rot": null,
+     "pose": "sit",
+     "keys": [],
+     "expr": "tidur",
+     "breathe": true,
+     "talk": [
+      [
+       2.539,
+       4.74
+      ],
+      [
+       5.487,
+       8.61
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Pak Harun memejamkan mata. \"Ratna minta dibukain lagi,\" bisiknya. \"Kasihan. Udah hampir empat puluh tahun.\""
+  },
+  {
+   "id": 35,
+   "seg": 8,
+   "w": 15,
+   "t0": 185.86,
+   "t1": 188.388,
+   "set": {
+    "name": "jaga",
+    "exposure": 1.15
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "desk",
+     "rot": null,
+     "pose": "idle",
+     "keys": [
+      [
+       1.5,
+       "look",
+       [
+        1.0,
+        -2.2,
+        1.1
+       ]
+      ]
+     ],
+     "expr": "cemas"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ketukan itu datang setiap malam."
+  },
+  {
+   "id": 36,
+   "seg": 8,
+   "w": 20,
+   "t0": 188.388,
+   "t1": 193.446,
+   "set": {
+    "name": "lorong",
+    "dead": [
+     2,
+     3,
+     5
+    ],
+    "lights": 0.5,
+    "exposure": 1.0
+   },
+   "cam": "clock",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Selalu antara pukul dua, sampai pukul dua lewat tujuh belas menit."
+  },
+  {
+   "id": 37,
+   "seg": 8,
+   "w": 31,
+   "t0": 193.446,
+   "t1": 198.461,
+   "set": {
+    "name": "lorong",
+    "dead": [
+     2,
+     3,
+     5
+    ],
+    "lights": 0.5,
+    "exposure": 1.0
+   },
+   "cam": "door",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0.3,
+     "knock"
+    ],
+    [
+     0.8,
+     "knock"
+    ],
+    [
+     1.3,
+     "knock"
+    ],
+    [
+     3.0,
+     "knock"
+    ],
+    [
+     3.5,
+     "knock"
+    ],
+    [
+     4.0,
+     "knock"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ketukannya pelan dan sopan. Tiga kali. Berhenti. Lalu diulang."
+  },
+  {
+   "id": 38,
+   "seg": 8,
+   "w": 40,
+   "t0": 198.461,
+   "t1": 202.376,
+   "set": {
+    "name": "jaga",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "desk",
+     "rot": null,
+     "pose": "idle",
+     "keys": [],
+     "expr": "cemas"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sari mematuhi aturannya. Ia tidak mendatanginya."
+  },
+  {
+   "id": 39,
+   "seg": 8,
+   "w": 46,
+   "t0": 202.376,
+   "t1": 208.94,
+   "set": {
+    "name": "lorong",
+    "dead": [
+     2,
+     3,
+     5
+    ],
+    "lights": 0.5,
+    "exposure": 1.0
+   },
+   "cam": "long",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "start",
+     "rot": null,
+     "pose": "idle",
+     "keys": [],
+     "expr": "cemas"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tapi rasa penasarannya tumbuh... seperti jamur di tempat lembap."
+  },
+  {
+   "id": 40,
+   "seg": 9,
+   "w": 0,
+   "t0": 208.94,
+   "t1": 215.827,
+   "set": {
+    "name": "jaga",
+    "exposure": 1.15
+   },
+   "cam": "cab",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "cab",
+     "rot": null,
+     "pose": "papers",
+     "keys": [],
+     "expr": "netral"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Suatu malam, saat merapikan lemari arsip di ruang jaga, ia menemukan laci terbawah yang macet."
+  },
+  {
+   "id": 41,
+   "seg": 9,
+   "w": 15,
+   "t0": 215.827,
+   "t1": 221.507,
+   "set": {
+    "name": "jaga",
+    "exposure": 1.15
+   },
+   "cam": "cab",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "cab",
+     "rot": null,
+     "pose": "papers",
+     "keys": [
+      [
+       0.4,
+       "pose",
+       "give"
+      ]
+     ],
+     "expr": "cemas"
+    }
+   ],
+   "dyn": [
+    {
+     "obj": "j_drawer0",
+     "prop": "locx",
+     "keys": [
+      [
+       0.0,
+       1.27
+      ],
+      [
+       0.9,
+       0.97
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0.3,
+     "drawer"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Setelah ditarik paksa, laci itu terbuka, dan mengeluarkan bau apak kertas basah."
+  },
+  {
+   "id": 42,
+   "seg": 9,
+   "w": 27,
+   "t0": 221.507,
+   "t1": 226.906,
+   "set": {
+    "name": "buku",
+    "lines": [],
+    "style": "closed",
+    "exposure": 1.3
+   },
+   "cam": "top",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "paper"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Di dalamnya ada sebuah buku register bersampul kain hijau yang sudah berjamur."
+  },
+  {
+   "id": 43,
+   "seg": 9,
+   "w": 39,
+   "t0": 226.906,
+   "t1": 233.702,
+   "set": {
+    "name": "buku",
+    "lines": [],
+    "style": "closed",
+    "exposure": 1.3
+   },
+   "cam": "low",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Di punggungnya tertulis: Bangsal Melati. Tahun tujuh puluh sembilan, sampai delapan puluh tujuh."
+  },
+  {
+   "id": 44,
+   "seg": 9,
+   "w": 52,
+   "t0": 233.702,
+   "t1": 238.806,
+   "set": {
+    "name": "buku",
+    "lines": [
+     "Sumarni - 12 Jan 1987 - Luminal",
+     "Rukmini - 20 Jan 1987 - CPZ",
+     "Tini - 26 Jan 1987 - Luminal",
+     "Wartini - 30 Jan 1987 - Haloperidol"
+    ],
+    "style": "open",
+    "exposure": 1.3
+   },
+   "cam": "top",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "pan_d",
+   "sfx": [
+    [
+     0,
+     "page"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sebagian besar isinya catatan biasa. Nama pasien. Tanggal masuk. Obat."
+  },
+  {
+   "id": 45,
+   "seg": 9,
+   "w": 62,
+   "t0": 238.806,
+   "t1": 244.96,
+   "set": {
+    "name": "buku",
+    "lines": [
+     "Sumarni - 12 Jan 1987 - Luminal",
+     "Rukmini - 20 Jan 1987 - CPZ",
+     "Tini - 26 Jan 1987 - Luminal",
+     "Wartini - 30 Jan 1987 - Haloperidol"
+    ],
+    "style": "open",
+    "exposure": 1.3
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "tension"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Lalu di halaman-halaman terakhir... tulisan tangannya mulai berubah."
+  },
+  {
+   "id": 46,
+   "seg": 10,
+   "w": 0,
+   "t0": 244.96,
+   "t1": 253.81,
+   "set": {
+    "name": "buku",
+    "lines": [
+     "2 Februari 1987.",
+     "Pasien kamar 2 mengeluh mendengar",
+     "ketukan dari dalam dinding.",
+     "Diberi obat tidur."
+    ],
+    "style": "open",
+    "exposure": 1.3
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "page"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dua Februari, sembilan belas delapan puluh tujuh. Pasien kamar dua mengeluh mendengar ketukan dari dalam dinding. Diberi obat tidur."
+  },
+  {
+   "id": 47,
+   "seg": 10,
+   "w": 19,
+   "t0": 253.81,
+   "t1": 259.2,
+   "set": {
+    "name": "buku",
+    "lines": [
+     "9 Februari.",
+     "3 pasien mengeluhkan hal yang sama.",
+     "Semua menyebut",
+     "\"ibu-ibu di dalam tembok\"."
+    ],
+    "style": "open",
+    "exposure": 1.3
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sembilan Februari. Tiga pasien mengeluhkan hal yang sama. Semua menyebut, \"ibu-ibu di dalam tembok.\""
+  },
+  {
+   "id": 48,
+   "seg": 10,
+   "w": 33,
+   "t0": 259.2,
+   "t1": 267.41,
+   "set": {
+    "name": "buku",
+    "lines": [
+     "3 Maret. Pasien baru.",
+     "Ratna, 19 tahun. Kamar 4."
+    ],
+    "style": "open",
+    "exposure": 1.3
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tiga Maret. Pasien baru. Ratna, sembilan belas tahun. Kamar empat."
+  },
+  {
+   "id": 49,
+   "seg": 10,
+   "w": 43,
+   "t0": 267.41,
+   "t1": 278.0,
+   "set": {
+    "name": "buku",
+    "lines": [
+     "8 Maret. Ratna menolak tidur.",
+     "\"Ibu\" memanggil namanya tiap malam.",
+     "Kalau dijawab,",
+     "Ibu bisa keluar."
+    ],
+    "style": "open",
+    "exposure": 1.3
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Delapan Maret. Ratna menolak tidur. Ia mengatakan, \"Ibu\" memanggil namanya tiap malam. Ia mengatakan... kalau dijawab, Ibu bisa keluar."
+  },
+  {
+   "id": 50,
+   "seg": 11,
+   "w": 0,
+   "t0": 278.0,
+   "t1": 287.434,
+   "set": {
+    "name": "buku",
+    "lines": [
+     "12 Maret. Ratna mengetuk pintu",
+     "sepanjang malam. Minta dipindahkan.",
+     "Ditolak - dr. H."
+    ],
+    "style": "open",
+    "exposure": 1.3
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "page"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dua belas Maret. Ratna mengetuk pintu kamar sepanjang malam. Minta dipindahkan. Permintaan ditolak oleh dokter H."
+  },
+  {
+   "id": 51,
+   "seg": 11,
+   "w": 16,
+   "t0": 287.434,
+   "t1": 298.229,
+   "set": {
+    "name": "buku",
+    "lines": [
+     "14 Maret. Pukul 02.17.",
+     "Pasien ditemukan di kamar 4.",
+     "Pintu terkunci dari luar.",
+     "Semua kuku patah. Dinding penuh goresan."
+    ],
+    "style": "open",
+    "exposure": 1.3
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Empat belas Maret. Pukul dua lewat tujuh belas menit. Pasien ditemukan di kamar empat. Pintu terkunci dari luar. Semua kuku pasien patah."
+  },
+  {
+   "id": 52,
+   "seg": 11,
+   "w": 38,
+   "t0": 298.229,
+   "t1": 300.55,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.9
+   },
+   "cam": "wall",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "sting_soft"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dinding kamar penuh goresan."
+  },
+  {
+   "id": 53,
+   "seg": 11,
+   "w": 42,
+   "t0": 300.55,
+   "t1": 302.91,
+   "set": {
+    "name": "buku",
+    "lines": [
+     "Pasien meninggal."
+    ],
+    "style": "open",
+    "exposure": 1.3
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Pasien meninggal."
+  },
+  {
+   "id": 54,
+   "seg": 12,
+   "w": 0,
+   "t0": 302.91,
+   "t1": 315.148,
+   "set": {
+    "name": "buku",
+    "lines": [
+     "Pasien meninggal.",
+     "",
+     "!Saya yang mengunci pintunya.",
+     "!Saya dengar dia minta tolong.",
+     "!Saya tidak buka.",
+     "!Tertanda,  W."
+    ],
+    "style": "open",
+    "exposure": 1.3
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Di bawahnya, dengan tinta berbeda dan tulisan yang gemetar... Saya yang mengunci pintunya. Saya dengar dia minta tolong. Saya tidak buka."
+  },
+  {
+   "id": 55,
+   "seg": 12,
+   "w": 21,
+   "t0": 315.148,
+   "t1": 317.128,
+   "set": {
+    "name": "buku",
+    "lines": [
+     "!Saya tidak buka.",
+     "!Tertanda,  W."
+    ],
+    "style": "open",
+    "exposure": 1.3
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [
+    [
+     1.842,
+     "sting_soft"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tertanda... W."
+  },
+  {
+   "id": 56,
+   "seg": 12,
+   "w": 23,
+   "t0": 317.128,
+   "t1": 321.81,
+   "set": {
+    "name": "jaga",
+    "exposure": 1.15
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "desk",
+     "rot": null,
+     "pose": "idle",
+     "keys": [],
+     "expr": "takut",
+     "blink": false
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sari menatap huruf W itu... lama sekali."
+  },
+  {
+   "id": 57,
+   "seg": 13,
+   "w": 0,
+   "t0": 321.81,
+   "t1": 326.245,
+   "set": {
+    "name": "rs_ext",
+    "night": false,
+    "car": true,
+    "exposure": 0.45
+   },
+   "cam": "car",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "car_side",
+     "rot": 150,
+     "pose": "give",
+     "keys": [],
+     "expr": "cemas",
+     "prop": "papers"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "evening"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Keesokan sorenya, Sari menunggu Bu Wiwik di parkiran."
+  },
+  {
+   "id": 58,
+   "seg": 13,
+   "w": 8,
+   "t0": 326.245,
+   "t1": 330.523,
+   "set": {
+    "name": "rs_ext",
+    "night": false,
+    "car": true,
+    "exposure": 0.45
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "medium",
+    "side": 0.5
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "car_side",
+     "rot": 150,
+     "pose": "give",
+     "keys": [],
+     "expr": "cemas",
+     "prop": "papers"
+    },
+    {
+     "who": "wiwik",
+     "at": [
+      2.1,
+      23.0,
+      0
+     ],
+     "rot": -10,
+     "pose": "idle",
+     "keys": [],
+     "expr": "netral"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tanpa berkata apa-apa, ia menyodorkan buku register itu."
+  },
+  {
+   "id": 59,
+   "seg": 13,
+   "w": 16,
+   "t0": 330.523,
+   "t1": 332.317,
+   "set": {
+    "name": "rs_ext",
+    "night": false,
+    "car": true,
+    "exposure": 0.45
+   },
+   "cam": {
+    "on": "wiwik",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": [
+      2.1,
+      23.0,
+      0
+     ],
+     "rot": -10,
+     "pose": "idle",
+     "keys": [],
+     "expr": "takut",
+     "blink": false
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Wajah Bu Wiwik memucat."
+  },
+  {
+   "id": 60,
+   "seg": 13,
+   "w": 20,
+   "t0": 332.317,
+   "t1": 335.723,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "front",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "cemas",
+     "z": 0.1
+    },
+    {
+     "who": "sari_p",
+     "at": "pass",
+     "rot": 0,
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "cemas",
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "car_door"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ia menyuruh Sari masuk ke mobilnya..."
+  },
+  {
+   "id": 61,
+   "seg": 13,
+   "w": 26,
+   "t0": 335.723,
+   "t1": 338.294,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "wiwik",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "cemas",
+     "z": 0.1
+    },
+    {
+     "who": "sari_p",
+     "at": "pass",
+     "rot": 0,
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "cemas",
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "lalu lama hanya memandangi setir."
+  },
+  {
+   "id": 62,
+   "seg": 13,
+   "w": 31,
+   "t0": 338.294,
+   "t1": 342.054,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "wiwik",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "cemas",
+     "talk": [
+      [
+       0.12,
+       2.439
+      ]
+     ],
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Saya umur dua puluh waktu itu,\" akhirnya ia bicara."
+  },
+  {
+   "id": 63,
+   "seg": 13,
+   "w": 40,
+   "t0": 342.054,
+   "t1": 352.08,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "two",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "cemas",
+     "talk": [
+      [
+       0.12,
+       9.346
+      ]
+     ],
+     "z": 0.1
+    },
+    {
+     "who": "sari_p",
+     "at": "pass",
+     "rot": 0,
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "cemas",
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Seumuran kamu. Dokter Hendarto bilang, Ratna cuma halusinasi. Jadi pintunya harus dikunci, supaya dia nggak keluyuran.\""
+  },
+  {
+   "id": 64,
+   "seg": 14,
+   "w": 0,
+   "t0": 352.08,
+   "t1": 354.434,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "wiwik",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "cemas",
+     "talk": [
+      [
+       0.45,
+       7.248
+      ]
+     ],
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Malam itu dia ngetuk terus."
+  },
+  {
+   "id": 65,
+   "seg": 14,
+   "w": 5,
+   "t0": 354.434,
+   "t1": 357.269,
+   "set": {
+    "name": "lorong",
+    "dead": [
+     2,
+     3,
+     5
+    ],
+    "lights": 0.5,
+    "exposure": 1.0
+   },
+   "cam": "door",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0.1,
+     "knock"
+    ],
+    [
+     0.5,
+     "knock"
+    ],
+    [
+     0.9,
+     "knock"
+    ],
+    [
+     2.4,
+     "knock"
+    ],
+    [
+     2.8,
+     "knock"
+    ],
+    [
+     3.2,
+     "knock"
+    ]
+   ],
+   "music": [],
+   "fx": [
+    [
+     "old",
+     0,
+     99
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Tiga kali. Berhenti. Tiga kali lagi."
+  },
+  {
+   "id": 66,
+   "seg": 14,
+   "w": 11,
+   "t0": 357.269,
+   "t1": 363.691,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "wiwik",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "nangis",
+     "talk": [
+      [
+       0.12,
+       6.542
+      ]
+     ],
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dia manggil-manggil saya. Suster Wiwik... tolong... Ibu udah di sini.\""
+  },
+  {
+   "id": 67,
+   "seg": 14,
+   "w": 21,
+   "t0": 363.691,
+   "t1": 365.289,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "two",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "nangis",
+     "z": 0.1
+    },
+    {
+     "who": "sari_p",
+     "at": "pass",
+     "rot": 0,
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "cemas",
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Suara Bu Wiwik pecah."
+  },
+  {
+   "id": 68,
+   "seg": 14,
+   "w": 25,
+   "t0": 365.289,
+   "t1": 373.044,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "wiwik",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "cemas",
+     "talk": [
+      [
+       0.12,
+       7.875
+      ]
+     ],
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Jam dua lewat lima belas, ketukannya berhenti. Saya kira dia sudah tidur. Lalu saya dengar ketukan lagi."
+  },
+  {
+   "id": 69,
+   "seg": 14,
+   "w": 42,
+   "t0": 373.044,
+   "t1": 375.814,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.9
+   },
+   "cam": "wall",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0.2,
+     "knock_heavy"
+    ],
+    [
+     1.0,
+     "knock_heavy"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "sting_soft"
+    ]
+   ],
+   "fx": [
+    [
+     "old",
+     0,
+     99
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Tapi bukan dari pintu. Dari dinding."
+  },
+  {
+   "id": 70,
+   "seg": 14,
+   "w": 48,
+   "t0": 375.814,
+   "t1": 387.62,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "wiwik",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "takut",
+     "talk": [
+      [
+       0.12,
+       11.186
+      ]
+     ],
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dan yang ngetuk... bukan Ratna. Ketukannya berat, Sari. Kayak orang ngetuk pakai kepalan tangan... yang sudah nggak ada dagingnya.\""
+  },
+  {
+   "id": 71,
+   "seg": 15,
+   "w": 0,
+   "t0": 387.62,
+   "t1": 389.326,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "sari",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "cemas",
+     "z": 0.1
+    },
+    {
+     "who": "sari_p",
+     "at": "pass",
+     "rot": 0,
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "cemas",
+     "talk": [
+      [
+       0.45,
+       1.826
+      ]
+     ],
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Siapa 'Ibu' itu, Bu?\""
+  },
+  {
+   "id": 72,
+   "seg": 15,
+   "w": 4,
+   "t0": 389.326,
+   "t1": 391.054,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "wiwik",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [
+      [
+       0.6,
+       "expr",
+       "takut"
+      ]
+     ],
+     "expr": "cemas",
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Bu Wiwik menelan ludah."
+  },
+  {
+   "id": 73,
+   "seg": 15,
+   "w": 8,
+   "t0": 391.054,
+   "t1": 397.67,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "two",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "cemas",
+     "talk": [
+      [
+       0.12,
+       6.736
+      ]
+     ],
+     "z": 0.1
+    },
+    {
+     "who": "sari_p",
+     "at": "pass",
+     "rot": 0,
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "cemas",
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Zaman Belanda, sayap timur itu bangsal perempuan. Ada satu pasien. Orang-orang manggilnya"
+  },
+  {
+   "id": 74,
+   "seg": 15,
+   "w": 20,
+   "t0": 397.67,
+   "t1": 403.649,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "entry",
+   "cast": [
+    {
+     "who": "hantu",
+     "at": [
+      0.0,
+      9.0,
+      0
+     ],
+     "rot": 0,
+     "pose": "idle",
+     "keys": []
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "sting_soft"
+    ]
+   ],
+   "fx": [
+    [
+     "old",
+     0,
+     99
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Mbok Kasih. Dia mengamuk terus. Nyakar-nyakar perawat. Teriak-teriak tiap malam."
+  },
+  {
+   "id": 75,
+   "seg": 15,
+   "w": 30,
+   "t0": 403.649,
+   "t1": 414.45,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "wiwik",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "cemas",
+     "talk": [
+      [
+       0.12,
+       9.981
+      ]
+     ],
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Waktu bangsal itu direnovasi, tahun tiga puluhan... dia hilang. Nggak ada catatan dia keluar. Nggak ada catatan dia meninggal.\""
+  },
+  {
+   "id": 76,
+   "seg": 16,
+   "w": 0,
+   "t0": 414.45,
+   "t1": 419.672,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "wiwik",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "cemas",
+     "talk": [
+      [
+       1.753,
+       11.628
+      ]
+     ],
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ia diam sebentar. \"Tukang-tukang yang kerja di situ bilang..."
+  },
+  {
+   "id": 77,
+   "seg": 16,
+   "w": 9,
+   "t0": 419.672,
+   "t1": 425.958,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.9
+   },
+   "cam": "low",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "dinding kamar empat dulu lebih tipis. Setelah renovasi, jadi lebih tebal. Sejengkal.\""
+  },
+  {
+   "id": 78,
+   "seg": 16,
+   "w": 21,
+   "t0": 425.958,
+   "t1": 428.996,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "front",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "takut",
+     "z": 0.1
+    },
+    {
+     "who": "sari_p",
+     "at": "pass",
+     "rot": 0,
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "takut",
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "cold_wind"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Udara di dalam mobil terasa dingin sekali."
+  },
+  {
+   "id": 79,
+   "seg": 16,
+   "w": 28,
+   "t0": 428.996,
+   "t1": 438.788,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "wiwik",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "takut",
+     "talk": [
+      [
+       0.12,
+       3.499
+      ],
+      [
+       4.626,
+       9.912
+      ]
+     ],
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Ratna bukan minta dibukain supaya bisa keluar,\" bisik Bu Wiwik. \"Dia ngetuk... buat memperingatkan. Sampai sekarang pun begitu."
+  },
+  {
+   "id": 80,
+   "seg": 16,
+   "w": 46,
+   "t0": 438.788,
+   "t1": 441.726,
+   "set": {
+    "name": "lorong",
+    "dead": [
+     2,
+     3,
+     5
+    ],
+    "lights": 0.5,
+    "exposure": 1.0
+   },
+   "cam": "door",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0.4,
+     "knock"
+    ],
+    [
+     0.8,
+     "knock"
+    ],
+    [
+     1.2,
+     "knock"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Setiap malam dia ngetuk, supaya kita tahu"
+  },
+  {
+   "id": 81,
+   "seg": 16,
+   "w": 53,
+   "t0": 441.726,
+   "t1": 448.2,
+   "set": {
+    "name": "mobil",
+    "exposure": 1.0
+   },
+   "cam": "sari",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "driver",
+     "rot": 0,
+     "pose": "drive",
+     "keys": [],
+     "expr": "cemas",
+     "z": 0.1
+    },
+    {
+     "who": "sari_p",
+     "at": "pass",
+     "rot": 0,
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "takut",
+     "blink": false,
+     "z": 0.1
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Mbok Kasih masih di situ. Nyari orang... yang mau jawab panggilannya.\""
+  },
+  {
+   "id": 82,
+   "seg": 17,
+   "w": 0,
+   "t0": 448.2,
+   "t1": 450.471,
+   "set": {
+    "name": "rs_ext",
+    "night": true,
+    "exposure": 2.4
+   },
+   "cam": "road",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "rain_heavy"
+    ],
+    [
+     1.0,
+     "thunder"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "drone_in"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Malam itu hujan turun deras."
+  },
+  {
+   "id": 83,
+   "seg": 17,
+   "w": 5,
+   "t0": 450.471,
+   "t1": 453.51,
+   "set": {
+    "name": "lorong",
+    "dead": [
+     2,
+     3,
+     5
+    ],
+    "lights": 0.5,
+    "exposure": 1.0
+   },
+   "cam": "long",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     2.136,
+     "power_off"
+    ],
+    [
+     3.6,
+     "power_off"
+    ]
+   ],
+   "music": [],
+   "fx": [
+    [
+     "dark",
+     2.136,
+     0.7
+    ],
+    [
+     "dark",
+     3.6,
+     0.5
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Listrik di sayap timur sempat padam dua kali."
+  },
+  {
+   "id": 84,
+   "seg": 17,
+   "w": 13,
+   "t0": 453.51,
+   "t1": 463.662,
+   "set": {
+    "name": "jaga",
+    "exposure": 1.15
+   },
+   "cam": "door",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "desk",
+     "rot": 0,
+     "pose": "idle",
+     "keys": [],
+     "expr": "cemas"
+    },
+    {
+     "who": "darto",
+     "at": "door",
+     "rot": null,
+     "pose": "torch",
+     "keys": [],
+     "expr": "cemas",
+     "prop": "torch",
+     "talk": [
+      [
+       6.807,
+       10.272
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Pak Darto, satpam tua yang biasanya berjaga di pos depan, datang ke ruang jaga dengan wajah tegang. \"Mbak Sari... rantai Bangsal Melati putus.\""
+  },
+  {
+   "id": 85,
+   "seg": 17,
+   "w": 36,
+   "t0": 463.662,
+   "t1": 468.015,
+   "set": {
+    "name": "lorong",
+    "wet": true,
+    "chain_state": "broken",
+    "lights": 0.45,
+    "dead": [
+     2,
+     4
+    ],
+    "exposure": 1.1
+   },
+   "cam": "back",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.35,
+      3.0,
+      0
+     ],
+     "rot": 180,
+     "pose": "torch",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0.35,
+        3.0,
+        0,
+        180
+       ]
+      ],
+      [
+       6.0,
+       "move",
+       [
+        0.35,
+        9.0,
+        0,
+        180
+       ]
+      ]
+     ],
+     "expr": "cemas",
+     "prop": "torch",
+     "walk": [
+      [
+       0,
+       4.353
+      ]
+     ]
+    },
+    {
+     "who": "darto",
+     "at": [
+      -0.35,
+      2.6,
+      0
+     ],
+     "rot": 180,
+     "pose": "torch",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        -0.35,
+        2.6,
+        0,
+        180
+       ]
+      ],
+      [
+       6.0,
+       "move",
+       [
+        -0.35,
+        8.6,
+        0,
+        180
+       ]
+      ]
+     ],
+     "expr": "cemas",
+     "prop": "torch",
+     "walk": [
+      [
+       0,
+       4.353
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0,
+     "steps_wet"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Mereka berdua berjalan menyusuri lorong timur, dengan senter."
+  },
+  {
+   "id": 86,
+   "seg": 17,
+   "w": 44,
+   "t0": 468.015,
+   "t1": 472.952,
+   "set": {
+    "name": "lorong",
+    "wet": true,
+    "chain_state": "broken",
+    "lights": 0.45,
+    "dead": [
+     2,
+     4
+    ],
+    "exposure": 1.1
+   },
+   "cam": "low",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "drip"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Lantainya basah. Entah oleh bocoran atap... atau oleh hal lain."
+  },
+  {
+   "id": 87,
+   "seg": 17,
+   "w": 54,
+   "t0": 472.952,
+   "t1": 476.678,
+   "set": {
+    "name": "lorong",
+    "wet": true,
+    "chain_state": "broken",
+    "lights": 0.45,
+    "dead": [
+     2,
+     4
+    ],
+    "exposure": 1.1
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "mid",
+     "rot": null,
+     "pose": "torch",
+     "keys": [],
+     "expr": "cemas",
+     "prop": "torch"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Semakin dekat ke ujung lorong, bau melati makin tajam."
+  },
+  {
+   "id": 88,
+   "seg": 17,
+   "w": 63,
+   "t0": 476.678,
+   "t1": 482.94,
+   "set": {
+    "name": "lorong",
+    "wet": true,
+    "chain_state": "broken",
+    "lights": 0.45,
+    "dead": [
+     2,
+     4
+    ],
+    "exposure": 1.1
+   },
+   "cam": "end",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.35,
+      19.5,
+      0
+     ],
+     "rot": 180,
+     "pose": "torch",
+     "keys": [],
+     "expr": "cemas",
+     "prop": "torch"
+    },
+    {
+     "who": "darto",
+     "at": [
+      -0.35,
+      19.2,
+      0
+     ],
+     "rot": 180,
+     "pose": "torch",
+     "keys": [],
+     "expr": "cemas",
+     "prop": "torch"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "tension"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Wanginya menusuk dan manis... seperti bunga yang ditaruh di atas jenazah."
+  },
+  {
+   "id": 89,
+   "seg": 18,
+   "w": 0,
+   "t0": 482.94,
+   "t1": 488.05,
+   "set": {
+    "name": "lorong",
+    "wet": true,
+    "chain_state": "broken",
+    "lights": 0.45,
+    "dead": [
+     2,
+     4
+    ],
+    "exposure": 1.1
+   },
+   "cam": "chain",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Rantai besi itu tergeletak di lantai. Gemboknya masih terkunci."
+  },
+  {
+   "id": 90,
+   "seg": 18,
+   "w": 9,
+   "t0": 488.05,
+   "t1": 495.592,
+   "set": {
+    "name": "lorong",
+    "wet": true,
+    "chain_state": "broken",
+    "lights": 0.45,
+    "dead": [
+     2,
+     4
+    ],
+    "exposure": 1.1
+   },
+   "cam": "chain",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     3.049,
+     "sting_soft"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tapi salah satu mata rantainya terbuka... seperti ditarik dengan tenaga yang tidak masuk akal."
+  },
+  {
+   "id": 91,
+   "seg": 18,
+   "w": 23,
+   "t0": 495.592,
+   "t1": 498.447,
+   "set": {
+    "name": "lorong",
+    "wet": true,
+    "chain_state": "broken",
+    "door_open": 14,
+    "lights": 0.45,
+    "dead": [
+     2,
+     4
+    ],
+    "exposure": 1.1
+   },
+   "cam": "door",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "creak"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Pintu Bangsal Melati terbuka sedikit."
+  },
+  {
+   "id": 92,
+   "seg": 18,
+   "w": 28,
+   "t0": 498.447,
+   "t1": 502.108,
+   "set": {
+    "name": "lorong",
+    "wet": true,
+    "chain_state": "broken",
+    "door_open": 14,
+    "lights": 0.45,
+    "dead": [
+     2,
+     4
+    ],
+    "exposure": 1.1
+   },
+   "cam": {
+    "on": "darto",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "darto",
+     "at": "door_out",
+     "rot": 0,
+     "pose": "torch",
+     "keys": [],
+     "expr": "takut",
+     "prop": "torch",
+     "talk": [
+      [
+       0.12,
+       0.511
+      ],
+      [
+       1.755,
+       3.781
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Mbak,\" bisik Pak Darto, \"kita panggil Bu Wiwik aja.\""
+  },
+  {
+   "id": 93,
+   "seg": 18,
+   "w": 37,
+   "t0": 502.108,
+   "t1": 505.35,
+   "set": {
+    "name": "lorong",
+    "wet": true,
+    "chain_state": "broken",
+    "door_open": 14,
+    "lights": 0.45,
+    "dead": [
+     2,
+     4
+    ],
+    "exposure": 1.1
+   },
+   "cam": "end",
+   "cast": [
+    {
+     "who": "darto",
+     "at": [
+      -0.5,
+      21.0,
+      0
+     ],
+     "rot": 180,
+     "pose": "torch",
+     "keys": [],
+     "expr": "takut",
+     "prop": "torch"
+    },
+    {
+     "who": "sari_p",
+     "at": [
+      0.3,
+      21.4,
+      0
+     ],
+     "rot": 180,
+     "pose": "torch",
+     "keys": [
+      [
+       0.3,
+       "move",
+       [
+        0.3,
+        21.4,
+        0,
+        180
+       ]
+      ],
+      [
+       3.0,
+       "move",
+       [
+        0.3,
+        23.6,
+        0,
+        180
+       ]
+      ]
+     ],
+     "expr": "netral",
+     "prop": "torch",
+     "walk": [
+      [
+       0.3,
+       3.242
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tapi Sari sudah melangkah masuk."
+  },
+  {
+   "id": 94,
+   "seg": 19,
+   "w": 0,
+   "t0": 505.35,
+   "t1": 513.351,
+   "set": {
+    "name": "lorong",
+    "wet": true,
+    "chain_state": "broken",
+    "door_open": 14,
+    "lights": 0.45,
+    "dead": [
+     2,
+     4
+    ],
+    "exposure": 1.1
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "xclose",
+    "side": 0.2
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "near_door",
+     "rot": 0,
+     "pose": "torch",
+     "keys": [],
+     "expr": "netral",
+     "prop": "torch",
+     "blink": false
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Kemudian hari, ia tidak pernah bisa menjelaskan kenapa ia melakukannya. Rasanya seperti ada yang menariknya pelan-pelan."
+  },
+  {
+   "id": 95,
+   "seg": 19,
+   "w": 16,
+   "t0": 513.351,
+   "t1": 518.13,
+   "set": {
+    "name": "lorong",
+    "wet": true,
+    "chain_state": "broken",
+    "door_open": 14,
+    "lights": 0.45,
+    "dead": [
+     2,
+     4
+    ],
+    "exposure": 1.1
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "medium",
+    "side": -0.3
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "near_door",
+     "rot": 0,
+     "pose": "torch",
+     "keys": [],
+     "expr": "netral",
+     "prop": "torch"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Seperti tangan dingin... yang menggenggam pergelangan tangannya."
+  },
+  {
+   "id": 96,
+   "seg": 19,
+   "w": 23,
+   "t0": 518.13,
+   "t1": 520.838,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "entry",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "entry",
+     "rot": 180,
+     "pose": "torch",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0.0,
+        0.8,
+        0,
+        180
+       ]
+      ],
+      [
+       7.0,
+       "move",
+       [
+        0.0,
+        4.5,
+        0,
+        180
+       ]
+      ]
+     ],
+     "expr": "cemas",
+     "prop": "torch",
+     "walk": [
+      [
+       0,
+       2.708
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0,
+     "steps_slow"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Di dalam, bangsal itu membeku dalam waktu."
+  },
+  {
+   "id": 97,
+   "seg": 19,
+   "w": 30,
+   "t0": 520.838,
+   "t1": 526.0,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "beds",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "pan_r",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ranjang-ranjang besi berkarat masih berjajar, dengan kasur yang sudah menghitam."
+  },
+  {
+   "id": 98,
+   "seg": 19,
+   "w": 40,
+   "t0": 526.0,
+   "t1": 532.462,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "cal",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Di dinding masih tergantung kalender tahun sembilan belas delapan puluh tujuh. Terbuka di bulan Maret."
+  },
+  {
+   "id": 99,
+   "seg": 19,
+   "w": 55,
+   "t0": 532.462,
+   "t1": 537.96,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "wchair",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ada kursi roda yang menghadap ke dinding... seperti sedang dihukum."
+  },
+  {
+   "id": 100,
+   "seg": 20,
+   "w": 0,
+   "t0": 537.96,
+   "t1": 540.233,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "k4",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.0,
+      8.0,
+      0
+     ],
+     "rot": 180,
+     "pose": "torch",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0.0,
+        8.0,
+        0,
+        180
+       ]
+      ],
+      [
+       4.0,
+       "move",
+       [
+        0.0,
+        10.8,
+        0,
+        180
+       ]
+      ]
+     ],
+     "expr": "cemas",
+     "prop": "torch",
+     "walk": [
+      [
+       0,
+       2.273
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Kamar empat ada di ujung."
+  },
+  {
+   "id": 101,
+   "seg": 20,
+   "w": 5,
+   "t0": 540.233,
+   "t1": 545.608,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.9
+   },
+   "cam": "side",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.35,
+      1.0,
+      0
+     ],
+     "rot": 160,
+     "pose": "torch",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0.15,
+        0.3,
+        0,
+        180
+       ]
+      ],
+      [
+       2.0,
+       "move",
+       [
+        0.15,
+        0.7,
+        0,
+        180
+       ]
+      ]
+     ],
+     "expr": "takut",
+     "prop": "torch",
+     "walk": [
+      [
+       0,
+       2.0
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Pintunya terbuka lebar. Sari menyorotkan senter ke dalam..."
+  },
+  {
+   "id": 102,
+   "seg": 20,
+   "w": 13,
+   "t0": 545.608,
+   "t1": 547.462,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.9
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.15,
+      0.7,
+      0
+     ],
+     "rot": 180,
+     "pose": "torch",
+     "keys": [],
+     "expr": "takut",
+     "prop": "torch",
+     "blink": false
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "dan napasnya tertahan."
+  },
+  {
+   "id": 103,
+   "seg": 20,
+   "w": 16,
+   "t0": 547.462,
+   "t1": 551.547,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.9
+   },
+   "cam": "wall",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "tension"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Setiap jengkal dinding kamar itu penuh goresan kuku."
+  },
+  {
+   "id": 104,
+   "seg": 20,
+   "w": 24,
+   "t0": 551.547,
+   "t1": 558.852,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.9
+   },
+   "cam": "corner",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "pan_l",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ada ribuan. Berlapis-lapis. Saling silang. Dari lantai, sampai setinggi dada orang dewasa."
+  },
+  {
+   "id": 105,
+   "seg": 20,
+   "w": 36,
+   "t0": 558.852,
+   "t1": 566.823,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.9
+   },
+   "cam": "text",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Di tengah goresan itu, ada tulisan yang digurat dalam-dalam. Seperti dibuat dengan jari yang berdarah."
+  },
+  {
+   "id": 106,
+   "seg": 20,
+   "w": 51,
+   "t0": 566.823,
+   "t1": 570.242,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.9
+   },
+   "cam": "text",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [
+    [
+     0.12,
+     "sting"
+    ]
+   ],
+   "fx": [
+    [
+     "flash",
+     0.12,
+     0.15
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Jangan jawab. Jangan jawab. Jangan jawab."
+  },
+  {
+   "id": 107,
+   "seg": 20,
+   "w": 57,
+   "t0": 570.242,
+   "t1": 579.25,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.9
+   },
+   "cam": "low",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     6.099,
+     "sting_soft"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dan di bawahnya, dengan goresan yang lebih kecil, lebih putus asa... Dia bisa pakai suara siapa aja."
+  },
+  {
+   "id": 108,
+   "seg": 21,
+   "w": 0,
+   "t0": 579.25,
+   "t1": 582.654,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.9
+   },
+   "cam": "side",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.15,
+      0.7,
+      0
+     ],
+     "rot": 180,
+     "pose": "torch",
+     "keys": [],
+     "expr": "takut",
+     "prop": "torch"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0.2,
+     "torch_click"
+    ],
+    [
+     1.4,
+     "torch_click"
+    ]
+   ],
+   "music": [],
+   "fx": [
+    [
+     "flicker",
+     0.0,
+     1.6
+    ],
+    [
+     "black",
+     1.6,
+     99
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Senter Sari berkedip... lalu mati."
+  },
+  {
+   "id": 109,
+   "seg": 21,
+   "w": 5,
+   "t0": 582.654,
+   "t1": 594.157,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.9
+   },
+   "cam": "corner",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0,
+     "breath_sob"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [
+    [
+     "black",
+     0,
+     99
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Dalam gelap total itu, ia mendengar napas. Napas pendek... seseorang yang sudah lama sekali menangis. \"Suster...\" Suara itu datang dari pojok kamar."
+  },
+  {
+   "id": 110,
+   "seg": 21,
+   "w": 27,
+   "t0": 594.157,
+   "t1": 601.101,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.2
+   },
+   "cam": "corner",
+   "cast": [
+    {
+     "who": "ratna",
+     "at": [
+      -0.95,
+      2.6,
+      -0.3
+     ],
+     "rot": 35,
+     "pose": "hug",
+     "keys": [],
+     "expr": "takut"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [
+    [
+     "fadein",
+     0,
+     2.5
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Ketika mata Sari mulai terbiasa dengan gelap, ia melihat sosok seorang gadis, duduk memeluk lutut."
+  },
+  {
+   "id": 111,
+   "seg": 21,
+   "w": 42,
+   "t0": 601.101,
+   "t1": 608.046,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.2
+   },
+   "cam": {
+    "on": "ratna",
+    "kind": "medium",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "ratna",
+     "at": [
+      -0.95,
+      2.6,
+      -0.3
+     ],
+     "rot": 35,
+     "pose": "hug",
+     "keys": [],
+     "expr": "takut"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Gadis itu memakai baju pasien bergaris yang sudah lusuh. Rambut panjangnya kusut, menutupi wajah."
+  },
+  {
+   "id": 112,
+   "seg": 21,
+   "w": 56,
+   "t0": 608.046,
+   "t1": 615.11,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.2
+   },
+   "cam": {
+    "on": "ratna",
+    "kind": "close",
+    "side": 0.6,
+    "up": -0.25
+   },
+   "cast": [
+    {
+     "who": "ratna",
+     "at": [
+      -0.95,
+      2.6,
+      -0.3
+     ],
+     "rot": 35,
+     "pose": "hug",
+     "keys": [],
+     "expr": "takut"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tangannya terkulai di atas lutut... dengan ujung jari yang hitam, dan tanpa kuku."
+  },
+  {
+   "id": 113,
+   "seg": 22,
+   "w": 0,
+   "t0": 615.11,
+   "t1": 616.907,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.2
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.25
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.15,
+      0.7,
+      0
+     ],
+     "rot": 210,
+     "pose": "nervous",
+     "keys": [],
+     "expr": "takut",
+     "talk": [
+      [
+       0.45,
+       0.966
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Ratna?\" bisik Sari."
+  },
+  {
+   "id": 114,
+   "seg": 22,
+   "w": 3,
+   "t0": 616.907,
+   "t1": 621.137,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.2
+   },
+   "cam": {
+    "on": "ratna",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "ratna",
+     "at": [
+      -0.95,
+      2.6,
+      -0.3
+     ],
+     "rot": 35,
+     "pose": "hug",
+     "keys": [
+      [
+       0.919,
+       "pose",
+       "sit"
+      ]
+     ],
+     "expr": "takut"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Gadis itu mengangkat wajahnya. Wajahnya pucat kebiruan."
+  },
+  {
+   "id": 115,
+   "seg": 22,
+   "w": 10,
+   "t0": 621.137,
+   "t1": 626.723,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.2
+   },
+   "cam": {
+    "on": "ratna",
+    "kind": "xclose",
+    "side": 0.25
+   },
+   "cast": [
+    {
+     "who": "ratna",
+     "at": [
+      -0.95,
+      2.6,
+      -0.3
+     ],
+     "rot": 35,
+     "pose": "sit",
+     "keys": [],
+     "expr": "nangis",
+     "look": "sari_p"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Matanya basah. Ia tidak terlihat jahat. Ia terlihat... ketakutan."
+  },
+  {
+   "id": 116,
+   "seg": 22,
+   "w": 19,
+   "t0": 626.723,
+   "t1": 634.994,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.2
+   },
+   "cam": {
+    "on": "ratna",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "ratna",
+     "at": [
+      -0.95,
+      2.6,
+      -0.3
+     ],
+     "rot": 35,
+     "pose": "sit",
+     "keys": [],
+     "expr": "takut",
+     "look": "sari_p",
+     "talk": [
+      [
+       0.12,
+       8.391
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Suster harus pergi,\" bisik Ratna. \"Dia udah tahu nama Suster. Pak Harun nyebut nama Suster keras-keras. Dia dengar.\""
+  },
+  {
+   "id": 117,
+   "seg": 22,
+   "w": 37,
+   "t0": 634.994,
+   "t1": 636.462,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.2
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.25
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.15,
+      0.7,
+      0
+     ],
+     "rot": 210,
+     "pose": "nervous",
+     "keys": [],
+     "expr": "takut",
+     "talk": [
+      [
+       0.12,
+       1.588
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Siapa? Mbok Kasih?\""
+  },
+  {
+   "id": 118,
+   "seg": 22,
+   "w": 40,
+   "t0": 636.462,
+   "t1": 642.76,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.2
+   },
+   "cam": {
+    "on": "ratna",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "ratna",
+     "at": [
+      -0.95,
+      2.6,
+      -0.3
+     ],
+     "rot": 35,
+     "pose": "sit",
+     "keys": [],
+     "expr": "teriak",
+     "look": "sari_p",
+     "talk": [
+      [
+       2.507,
+       5.538
+      ]
+     ],
+     "jitter": [
+      0,
+      6.298
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ratna menggeleng cepat. Panik. \"Jangan sebut namanya! Jangan...\""
+  },
+  {
+   "id": 119,
+   "seg": 23,
+   "w": 0,
+   "t0": 642.76,
+   "t1": 648.159,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.2
+   },
+   "cam": "wall",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "shake",
+   "sfx": [
+    [
+     0,
+     "knock_heavy"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "sting"
+    ]
+   ],
+   "fx": [
+    [
+     "flash",
+     0,
+     0.12
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "TOK! Bunyinya keras dan berat. Seperti kepalan tulang menghantam batu."
+  },
+  {
+   "id": 120,
+   "seg": 23,
+   "w": 10,
+   "t0": 648.159,
+   "t1": 653.923,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.2
+   },
+   "cam": "low",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Asalnya dari dinding kamar empat. Dinding... yang sejengkal lebih tebal."
+  },
+  {
+   "id": 121,
+   "seg": 23,
+   "w": 20,
+   "t0": 653.923,
+   "t1": 654.686,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.2
+   },
+   "cam": "wall",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "shake",
+   "sfx": [
+    [
+     0,
+     "knock_heavy"
+    ],
+    [
+     0.501,
+     "knock_heavy"
+    ]
+   ],
+   "music": [],
+   "fx": [
+    [
+     "flash",
+     0,
+     0.1
+    ],
+    [
+     "flash",
+     0.501,
+     0.1
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "TOK! TOK!"
+  },
+  {
+   "id": 122,
+   "seg": 23,
+   "w": 22,
+   "t0": 654.686,
+   "t1": 664.237,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.2
+   },
+   "cam": {
+    "on": "ratna",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "ratna",
+     "at": [
+      -0.95,
+      2.6,
+      -0.3
+     ],
+     "rot": 35,
+     "pose": "ears",
+     "keys": [],
+     "expr": "teriak",
+     "look": "sari_p",
+     "jitter": [
+      0,
+      9.551
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "shake",
+   "sfx": [
+    [
+     0,
+     "scream_girl"
+    ]
+   ],
+   "music": [],
+   "fx": [
+    [
+     "glitch",
+     3.045,
+     99
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Ratna menjerit, dan menutup telinganya. Sosoknya bergetar. Memudar. Lalu muncul lagi... seperti siaran televisi yang rusak."
+  },
+  {
+   "id": 123,
+   "seg": 23,
+   "w": 38,
+   "t0": 664.237,
+   "t1": 669.101,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.2
+   },
+   "cam": {
+    "on": "ratna",
+    "kind": "xclose",
+    "side": 0.25
+   },
+   "cast": [
+    {
+     "who": "ratna",
+     "at": [
+      -0.95,
+      2.6,
+      -0.3
+     ],
+     "rot": 35,
+     "pose": "ears",
+     "keys": [],
+     "expr": "teriak",
+     "look": "sari_p",
+     "jitter": [
+      0,
+      4.864
+     ],
+     "talk": [
+      [
+       0.12,
+       4.984
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [
+    [
+     "glitch",
+     0,
+     99
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "\"Lari, Suster! Apa pun yang Suster dengar... jangan dijawab!\""
+  },
+  {
+   "id": 124,
+   "seg": 23,
+   "w": 47,
+   "t0": 669.101,
+   "t1": 671.79,
+   "set": {
+    "name": "kamar4",
+    "exposure": 1.2
+   },
+   "cam": "corner",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "chase"
+    ]
+   ],
+   "fx": [
+    [
+     "glitch",
+     0,
+     0.6
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Lalu... ia lenyap."
+  },
+  {
+   "id": 125,
+   "seg": 24,
+   "w": 0,
+   "t0": 671.79,
+   "t1": 673.109,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "back",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.0,
+      10.0,
+      0
+     ],
+     "rot": 0,
+     "pose": "torch",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0.0,
+        10.0,
+        0,
+        0
+       ]
+      ],
+      [
+       2.2,
+       "move",
+       [
+        0.0,
+        8.0,
+        0,
+        0
+       ]
+      ]
+     ],
+     "expr": "takut",
+     "walk": [
+      [
+       0,
+       1.319
+      ]
+     ],
+     "walk_style": "run",
+     "prop": "torch"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "shake",
+   "sfx": [
+    [
+     0,
+     "run"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sari berlari."
+  },
+  {
+   "id": 126,
+   "seg": 24,
+   "w": 2,
+   "t0": 673.109,
+   "t1": 677.354,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "entry",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "dolly_zoom",
+   "sfx": [
+    [
+     0,
+     "run"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Lorong bangsal itu terasa lebih panjang daripada saat ia masuk."
+  },
+  {
+   "id": 127,
+   "seg": 24,
+   "w": 12,
+   "t0": 677.354,
+   "t1": 685.181,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "mid",
+     "rot": 0,
+     "pose": "torch",
+     "keys": [],
+     "expr": "takut",
+     "walk": [
+      [
+       0,
+       7.827
+      ]
+     ],
+     "walk_style": "run",
+     "prop": "torch"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "shake",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Pintu keluar yang tadi hanya dua puluh langkah... sekarang terlihat jauh sekali. Seperti ujung terowongan."
+  },
+  {
+   "id": 128,
+   "seg": 24,
+   "w": 27,
+   "t0": 685.181,
+   "t1": 693.996,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "beds",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "pan_l",
+   "sfx": [
+    [
+     0.2,
+     "knock"
+    ],
+    [
+     0.6,
+     "knock"
+    ],
+    [
+     1.0,
+     "knock"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ketukan itu mengikutinya. Ia tidak bisa memastikan, apakah dari belakang... atau dari dalam dinding di kiri dan kanannya."
+  },
+  {
+   "id": 129,
+   "seg": 24,
+   "w": 45,
+   "t0": 693.996,
+   "t1": 703.66,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "back",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.0,
+      8.0,
+      0
+     ],
+     "rot": 0,
+     "pose": "torch",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0.0,
+        8.0,
+        0,
+        0
+       ]
+      ],
+      [
+       5.0,
+       "move",
+       [
+        0.0,
+        5.0,
+        0,
+        0
+       ]
+      ]
+     ],
+     "expr": "takut",
+     "walk": [
+      [
+       0,
+       9.664
+      ]
+     ],
+     "walk_style": "run",
+     "prop": "torch"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "shake",
+   "sfx": [
+    [
+     0.12,
+     "knock"
+    ],
+    [
+     0.49,
+     "knock"
+    ],
+    [
+     0.859,
+     "knock"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tok. Tok. Tok. Setiap kali ia melewati sebuah kamar, ketukannya ada di dinding kamar itu. Menyusulnya. Tidak pernah tertinggal."
+  },
+  {
+   "id": 130,
+   "seg": 25,
+   "w": 0,
+   "t0": 703.66,
+   "t1": 706.39,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "back",
+   "cast": [
+    {
+     "who": "darto",
+     "at": "door_out",
+     "rot": 180,
+     "pose": "torch",
+     "keys": [],
+     "expr": "netral",
+     "prop": "torch",
+     "noshadow": true,
+     "blink": false
+    },
+    {
+     "who": "sari_p",
+     "at": [
+      0.0,
+      5.0,
+      0
+     ],
+     "rot": 0,
+     "pose": "idle",
+     "keys": [],
+     "expr": "takut"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Lalu... terdengar suara."
+  },
+  {
+   "id": 131,
+   "seg": 25,
+   "w": 3,
+   "t0": 706.39,
+   "t1": 712.137,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "door",
+   "cast": [
+    {
+     "who": "darto",
+     "at": "door_out",
+     "rot": 180,
+     "pose": "torch",
+     "keys": [],
+     "expr": "netral",
+     "prop": "torch",
+     "noshadow": true,
+     "blink": false,
+     "talk": [
+      [
+       0.12,
+       0.493
+      ],
+      [
+       3.638,
+       5.867
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Sari?\" Itu suara Pak Darto. Dari arah pintu keluar. \"Mbak Sari! Sini, Mbak, cepet!\""
+  },
+  {
+   "id": 132,
+   "seg": 25,
+   "w": 17,
+   "t0": 712.137,
+   "t1": 715.436,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.0,
+      5.0,
+      0
+     ],
+     "rot": 0,
+     "pose": "idle",
+     "keys": [],
+     "expr": "takut",
+     "talk": [
+      [
+       1.69,
+       3.419
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sari hampir menjawab. Mulutnya sudah terbuka."
+  },
+  {
+   "id": 133,
+   "seg": 25,
+   "w": 23,
+   "t0": 715.436,
+   "t1": 726.67,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "feet",
+   "cast": [
+    {
+     "who": "darto",
+     "at": "door_out",
+     "rot": 180,
+     "pose": "torch",
+     "keys": [],
+     "expr": "netral",
+     "prop": "torch",
+     "noshadow": true,
+     "blink": false
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [
+    [
+     8.116,
+     "sting"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tapi ia melihat Pak Darto berdiri di ambang pintu, dengan senter menyala... dan cahaya senter itu... tidak menghasilkan bayangan apa pun di lantai."
+  },
+  {
+   "id": 134,
+   "seg": 25,
+   "w": 46,
+   "t0": 726.67,
+   "t1": 729.114,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.0,
+      5.0,
+      0
+     ],
+     "rot": 0,
+     "pose": "mouth",
+     "keys": [],
+     "expr": "takut"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sari menutup mulutnya rapat-rapat."
+  },
+  {
+   "id": 135,
+   "seg": 25,
+   "w": 50,
+   "t0": 729.114,
+   "t1": 732.0,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "beds",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.0,
+      5.0,
+      0
+     ],
+     "rot": 90,
+     "pose": "idle",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0.0,
+        5.0,
+        0,
+        90
+       ]
+      ],
+      [
+       2.5,
+       "move",
+       [
+        -1.4,
+        5.6,
+        0,
+        90
+       ]
+      ]
+     ],
+     "expr": "takut",
+     "walk": [
+      [
+       0,
+       2.886
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ia berbelok ke lorong samping."
+  },
+  {
+   "id": 136,
+   "seg": 26,
+   "w": 0,
+   "t0": 732.0,
+   "t1": 740.621,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "beds",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      -1.4,
+      5.6,
+      0
+     ],
+     "rot": 60,
+     "pose": "mouth",
+     "keys": [],
+     "expr": "takut"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "drift",
+   "sfx": [
+    [
+     0,
+     "whisper_far"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Sari...\" Kali ini suara Bu Wiwik. Lembut. Keibuan. \"Sari, sini, Nak. Udah aman. Jawab Ibu.\""
+  },
+  {
+   "id": 137,
+   "seg": 26,
+   "w": 15,
+   "t0": 740.621,
+   "t1": 744.174,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "xclose",
+    "side": 0.25
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      -1.4,
+      5.6,
+      0
+     ],
+     "rot": 60,
+     "pose": "mouth",
+     "keys": [],
+     "expr": "nangis"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Air mata Sari mengalir. Tapi ia tetap diam."
+  },
+  {
+   "id": 138,
+   "seg": 26,
+   "w": 23,
+   "t0": 744.174,
+   "t1": 749.023,
+   "set": {
+    "name": "bangsal",
+    "exposure": 1.4
+   },
+   "cam": "back",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Kemudian... datang suara yang paling ia takutkan."
+  },
+  {
+   "id": 139,
+   "seg": 26,
+   "w": 30,
+   "t0": 749.023,
+   "t1": 750.39,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "back",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [],
+   "music": [
+    [
+     0.12,
+     "nduk"
+    ]
+   ],
+   "fx": [
+    [
+     "black",
+     0,
+     1.487
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "\"Nduk...\""
+  },
+  {
+   "id": 140,
+   "seg": 26,
+   "w": 31,
+   "t0": 750.39,
+   "t1": 765.14,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "xclose",
+    "side": 0.2
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      -1.4,
+      5.6,
+      0
+     ],
+     "rot": 60,
+     "pose": "idle",
+     "keys": [],
+     "expr": "nangis",
+     "blink": false
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Itu suara ibunya. Ibunya yang meninggal tiga tahun lalu, karena kanker. Suara yang sudah lama sekali tidak ia dengar. Suara yang dulu memanggilnya pulang, setiap magrib."
+  },
+  {
+   "id": 141,
+   "seg": 27,
+   "w": 0,
+   "t0": 765.14,
+   "t1": 773.114,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "beds",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      -1.4,
+      5.6,
+      0
+     ],
+     "rot": 60,
+     "pose": "idle",
+     "keys": [],
+     "expr": "nangis"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "drift",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Nduk... Ibu kangen. Ibu di sini, Nduk. Jawab Ibu. Sekali aja. Bilang, iya Bu. Sekali aja.\""
+  },
+  {
+   "id": 142,
+   "seg": 27,
+   "w": 16,
+   "t0": 773.114,
+   "t1": 778.136,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "medium",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      -1.4,
+      5.6,
+      0
+     ],
+     "rot": 60,
+     "pose": "kneel",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        -1.4,
+        5.6,
+        0,
+        60
+       ]
+      ],
+      [
+       0.6,
+       "move",
+       [
+        -1.4,
+        5.6,
+        -0.32,
+        60
+       ]
+      ]
+     ],
+     "expr": "nangis"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0.5,
+     "fall"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Kaki Sari berhenti. Ia jatuh berlutut di lantai lorong yang basah."
+  },
+  {
+   "id": 143,
+   "seg": 27,
+   "w": 27,
+   "t0": 778.136,
+   "t1": 792.3,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      -1.4,
+      5.6,
+      -0.32
+     ],
+     "rot": 60,
+     "pose": "kneel",
+     "keys": [],
+     "expr": "nangis"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Seluruh tubuhnya ingin menjawab. Tiga tahun ia menyesal, tidak ada di samping ibunya di malam terakhir. Tiga tahun ia berharap... bisa mendengar suara itu sekali lagi."
+  },
+  {
+   "id": 144,
+   "seg": 28,
+   "w": 0,
+   "t0": 792.3,
+   "t1": 804.665,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.45,
+    "up": 0.05
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      -1.4,
+      5.6,
+      -0.32
+     ],
+     "rot": 60,
+     "pose": "kneel",
+     "keys": [],
+     "expr": "nangis",
+     "blink": false
+    },
+    {
+     "who": "hantu",
+     "at": [
+      -1.8,
+      5.85,
+      -0.15
+     ],
+     "rot": 60,
+     "pose": "idle",
+     "keys": []
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "breath_close"
+    ]
+   ],
+   "music": [
+    [
+     11.593,
+     "sting"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Nduk...\" Suara itu sekarang tepat di belakangnya. Di telinganya. Napasnya dingin. Berbau tanah basah... dan melati busuk. \"Jawab Ibu.\""
+  },
+  {
+   "id": 145,
+   "seg": 28,
+   "w": 19,
+   "t0": 804.665,
+   "t1": 808.186,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "xclose",
+    "side": 0.2
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      -1.4,
+      5.6,
+      -0.32
+     ],
+     "rot": 60,
+     "pose": "kneel",
+     "keys": [],
+     "expr": "marah",
+     "blink": false
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sari menggigit bibirnya, sampai berdarah."
+  },
+  {
+   "id": 146,
+   "seg": 28,
+   "w": 24,
+   "t0": 808.186,
+   "t1": 816.042,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "medium",
+    "side": 0.5
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      -1.4,
+      5.6,
+      -0.32
+     ],
+     "rot": 60,
+     "pose": "kneel",
+     "keys": [],
+     "expr": "nangis",
+     "blink": false
+    },
+    {
+     "who": "ratna",
+     "at": [
+      -1.75,
+      5.25,
+      0
+     ],
+     "rot": 30,
+     "pose": "give",
+     "keys": [],
+     "expr": "takut"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "hope"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Lalu... ada tangan kecil dan dingin yang menggenggam tangannya. Tangan itu tidak berkuku."
+  },
+  {
+   "id": 147,
+   "seg": 28,
+   "w": 37,
+   "t0": 816.042,
+   "t1": 817.44,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": {
+    "on": "ratna",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      -1.4,
+      5.6,
+      -0.32
+     ],
+     "rot": 60,
+     "pose": "kneel",
+     "keys": [],
+     "expr": "nangis",
+     "blink": false
+    },
+    {
+     "who": "ratna",
+     "at": [
+      -1.75,
+      5.25,
+      0
+     ],
+     "rot": 30,
+     "pose": "give",
+     "keys": [],
+     "expr": "takut"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ratna."
+  },
+  {
+   "id": 148,
+   "seg": 29,
+   "w": 0,
+   "t0": 817.44,
+   "t1": 826.087,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "back",
+   "cast": [
+    {
+     "who": "ratna",
+     "at": [
+      -0.3,
+      5.0,
+      0
+     ],
+     "rot": 0,
+     "pose": "idle",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        -0.3,
+        5.0,
+        0,
+        0
+       ]
+      ],
+      [
+       4.0,
+       "move",
+       [
+        -0.3,
+        1.2,
+        0,
+        0
+       ]
+      ]
+     ],
+     "expr": "takut",
+     "walk": [
+      [
+       0,
+       8.647
+      ]
+     ],
+     "walk_style": "run"
+    },
+    {
+     "who": "sari_p",
+     "at": [
+      0.3,
+      5.4,
+      0
+     ],
+     "rot": 0,
+     "pose": "idle",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0.3,
+        5.4,
+        0,
+        0
+       ]
+      ],
+      [
+       4.0,
+       "move",
+       [
+        0.3,
+        1.6,
+        0,
+        0
+       ]
+      ]
+     ],
+     "expr": "takut",
+     "walk": [
+      [
+       0,
+       8.647
+      ]
+     ],
+     "walk_style": "run"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "shake",
+   "sfx": [
+    [
+     0,
+     "run"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "chase"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Gadis itu menariknya bangkit, dan menyeretnya berlari. Kali ini, lorongnya kembali normal. Pintu keluar sudah dekat."
+  },
+  {
+   "id": 149,
+   "seg": 29,
+   "w": 16,
+   "t0": 826.087,
+   "t1": 833.762,
+   "set": {
+    "name": "bangsal",
+    "exposure": 2.0
+   },
+   "cam": "door",
+   "cast": [
+    {
+     "who": "darto",
+     "at": "door_out",
+     "rot": 180,
+     "pose": "torch",
+     "keys": [],
+     "expr": "takut",
+     "prop": "torch",
+     "jitter": [
+      0,
+      7.675
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dan di sana, Pak Darto yang asli berdiri pucat, dengan senter gemetar... dan dengan bayangan di lantai."
+  },
+  {
+   "id": 150,
+   "seg": 29,
+   "w": 33,
+   "t0": 833.762,
+   "t1": 840.608,
+   "set": {
+    "name": "lorong",
+    "wet": true,
+    "chain_state": "broken",
+    "lights": 0.6,
+    "exposure": 1.0
+   },
+   "cam": "end",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0.2,
+      22.6,
+      -0.32
+     ],
+     "rot": 0,
+     "pose": "kneel",
+     "keys": [],
+     "expr": "nangis"
+    },
+    {
+     "who": "darto",
+     "at": [
+      -0.6,
+      23.0,
+      0
+     ],
+     "rot": 160,
+     "pose": "give",
+     "keys": [],
+     "expr": "takut"
+    }
+   ],
+   "dyn": [
+    {
+     "obj": "l_bmR_hinge",
+     "prop": "rotz",
+     "keys": [
+      [
+       0,
+       -70
+      ],
+      [
+       4.701,
+       -70
+      ],
+      [
+       5.467,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     5.467,
+     "slam"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sari terjatuh keluar, melewati ambang pintu. Pak Darto langsung membanting pintu Bangsal Melati."
+  },
+  {
+   "id": 151,
+   "seg": 29,
+   "w": 46,
+   "t0": 840.608,
+   "t1": 847.753,
+   "set": {
+    "name": "lorong",
+    "wet": true,
+    "chain_state": "broken",
+    "lights": 0.6,
+    "exposure": 1.0
+   },
+   "cam": "long",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "shake",
+   "sfx": [
+    [
+     0,
+     "scream_inhuman"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "sting"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dari dalam, terdengar jeritan panjang. Suaranya bukan suara manusia. Tapi juga bukan suara binatang."
+  },
+  {
+   "id": 152,
+   "seg": 29,
+   "w": 60,
+   "t0": 847.753,
+   "t1": 855.605,
+   "set": {
+    "name": "lorong",
+    "wet": true,
+    "chain_state": "broken",
+    "lights": 0.6,
+    "exposure": 1.0
+   },
+   "cam": "side",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "shake",
+   "sfx": [
+    [
+     0,
+     "screams_many"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Jeritan itu memantul di seluruh dinding sayap timur... sampai semua pasien terbangun, dan ikut menjerit."
+  },
+  {
+   "id": 153,
+   "seg": 29,
+   "w": 75,
+   "t0": 855.605,
+   "t1": 859.11,
+   "set": {
+    "name": "lorong",
+    "wet": true,
+    "chain_state": "broken",
+    "lights": 0.6,
+    "exposure": 1.0
+   },
+   "cam": "long",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "silence"
+    ]
+   ],
+   "fx": [
+    [
+     "dark",
+     0,
+     0.3
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Kemudian... semuanya sunyi."
+  },
+  {
+   "id": 154,
+   "seg": 30,
+   "w": 0,
+   "t0": 859.11,
+   "t1": 865.836,
+   "set": {
+    "name": "jaga",
+    "exposure": 0.9
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      -0.4,
+      0.2,
+      0
+     ],
+     "rot": 58,
+     "pose": "idle",
+     "keys": [],
+     "expr": "capek",
+     "talk": [
+      [
+       2.823,
+       6.846
+      ]
+     ]
+    },
+    {
+     "who": "wiwik",
+     "at": [
+      0.4,
+      -0.3,
+      0
+     ],
+     "rot": 238,
+     "pose": "idle",
+     "keys": [],
+     "expr": "cemas"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "sad"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Bu Wiwik datang menjelang subuh. Ia mendengarkan cerita Sari tanpa memotong sedikit pun."
+  },
+  {
+   "id": 155,
+   "seg": 30,
+   "w": 13,
+   "t0": 865.836,
+   "t1": 868.107,
+   "set": {
+    "name": "jaga",
+    "exposure": 0.9
+   },
+   "cam": {
+    "on": "wiwik",
+    "kind": "close",
+    "side": -0.2
+   },
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": [
+      0.4,
+      -0.3,
+      0
+     ],
+     "rot": 238,
+     "pose": "idle",
+     "keys": [],
+     "expr": "nangis"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Lalu ia menangis. Lama sekali."
+  },
+  {
+   "id": 156,
+   "seg": 30,
+   "w": 18,
+   "t0": 868.107,
+   "t1": 876.59,
+   "set": {
+    "name": "jaga",
+    "exposure": 0.9
+   },
+   "cam": {
+    "on": "wiwik",
+    "kind": "close",
+    "side": -0.25
+   },
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": [
+      0.4,
+      -0.3,
+      0
+     ],
+     "rot": 238,
+     "pose": "idle",
+     "keys": [],
+     "expr": "nangis",
+     "talk": [
+      [
+       0.12,
+       1.748
+      ],
+      [
+       2.391,
+       8.603
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Ratna nolongin kamu,\" katanya. \"Empat puluh tahun dia nunggu, ada yang mau dengerin peringatannya. Dan kamu dengerin.\""
+  },
+  {
+   "id": 157,
+   "seg": 30,
+   "w": 35,
+   "t0": 876.59,
+   "t1": 881.327,
+   "set": {
+    "name": "rs_ext",
+    "night": false,
+    "exposure": 0.45
+   },
+   "cam": "facade",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "birds"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Siang harinya, atas desakan Bu Wiwik, pihak rumah sakit akhirnya"
+  },
+  {
+   "id": 158,
+   "seg": 30,
+   "w": 45,
+   "t0": 881.327,
+   "t1": 889.25,
+   "set": {
+    "name": "kamar4",
+    "exposure": 0.8
+   },
+   "cam": "side",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "watch_l",
+     "rot": null,
+     "pose": "idle",
+     "keys": [],
+     "expr": "cemas"
+    },
+    {
+     "who": "sari_p",
+     "at": "watch_r",
+     "rot": null,
+     "pose": "idle",
+     "keys": [],
+     "expr": "cemas"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "hammer"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "membongkar dinding kamar empat. Para tukang tidak mau bekerja, kecuali didampingi ustaz dan pendeta."
+  },
+  {
+   "id": 159,
+   "seg": 31,
+   "w": 0,
+   "t0": 889.25,
+   "t1": 896.79,
+   "set": {
+    "name": "kamar4",
+    "state": "bongkar",
+    "exposure": 1.2
+   },
+   "cam": "wall",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "rubble"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Di balik plester setebal sejengkal... mereka menemukan rongga sempit. Seukuran tubuh manusia."
+  },
+  {
+   "id": 160,
+   "seg": 31,
+   "w": 12,
+   "t0": 896.79,
+   "t1": 901.568,
+   "set": {
+    "name": "kamar4",
+    "state": "bongkar",
+    "exposure": 1.2
+   },
+   "cam": "wall",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [
+    [
+     1.027,
+     "sting_soft"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Di dalamnya, ada kerangka seorang perempuan. Dalam posisi berdiri."
+  },
+  {
+   "id": 161,
+   "seg": 31,
+   "w": 21,
+   "t0": 901.568,
+   "t1": 907.078,
+   "set": {
+    "name": "kamar4",
+    "state": "bongkar",
+    "exposure": 1.2
+   },
+   "cam": [
+    [
+     0.25,
+     2.35,
+     1.75
+    ],
+    [
+     0.0,
+     3.05,
+     1.85
+    ],
+    40
+   ],
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Kedua lengannya terangkat, dengan kepalan tangan menempel ke arah dalam kamar."
+  },
+  {
+   "id": 162,
+   "seg": 31,
+   "w": 32,
+   "t0": 907.078,
+   "t1": 914.05,
+   "set": {
+    "name": "kamar4",
+    "state": "bongkar",
+    "exposure": 1.2
+   },
+   "cam": {
+    "on": "wiwik",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "watch_l",
+     "rot": null,
+     "pose": "idle",
+     "keys": [],
+     "expr": "nangis"
+    },
+    {
+     "who": "sari_p",
+     "at": "watch_r",
+     "rot": null,
+     "pose": "idle",
+     "keys": [],
+     "expr": "cemas"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tulang-tulang jarinya patah dan aus... seperti telah mengetuk, selama hampir seratus tahun."
+  },
+  {
+   "id": 163,
+   "seg": 31,
+   "w": 44,
+   "t0": 914.05,
+   "t1": 918.213,
+   "set": {
+    "name": "makam",
+    "exposure": 0.3
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "wiwik",
+     "at": "wiwik",
+     "rot": null,
+     "pose": "idle",
+     "keys": [],
+     "expr": "nangis"
+    },
+    {
+     "who": "sari_p",
+     "at": "sari",
+     "rot": null,
+     "pose": "idle",
+     "keys": [],
+     "expr": "capek"
+    },
+    {
+     "who": "harun",
+     "at": "harun",
+     "rot": null,
+     "pose": "idle",
+     "keys": [],
+     "expr": "capek"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "birds"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Kerangka itu dimakamkan dengan layak. Ratna juga didoakan."
+  },
+  {
+   "id": 164,
+   "seg": 31,
+   "w": 52,
+   "t0": 918.213,
+   "t1": 923.74,
+   "set": {
+    "name": "makam",
+    "exposure": 0.3
+   },
+   "cam": "stone",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dan untuk pertama kalinya, namanya ditulis di batu nisan yang pantas."
+  },
+  {
+   "id": 165,
+   "seg": 32,
+   "w": 0,
+   "t0": 923.74,
+   "t1": 929.368,
+   "set": {
+    "name": "lorong",
+    "chain_state": "welded",
+    "night": false,
+    "exposure": 0.7
+   },
+   "cam": "door",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "weld"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Bangsal Melati ditutup permanen. Pintunya dilas. Bukan lagi dirantai."
+  },
+  {
+   "id": 166,
+   "seg": 32,
+   "w": 9,
+   "t0": 929.368,
+   "t1": 931.86,
+   "set": {
+    "name": "kamar_harun",
+    "exposure": 0.9
+   },
+   "cam": "back",
+   "cast": [
+    {
+     "who": "harun",
+     "at": "harun_bed",
+     "rot": null,
+     "pose": "sit",
+     "keys": [],
+     "expr": "senyum",
+     "breathe": true
+    },
+    {
+     "who": "sari_p",
+     "at": "sari_bed",
+     "rot": null,
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Pak Harun berhenti bersenandung."
+  },
+  {
+   "id": 167,
+   "seg": 32,
+   "w": 13,
+   "t0": 931.86,
+   "t1": 939.854,
+   "set": {
+    "name": "kamar_harun",
+    "exposure": 0.9
+   },
+   "cam": {
+    "on": "harun",
+    "kind": "close",
+    "side": 0.5
+   },
+   "cast": [
+    {
+     "who": "harun",
+     "at": "harun_bed",
+     "rot": null,
+     "pose": "sit",
+     "keys": [],
+     "expr": "senyum",
+     "breathe": true,
+     "talk": [
+      [
+       5.307,
+       8.114
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ketika Sari menjenguknya, ia tersenyum kecil, dan berkata... \"Ratna udah pulang. Dia titip makasih.\""
+  },
+  {
+   "id": 168,
+   "seg": 32,
+   "w": 27,
+   "t0": 939.854,
+   "t1": 944.08,
+   "set": {
+    "name": "lorong",
+    "night": false,
+    "exposure": 0.6
+   },
+   "cam": "long",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "birds"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Selama sebulan, sayap timur benar-benar sunyi."
+  },
+  {
+   "id": 169,
+   "seg": 33,
+   "w": 0,
+   "t0": 944.08,
+   "t1": 947.737,
+   "set": {
+    "name": "rs_ext",
+    "night": false,
+    "exposure": 0.45
+   },
+   "cam": "road",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "pull",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "calm"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sari mengundurkan diri sebulan kemudian."
+  },
+  {
+   "id": 170,
+   "seg": 33,
+   "w": 5,
+   "t0": 947.737,
+   "t1": 953.011,
+   "set": {
+    "name": "kos",
+    "clock": "02:16",
+    "exposure": 1.1
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "sit",
+     "rot": null,
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "capek"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ia pindah ke rumah kos kecil di kota. Bekerja di klinik, siang hari."
+  },
+  {
+   "id": 171,
+   "seg": 33,
+   "w": 18,
+   "t0": 953.011,
+   "t1": 957.916,
+   "set": {
+    "name": "kos",
+    "clock": "02:16",
+    "exposure": 1.9
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0,
+      0,
+      0
+     ],
+     "rot": 0,
+     "pose": "idle",
+     "keys": [],
+     "expr": "tidur",
+     "lie": [
+      -0.9,
+      1.45,
+      0.66,
+      0
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "night_room"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dan perlahan... mulai bisa tidur tanpa lampu menyala."
+  },
+  {
+   "id": 172,
+   "seg": 33,
+   "w": 26,
+   "t0": 957.916,
+   "t1": 963.441,
+   "set": {
+    "name": "kos",
+    "clock": "02:16",
+    "exposure": 1.9
+   },
+   "cam": "close",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0,
+      0,
+      0
+     ],
+     "rot": 0,
+     "pose": "idle",
+     "keys": [
+      [
+       0.966,
+       "expr",
+       "cemas"
+      ]
+     ],
+     "expr": "tidur",
+     "lie": [
+      -0.9,
+      1.45,
+      0.66,
+      0
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Malam itu, ia terbangun tanpa tahu sebabnya. Kamarnya gelap. Sunyi."
+  },
+  {
+   "id": 173,
+   "seg": 33,
+   "w": 36,
+   "t0": 963.441,
+   "t1": 968.465,
+   "set": {
+    "name": "kos",
+    "clock": "02:16",
+    "exposure": 1.9
+   },
+   "cam": [
+    [
+     0.1,
+     1.45,
+     0.8
+    ],
+    [
+     0.1,
+     1.65,
+     0.556
+    ],
+    40
+   ],
+   "cast": [],
+   "dyn": [],
+   "extras": [
+    {
+     "kind": "phone_table",
+     "at": [
+      0.1,
+      1.65,
+      0.556
+     ],
+     "text": [
+      "02:16",
+      "Kamis"
+     ]
+    }
+   ],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ia melirik ponsel di samping bantal. Pukul dua lewat enam belas."
+  },
+  {
+   "id": 174,
+   "seg": 33,
+   "w": 47,
+   "t0": 968.465,
+   "t1": 974.35,
+   "set": {
+    "name": "kos",
+    "clock": "02:17",
+    "exposure": 1.9
+   },
+   "cam": [
+    [
+     0.1,
+     1.45,
+     0.8
+    ],
+    [
+     0.1,
+     1.65,
+     0.556
+    ],
+    40
+   ],
+   "cast": [],
+   "dyn": [],
+   "extras": [
+    {
+     "kind": "phone_table",
+     "at": [
+      0.1,
+      1.65,
+      0.556
+     ],
+     "text": [
+      "02:17",
+      "Kamis"
+     ]
+    }
+   ],
+   "move": "push",
+   "sfx": [],
+   "music": [
+    [
+     4.264,
+     "sting_soft"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Angka di layar berganti. Pukul dua... lewat tujuh belas."
+  },
+  {
+   "id": 175,
+   "seg": 34,
+   "w": 0,
+   "t0": 974.35,
+   "t1": 985.493,
+   "set": {
+    "name": "kos",
+    "clock": "02:17",
+    "exposure": 1.9
+   },
+   "cam": "wall",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dari dinding di samping ranjangnya... dinding kamar kos yang baru tiga minggu ia tempati... terdengar..."
+  },
+  {
+   "id": 176,
+   "seg": 34,
+   "w": 15,
+   "t0": 985.493,
+   "t1": 985.952,
+   "set": {
+    "name": "kos",
+    "clock": "02:17",
+    "exposure": 1.9
+   },
+   "cam": "wall",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0.12,
+     "knock"
+    ]
+   ],
+   "music": [
+    [
+     0.12,
+     "sting"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tok."
+  },
+  {
+   "id": 177,
+   "seg": 34,
+   "w": 16,
+   "t0": 985.952,
+   "t1": 987.18,
+   "set": {
+    "name": "kos",
+    "clock": "02:17",
+    "exposure": 1.9
+   },
+   "cam": "close",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0,
+      0,
+      0
+     ],
+     "rot": 0,
+     "pose": "idle",
+     "keys": [],
+     "expr": "takut",
+     "lie": [
+      -0.9,
+      1.45,
+      0.66,
+      0
+     ],
+     "blink": false
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sari membeku."
+  },
+  {
+   "id": 178,
+   "seg": 34,
+   "w": 18,
+   "t0": 987.18,
+   "t1": 991.303,
+   "set": {
+    "name": "kos",
+    "clock": "02:17",
+    "exposure": 1.9
+   },
+   "cam": "wall",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0.12,
+     "knock"
+    ],
+    [
+     0.579,
+     "knock"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tok. Tok. Ketukannya pelan. Sopan. Dan sabar."
+  },
+  {
+   "id": 179,
+   "seg": 34,
+   "w": 25,
+   "t0": 991.303,
+   "t1": 1000.48,
+   "set": {
+    "name": "kos",
+    "clock": "02:17",
+    "exposure": 1.9
+   },
+   "cam": "top",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0,
+      0,
+      0
+     ],
+     "rot": 0,
+     "pose": "idle",
+     "keys": [],
+     "expr": "takut",
+     "lie": [
+      -0.9,
+      1.45,
+      0.66,
+      0
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "whisper_far"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Lalu sebuah suara berbisik dari dalam dinding. Lembut. Penuh kerinduan. Suara yang sangat ia kenal."
+  },
+  {
+   "id": 180,
+   "seg": 35,
+   "w": 0,
+   "t0": 1000.48,
+   "t1": 1007.873,
+   "set": {
+    "name": "kos",
+    "clock": "02:17",
+    "exposure": 1.9
+   },
+   "cam": "wall",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "nduk"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Nduk... dinding di rumah sakit itu sudah dibongkar. Ibu nggak punya rumah lagi.\""
+  },
+  {
+   "id": 181,
+   "seg": 35,
+   "w": 13,
+   "t0": 1007.873,
+   "t1": 1012.435,
+   "set": {
+    "name": "kos",
+    "clock": "02:17",
+    "exposure": 1.9
+   },
+   "cam": "close",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": [
+      0,
+      0,
+      0
+     ],
+     "rot": 0,
+     "pose": "idle",
+     "keys": [],
+     "expr": "nangis",
+     "lie": [
+      -0.9,
+      1.45,
+      0.66,
+      0
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "\"Boleh Ibu tinggal di sini?\" \"Jawab Ibu, Nduk. Sekali aja.\""
+  },
+  {
+   "id": 182,
+   "seg": 35,
+   "w": 23,
+   "t0": 1012.435,
+   "t1": 1018.599,
+   "set": {
+    "name": "kos",
+    "clock": "02:17",
+    "exposure": 1.9
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "sit",
+     "rot": null,
+     "pose": "mouth",
+     "keys": [],
+     "expr": "nangis"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [
+    [
+     0,
+     "rain"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sari menutup mulutnya dengan kedua tangan. Di luar, hujan mulai turun lagi."
+  },
+  {
+   "id": 183,
+   "seg": 35,
+   "w": 35,
+   "t0": 1018.599,
+   "t1": 1022.017,
+   "set": {
+    "name": "kos",
+    "clock": "02:17",
+    "exposure": 1.9
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "sit",
+     "rot": null,
+     "pose": "hug",
+     "keys": [],
+     "expr": "takut"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0.3,
+     "knock"
+    ],
+    [
+     0.8,
+     "knock"
+    ],
+    [
+     1.3,
+     "knock"
+    ],
+    [
+     3.5,
+     "knock"
+    ],
+    [
+     4.0,
+     "knock"
+    ],
+    [
+     4.5,
+     "knock"
+    ]
+   ],
+   "music": [],
+   "fx": [
+    [
+     "timelapse",
+     0,
+     99
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Ketukan itu terus berlanjut sampai subuh."
+  },
+  {
+   "id": 184,
+   "seg": 35,
+   "w": 41,
+   "t0": 1022.017,
+   "t1": 1027.07,
+   "set": {
+    "name": "kos",
+    "clock": "02:16",
+    "exposure": 1.9
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "sit",
+     "rot": null,
+     "pose": "hug",
+     "keys": [],
+     "expr": "capek"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0.3,
+     "knock"
+    ],
+    [
+     0.8,
+     "knock"
+    ],
+    [
+     1.3,
+     "knock"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Malam berikutnya pun begitu. Dan malam sesudahnya."
+  },
+  {
+   "id": 185,
+   "seg": 36,
+   "w": 0,
+   "t0": 1027.07,
+   "t1": 1033.591,
+   "set": {
+    "name": "kos",
+    "clock": "02:17",
+    "exposure": 1.9
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "xclose",
+    "side": 0.25
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "sit",
+     "rot": null,
+     "pose": "hug",
+     "keys": [],
+     "expr": "capek"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ia tahu... suara itu tidak akan pernah pergi. Suara itu hanya menunggu."
+  },
+  {
+   "id": 186,
+   "seg": 36,
+   "w": 12,
+   "t0": 1033.591,
+   "t1": 1042.777,
+   "set": {
+    "name": "kos",
+    "clock": "02:17",
+    "exposure": 1.9
+   },
+   "cam": "wall",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Menunggu malam ketika Sari terlalu lelah... terlalu rindu... atau terlalu setengah tidur..."
+  },
+  {
+   "id": 187,
+   "seg": 36,
+   "w": 24,
+   "t0": 1042.777,
+   "t1": 1046.027,
+   "set": {
+    "name": "kos",
+    "clock": "02:17",
+    "exposure": 1.9
+   },
+   "cam": {
+    "on": "sari_p",
+    "kind": "xclose",
+    "side": 0.2
+   },
+   "cast": [
+    {
+     "who": "sari_p",
+     "at": "sit",
+     "rot": null,
+     "pose": "hug",
+     "keys": [
+      [
+       2.314,
+       "expr",
+       "tidur"
+      ]
+     ],
+     "expr": "capek"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "sampai akhirnya... ia menjawab."
+  },
+  {
+   "id": 188,
+   "seg": 36,
+   "w": 28,
+   "t0": 1046.027,
+   "t1": 1051.43,
+   "set": {
+    "name": "kos",
+    "clock": "02:17",
+    "exposure": 1.9
+   },
+   "cam": "wall",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0.12,
+     "knock"
+    ],
+    [
+     0.548,
+     "knock"
+    ],
+    [
+     0.975,
+     "knock"
+    ]
+   ],
+   "music": [
+    [
+     0.12,
+     "end"
+    ]
+   ],
+   "fx": [
+    [
+     "black",
+     0.0,
+     99
+    ]
+   ],
+   "title": false,
+   "end": true,
+   "text": "Tok. Tok. Tok."
+  }
+ ]
+}

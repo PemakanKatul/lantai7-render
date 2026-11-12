@@ -47,8 +47,15 @@ def publish(i):
                    f"git commit -qm 'progress worker {i}' && git push -qf origin HEAD", shell=True)
 
 
+def plan_file():
+    import re
+    m = re.search(r"plan=(\S+)", open(os.path.join(HERE, "farm", "trigger.txt")).read())
+    return os.path.join(HERE, m.group(1) if m else "plan.json")
+
+
 if __name__ == "__main__":
-    plan = json.load(open(os.path.join(HERE, "plan.json")))
+    PLAN = plan_file()
+    plan = json.load(open(PLAN))
     if sys.argv[1] == "show":
         for i, b in enumerate(buckets(plan, int(sys.argv[2]))):
             print(i, b)
@@ -65,7 +72,7 @@ if __name__ == "__main__":
         if time.time() - T0 > LIMIT:
             log.write(f"time limit, stopping before shot {sid}\n"); break
         t = time.time()
-        r = subprocess.run([sys.executable, "-I", os.path.join(HERE, "shots.py"), str(sid), f"samples={samples}", "out=out"],
+        r = subprocess.run([sys.executable, "-I", os.path.join(HERE, "shots.py"), str(sid), f"samples={samples}", "out=out", f"plan={PLAN}"],
                            capture_output=True, text=True)
         ok = os.path.exists(f"out/shot_{sid:03d}.mp4")
         log.write(f"shot {sid} {'OK' if ok else 'FAIL'} {time.time() - t:.0f}s\n")

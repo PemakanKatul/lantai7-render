@@ -14,7 +14,7 @@ import bpy
 import numpy as np
 from mathutils import Vector, Matrix, Quaternion, Euler
 from bpy_extras.object_utils import world_to_camera_view
-import lib, clay, fig, sets
+import lib, clay, fig, sets, sets_bm
 from toon import rbox
 
 FPS = 12
@@ -131,6 +131,65 @@ def pose(arm, name):
             pb(arm, f"upperarm.{lr}", P((0.17 * s, -0.10, 0.50)))
             pb(arm, f"forearm.{lr}", P((0.10 * s, -0.24, 0.50)))
         pb(arm, "head", P((0, -0.10, 0.99)))
+    elif name == "torch":          # right arm forward holding a flashlight at chest height
+        pb(arm, "upperarm.R", P((-0.17, -0.12, 0.56)))
+        pb(arm, "forearm.R", P((-0.15, -0.26, 0.58)))
+        pb(arm, "hand.R", P((-0.15, -0.33, 0.59)))
+    elif name == "torch_l":        # flashlight forward + left hand at the chest
+        pb(arm, "upperarm.R", P((-0.17, -0.12, 0.56)))
+        pb(arm, "forearm.R", P((-0.15, -0.26, 0.58)))
+        pb(arm, "hand.R", P((-0.15, -0.33, 0.59)))
+        pb(arm, "upperarm.L", P((0.17, -0.07, 0.50)))
+        pb(arm, "forearm.L", P((0.03, -0.16, 0.58)))
+    elif name == "mouth":          # hands over the mouth
+        pb(arm, "head", P((0, -0.04, 1.0)))
+        for sg, lr in ((1, "L"), (-1, "R")):
+            pb(arm, f"upperarm.{lr}", P((0.15 * sg, -0.10, 0.52)))
+            pb(arm, f"forearm.{lr}", P((0.04 * sg, -0.16, 0.74)))
+            pb(arm, f"hand.{lr}", P((0.01 * sg, -0.17, 0.81)))
+    elif name == "ears":           # hands over the ears
+        for sg, lr in ((1, "L"), (-1, "R")):
+            pb(arm, f"upperarm.{lr}", P((0.20 * sg, -0.02, 0.60)))
+            pb(arm, f"forearm.{lr}", P((0.13 * sg, -0.02, 0.80)))
+            pb(arm, f"hand.{lr}", P((0.10 * sg, -0.01, 0.86)))
+    elif name == "hug":            # sitting, hugging the knees (use with sit legs)
+        pb(arm, "leg.L", P((0.08, -0.25, 0.62)))
+        pb(arm, "leg.R", P((-0.08, -0.25, 0.62)))
+        pb(arm, "chest", P((0, -0.07, 0.63)))
+        pb(arm, "head", P((0, -0.12, 0.96)))
+        for sg, lr in ((1, "L"), (-1, "R")):
+            pb(arm, f"upperarm.{lr}", P((0.15 * sg, -0.14, 0.52)))
+            pb(arm, f"forearm.{lr}", P((0.06 * sg, -0.27, 0.56)))
+    elif name == "kneel":          # fallen to the knees, torso upright, hands on the floor
+        pb(arm, "pelvis", P((0, 0.02, 0.44)))
+        pb(arm, "leg.L", P((0.08, 0.30, 0.10)))
+        pb(arm, "leg.R", P((-0.08, 0.30, 0.10)))
+        pb(arm, "chest", P((0, -0.05, 0.64)))
+        pb(arm, "head", P((0, -0.10, 0.98)))
+        for sg, lr in ((1, "L"), (-1, "R")):
+            pb(arm, f"upperarm.{lr}", P((0.19 * sg, -0.12, 0.42)))
+            pb(arm, f"forearm.{lr}", P((0.18 * sg, -0.18, 0.28)))
+    elif name == "wallhand":       # one trembling hand flat on the wall in front
+        pb(arm, "upperarm.L", P((0.17, -0.14, 0.62)))
+        pb(arm, "forearm.L", P((0.17, -0.26, 0.76)))
+        pb(arm, "hand.L", P((0.17, -0.31, 0.84)))
+    elif name == "drive":          # sitting in a car seat, hands on the wheel
+        pb(arm, "leg.L", P((0.08, -0.32, 0.36)))
+        pb(arm, "leg.R", P((-0.08, -0.32, 0.36)))
+        for sg, lr in ((1, "L"), (-1, "R")):
+            pb(arm, f"upperarm.{lr}", P((0.17 * sg, -0.12, 0.50)))
+            pb(arm, f"forearm.{lr}", P((0.12 * sg, -0.26, 0.58)))
+    elif name == "sitlap":         # sitting, hands in the lap (book)
+        pb(arm, "leg.L", P((0.08, -0.32, 0.36)))
+        pb(arm, "leg.R", P((-0.08, -0.32, 0.36)))
+        pb(arm, "head", P((0, -0.08, 0.99)))
+        for sg, lr in ((1, "L"), (-1, "R")):
+            pb(arm, f"upperarm.{lr}", P((0.16 * sg, -0.08, 0.50)))
+            pb(arm, f"forearm.{lr}", P((0.07 * sg, -0.2, 0.44)))
+    elif name == "give":           # both hands forward holding something out
+        for sg, lr in ((1, "L"), (-1, "R")):
+            pb(arm, f"upperarm.{lr}", P((0.17 * sg, -0.14, 0.54)))
+            pb(arm, f"forearm.{lr}", P((0.08 * sg, -0.30, 0.58)))
     elif name == "pocket":
         pb(arm, "upperarm.R", P((-0.21, 0.02, 0.50)))
         pb(arm, "forearm.R", P((-0.17, -0.05, 0.40)))
@@ -175,6 +234,18 @@ def prop(arm, kind, text=None):
         st = bpy.context.object; st.name = "broom_stick"; st.data.materials.append(_mat("broom_m", (0.35, 0.16, 0.05)))
         br = lib.box("broom_head", (0.20 * s, 0.05 * s, 0.10 * s), c + M.to_3x3() @ Vector((0, 0, 0.52)), _mat("broom_h", (0.55, 0.45, 0.2)))
         objs = [st, br]
+        bone = "hand.R"
+    elif kind == "torch":
+        c = M @ Vector((-0.205, -0.10, 0.34))
+        fwd = (M.to_3x3() @ Vector((0, -1, 0))).normalized()
+        o = lib.box("torch_body", (0.03 * s, 0.10 * s, 0.03 * s), c, _mat("torch_m", (0.05, 0.05, 0.06)))
+        o.rotation_euler = arm.rotation_euler.copy()
+        g = lib.box("torch_lens", (0.028 * s, 0.006 * s, 0.028 * s), c + fwd * 0.05 * s, _mat("torch_g", (1.0, 0.95, 0.8), 6.0))
+        g.rotation_euler = arm.rotation_euler.copy()
+        sp = sets_bm.spot("torch_l", c + fwd * 0.06 * s, c + fwd * 3 + Vector((0, 0, -0.35)), 160, angle=38, blend=0.45,
+                          color=(1.0, 0.92, 0.78), radius=0.02)
+        mw = sp.matrix_world.copy(); sp.parent = arm; bpy.context.view_layer.update(); sp.matrix_world = mw
+        objs = [o, g]
         bone = "hand.R"
     elif kind == "papers":
         c = M @ Vector((0.0, -0.20, 0.36))
@@ -232,6 +303,8 @@ def build_set(spec):
         return sets.bathroom()
     if n == "parking":
         return sets.parking()
+    if hasattr(sets_bm, n):
+        return getattr(sets_bm, n)(**p)
     raise ValueError(n)
 
 
@@ -292,18 +365,35 @@ def build(shot):
     for c in shot.get("cast", []):
         who = c["who"]
         base = c.get("as", who)
-        exprs = sorted({c.get("expr", fig.CAST[base].get("expr", "cemas"))} |
-                       {k[2] for k in c.get("keys", []) if k[1] == "expr"}) if base != "hantu" else None
+        bases = {c.get("expr", fig.CAST[base].get("expr", "cemas"))} | {k[2] for k in c.get("keys", []) if k[1] == "expr"}
+        exprs = set(bases)
+        for b_ in bases:
+            if b_ == "tidur":
+                if c.get("talk"):
+                    exprs |= {"tidur_t"}
+                continue
+            exprs |= {b_ + "_b"}
+            if c.get("talk"):
+                exprs |= {b_ + "_t", b_ + "_tb"}
+        exprs = sorted(exprs) if base != "hantu" else None
         loc, rot = c.get("at"), c.get("rot")
         if isinstance(loc, str):
             loc, r0 = marks[loc]
             rot = rot if rot is not None else math.degrees(r0)
+        if c.get("z") is not None:
+            loc = (loc[0], loc[1], c["z"])
         over = dict(c.get("over", {}))
         arm = fig.make(base, loc=tuple(loc), rot_z=R(rot or 0), exprs=exprs,
                        expr=c.get("expr", fig.CAST[base].get("expr", "cemas")) if base != "hantu" else "hantu", **over)
         arm.name = who if who not in bpy.data.objects or bpy.data.objects[who] == arm else arm.name
         if c.get("prop"):
             prop(arm, c["prop"])
+        if c.get("noshadow"):
+            for o in [arm] + collect(arm):
+                try:
+                    o.visible_shadow = False
+                except Exception:
+                    pass
         if c.get("lie"):
             fig.lie_down(arm, tuple(c["lie"][:3]), R(c["lie"][3] if len(c["lie"]) > 3 else 0))
         actors[who] = (arm, c)
@@ -410,7 +500,7 @@ def animate(sc, shot, actors, cams, marks):
                 state["pose"] = v; track.append((t, dict(state)))
             elif kind == "look":
                 state["look"] = v; track.append((t, dict(state)))
-        hold = c.get("hold", 0.25)   # seconds to blend into a new pose
+        hold = c.get("hold", 0.4)   # seconds to blend into a new pose
         for i, (t, st) in enumerate(track):
             for ff in ([fr(shot, t)] if i == 0 else [fr(shot, max(0, t - hold)), fr(shot, t)]):
                 prev = track[i - 1][1] if (i > 0 and ff == fr(shot, max(0, t - hold))) else st
@@ -433,15 +523,56 @@ def animate(sc, shot, actors, cams, marks):
                     pose(arm, names[k % 2])
                     key_bones(arm, ff)
                 sc.frame_set(fb); pose(arm, track[-1][1]["pose"]); key_bones(arm, fb)
-        # expressions
-        for t, kind, v in keys:
-            if kind == "expr":
-                fig.key_expr(arm, v, fr(shot, t))
-        if any(k[1] == "expr" for k in keys):
-            fig.key_expr(arm, c.get("expr", fig.CAST[c.get("as", who)].get("expr", "cemas")), 1)
-            for t, kind, v in keys:
-                if kind == "expr":
-                    fig.key_expr(arm, v, fr(shot, t))
+        # face: base expression track + blinks + lip-sync (one visible face set per frame)
+        if c.get("as", who) not in ("hantu",) and not c.get("noface"):
+            base0 = c.get("expr", fig.CAST[c.get("as", who)].get("expr", "cemas"))
+            etrack = [(1, base0)] + sorted((fr(shot, t), v) for t, kind, v in keys if kind == "expr")
+            talk = [(fr(shot, a), fr(shot, b)) for a, b in c.get("talk", [])]
+            rnd = __import__("random").Random(hash(who) % 997 + shot["id"])
+            blink = set()
+            if c.get("blink", True):
+                ff = rnd.randint(8, 30)
+                while ff < nfr:
+                    blink.add(ff)
+                    if rnd.random() < 0.15:
+                        blink.add(ff + 2)            # occasional double blink
+                    ff += rnd.randint(28, 60)
+            mouth_open = set()
+            for a, b in talk:                        # open on syllables: ~2 frames open, 1 closed, a little irregular
+                ff = a
+                while ff < b:
+                    n_open = rnd.choice((1, 2, 2, 3))
+                    for k in range(n_open):
+                        if ff + k < b:
+                            mouth_open.add(ff + k)
+                    ff += n_open + rnd.choice((1, 1, 2))
+            last = None
+            for ff in range(1, nfr + 1):
+                b = [e for f0, e in etrack if f0 <= ff][-1]
+                if b in ("tidur",):
+                    st = b + ("_t" if ff in mouth_open else "")
+                else:
+                    suf = ("t" if ff in mouth_open else "") + ("b" if ff in blink else "")
+                    st = b + ("_" + suf if suf else "")
+                if st != last:
+                    fig.key_expr(arm, st, ff)
+                    last = st
+        # head life: small nods while talking, slow drift while listening (on top of the pose keys)
+        if c.get("as", who) != "hantu" and c.get("headlife", True) and "head" in arm.pose.bones:
+            hb = arm.pose.bones["head"]
+            rnd2 = __import__("random").Random(hash(who) % 991 + 7 * shot["id"])
+            spans = [(fr(shot, a), fr(shot, b), 1) for a, b in c.get("talk", [])]
+            if not spans:
+                spans = [(1, nfr, 0)]
+            for a, b, talking in spans:
+                step = 5 if talking else 14
+                for ff in range(a, b + 1, step):
+                    sc.frame_set(ff)
+                    amp = (3.2 if talking else 1.4)
+                    q = Euler((R(rnd2.uniform(-amp, amp)), R(rnd2.uniform(-amp, amp) * 0.6), R(rnd2.uniform(-amp, amp) * 0.8))).to_quaternion()
+                    hb.rotation_mode = "QUATERNION"
+                    hb.rotation_quaternion = hb.rotation_quaternion @ q
+                    hb.keyframe_insert("rotation_quaternion", frame=ff)
         # visibility
         vis = [k for k in keys if k[1] == "show"]
         if vis or c.get("hidden"):

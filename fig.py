@@ -93,7 +93,7 @@ def hit(o, x, z):
 
 
 SKIN = {"sawo": (0.36, 0.185, 0.10), "kuning": (0.50, 0.29, 0.165), "gelap": (0.23, 0.11, 0.058),
-        "hantu": (0.42, 0.45, 0.42)}
+        "hantu": (0.42, 0.45, 0.42), "pucat": (0.40, 0.40, 0.44), "tua": (0.30, 0.165, 0.095)}
 
 # ------------------------------------------------------------------ expressions
 # lid: how open the upper lid is (None = no lid = wide eyes, "closed" = shut)
@@ -111,6 +111,21 @@ EXPR = {
     "tidur":  dict(lid="closed", tilt=0.0, brow=(0.0, -0.004), mouth="flat", iris=1.0),
     "hantu":  dict(lid=None, tilt=0.0, brow=None, mouth="scream", iris=0.0),
 }
+
+
+def expr_spec(e):
+    """'cemas' or variants 'cemas_t' (mouth open, talking), 'cemas_b' (blink), 'cemas_tb'"""
+    if "_" in e:
+        base, suf = e.rsplit("_", 1)
+    else:
+        base, suf = e, ""
+    sp = dict(EXPR[base])
+    if "t" in suf:
+        sp["mouth"] = {"flat": "talk", "frown": "talk", "smile": "talks", "o": "talk_o", "scream": "talk_o",
+                       "shout": "talk", "wail": "talk_w"}.get(sp["mouth"], "talk")
+    if "b" in suf and sp["lid"] != "closed":
+        sp["lid"] = "closed"
+    return sp
 
 
 def set_expr(arm, expr):
@@ -137,7 +152,7 @@ def person(name="sari", gender="f", skin="sawo", shirt=(0.60, 0.69, 0.80), botto
            hair=(0.025, 0.014, 0.01), shoes=(0.10, 0.045, 0.025), lanyard=(0.05, 0.14, 0.5),
            hair_style="bun", skirt=None, long_skirt=False, hijab=None, glasses=False, mustache=False,
            tie=None, cap=None, collar=None, build=1.0, nose=1.0, scale=1.45, ghost=False,
-           exprs=None, expr="cemas", loc=(0, 0, 0), rot_z=0.0):
+           exprs=None, expr="cemas", loc=(0, 0, 0), rot_z=0.0, wet=False):
     if skirt is None:
         skirt = gender == "f"
     skc = SKIN[skin]
@@ -304,7 +319,7 @@ def person(name="sari", gender="f", skin="sawo", shirt=(0.60, 0.69, 0.80), botto
         return R(o, "head")
 
     for e in (exprs or [k for k in EXPR if k != "hantu"]) if not ghost else ["hantu"]:
-        sp = EXPR[e]
+        sp = expr_spec(e)
         for s, lr in ((1, "L"), (-1, "R")):
             c = eyes[s]
             look = Vector((-0.10 * s, -1, -0.04)).normalized()
@@ -350,7 +365,8 @@ def person(name="sari", gender="f", skin="sawo", shirt=(0.60, 0.69, 0.80), botto
             X(curve("mouth", mp, 0.0055, lip, res=3), e)
         else:
             w, h, cz = {"o": (0.017, 0.02, 0.738), "scream": (0.032, 0.042, 0.728), "shout": (0.04, 0.026, 0.736),
-                        "wail": (0.034, 0.02, 0.736)}[m]
+                        "wail": (0.034, 0.02, 0.736), "talk": (0.021, 0.011, 0.740), "talks": (0.025, 0.010, 0.742),
+                        "talk_o": (0.014, 0.012, 0.739), "talk_w": (0.026, 0.012, 0.738)}[m]
             p, n = hit(head, 0, cz)
             X(B("mouth", p + Vector((0, 0.008, 0)), (w, 0.014, h), inside, seg=40), e)
             ring = [p + Vector((w * math.cos(t), -0.001 + 0.004 * abs(math.cos(t)), h * math.sin(t)))
@@ -447,7 +463,7 @@ def person(name="sari", gender="f", skin="sawo", shirt=(0.60, 0.69, 0.80), botto
                     pts.append(Vector((last.x * 0.97, last.y * 0.97, z_end)))
                     o = curve(f"lock{sgn}{j}", pts, 0.024, hr, res=3); taper(o, 0.7, 0.55)
                     hparts.append(o)
-            if ghost:
+            if ghost or wet:
                 for k, th in enumerate((-30, -14, 4, 20, 36)):   # wet strands over the face
                     pts = [H.at(th, 70, 0.02)[0], H.at(th, 40, 0.024)[0], H.at(th * 1.05, 5, 0.03)[0],
                            H.at(th * 1.1, -30, 0.03)[0], H.at(th * 1.1, -30, 0.03)[0] + Vector((0, -0.005, -0.10 - 0.02 * (k % 2)))]
@@ -588,6 +604,21 @@ CAST = {
                      shoes=(0.25, 0.12, 0.05), scale=1.42, expr="capek"),
     "hantu":  dict(gender="f", skin="hantu", hair_style="long", hair=(0.004, 0.004, 0.005), shirt=(0.55, 0.55, 0.52),
                    bottom=(0.55, 0.55, 0.52), long_skirt=True, lanyard=None, ghost=True, scale=1.6),
+    # ---------------- Bangsal Melati
+    "sari_p": dict(gender="f", skin="sawo", hair_style="bun", shirt=(0.74, 0.75, 0.73), bottom=(0.70, 0.71, 0.69),
+                   shoes=(0.75, 0.75, 0.72), lanyard=(0.05, 0.25, 0.30), scale=1.45),
+    "wiwik":  dict(gender="f", skin="tua", hair_style="bun", hair=(0.20, 0.19, 0.18), shirt=(0.72, 0.73, 0.70),
+                   bottom=(0.68, 0.69, 0.66), shoes=(0.72, 0.72, 0.69), lanyard=None, glasses=True, build=1.12, nose=1.05,
+                   scale=1.42, expr="netral"),
+    "harun":  dict(gender="m", skin="tua", hair_style="balding", hair=(0.62, 0.61, 0.58), shirt=(0.40, 0.47, 0.52),
+                   bottom=(0.36, 0.43, 0.48), shoes=(0.20, 0.17, 0.14), build=0.84, nose=1.1, lanyard=None, scale=1.38,
+                   expr="capek"),
+    "darto":  dict(gender="m", skin="sawo", hair_style="crew", hair=(0.28, 0.27, 0.26), shirt=(0.08, 0.10, 0.20),
+                   bottom=(0.025, 0.025, 0.03), shoes=(0.015, 0.012, 0.01), cap=(0.05, 0.06, 0.12), mustache=True,
+                   build=1.12, lanyard=None, scale=1.50, expr="cemas"),
+    "ratna":  dict(gender="f", skin="pucat", hair_style="long", hair=(0.012, 0.010, 0.010), shirt=(0.46, 0.50, 0.52),
+                   bottom=(0.46, 0.50, 0.52), long_skirt=True, shoes=(0.40, 0.40, 0.44), lanyard=None, wet=True,
+                   scale=1.36, expr="takut"),
 }
 
 
