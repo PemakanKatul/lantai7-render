@@ -192,7 +192,7 @@ def person(name="sari", gender="f", skin="sawo", shirt=(0.60, 0.69, 0.80), botto
     E = [(0, 1), (1, 2), (2, 3), (3, 4), (3, 5), (4, 6), (5, 7), (6, 8), (7, 9)]
     sw = 1.06 if gender == "m" else 1.0
     Rr = [(0.125 * bw, 0.10 * bw), (0.138 * bw, 0.108 * bw ** 1.3), (0.132 * sw, 0.102), (0.085 * sw, 0.07),
-          (0.054, 0.054), (0.054, 0.054), (0.048, 0.048), (0.048, 0.048), (0.046, 0.046), (0.046, 0.046)]
+          (0.058, 0.058), (0.058, 0.058), (0.05, 0.049), (0.05, 0.049), (0.046, 0.046), (0.046, 0.046)]
     base = skin_mesh(f"{name}_shirtbase", V, E, Rr, sh)
     extra = []
     for s in (1, -1):
@@ -214,6 +214,9 @@ def person(name="sari", gender="f", skin="sawo", shirt=(0.60, 0.69, 0.80), botto
     else:
         shirt_o = fuse(f"{name}_shirt", [base] + extra + cparts, sh, voxel=0.0045, smooth=5, factor=0.6)
     skin_to(arm, shirt_o, ["pelvis", "chest", "upperarm.L", "upperarm.R", "forearm.L", "forearm.R"])
+    for s, lr in ((1, "L"), (-1, "R")):   # ball-joint shoulders: centred on the joint so they never open a gap
+        R(B(f"{name}_shoulder{lr}", Vector(BONES[f"upperarm.{lr}"][0]) + Vector((0.006 * s, 0.0, -0.006)), (0.066, 0.064, 0.064), sh),
+          f"upperarm.{lr}")
     if not ghost:
         btn_m = M(f"{name}_button", tuple(c * 0.55 for c in shirt), rough=0.4, dents=0.0)
         for i, z in enumerate((0.60, 0.545, 0.49)):
@@ -484,7 +487,7 @@ def person(name="sari", gender="f", skin="sawo", shirt=(0.60, 0.69, 0.80), botto
         hparts.append(cap_shell(1.022, -6, thick=0.012))
         hparts += sweep("a", 5, -30, 60, 56, 40, r=0.016, off=0.016)
     elif hair_style == "balding":
-        hparts.append(cap_shell(1.025, -6, thick=0.012, keep=lambda th, el: el < 30 and abs(th) > 62))
+        hparts.append(cap_shell(1.025, -6, thick=0.012, keep=lambda th, el: -12 < el < 20 and abs(th) > 70))
     if hparts:
         R(fuse(f"{name}_hair", hparts, hr, voxel=0.0035, smooth=2, factor=0.5), "head")
     if cap:
