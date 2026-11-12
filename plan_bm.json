@@ -1016,7 +1016,7 @@
    },
    "cam": {
     "on": "sari_p",
-    "kind": "medium",
+    "kind": "close",
     "side": 0.2
    },
    "cast": [
@@ -1311,7 +1311,7 @@
      5
     ],
     "lights": 0.5,
-    "exposure": 1.0
+    "exposure": 2.4
    },
    "cam": "chain",
    "cast": [],
@@ -2217,11 +2217,19 @@
     "car": true,
     "exposure": 0.45
    },
-   "cam": {
-    "on": "sari_p",
-    "kind": "medium",
-    "side": 0.5
-   },
+   "cam": [
+    [
+     -0.6,
+     19.0,
+     1.45
+    ],
+    [
+     2.4,
+     22.3,
+     1.0
+    ],
+    32
+   ],
    "cast": [
     {
      "who": "sari_p",
@@ -4121,7 +4129,7 @@
    "t1": 540.233,
    "set": {
     "name": "bangsal",
-    "exposure": 2.0
+    "exposure": 3.0
    },
    "cam": "k4",
    "cast": [
@@ -4742,7 +4750,11 @@
      "pose": "sit",
      "keys": [],
      "expr": "nangis",
-     "look": "sari_p"
+     "look": [
+      0.15,
+      0.7,
+      1.25
+     ]
     }
    ],
    "dyn": [],
@@ -4782,7 +4794,11 @@
      "pose": "sit",
      "keys": [],
      "expr": "takut",
-     "look": "sari_p",
+     "look": [
+      0.15,
+      0.7,
+      1.25
+     ],
      "talk": [
       [
        0.12,
@@ -4873,7 +4889,11 @@
      "pose": "sit",
      "keys": [],
      "expr": "teriak",
-     "look": "sari_p",
+     "look": [
+      0.15,
+      0.7,
+      1.25
+     ],
      "talk": [
       [
        2.507,
@@ -5025,7 +5045,11 @@
      "pose": "ears",
      "keys": [],
      "expr": "teriak",
-     "look": "sari_p",
+     "look": [
+      0.15,
+      0.7,
+      1.25
+     ],
      "jitter": [
       0,
       9.551
@@ -5080,7 +5104,11 @@
      "pose": "ears",
      "keys": [],
      "expr": "teriak",
-     "look": "sari_p",
+     "look": [
+      0.15,
+      0.7,
+      1.25
+     ],
      "jitter": [
       0,
       4.864

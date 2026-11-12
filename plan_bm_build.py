@@ -114,7 +114,7 @@ beat(5, 53, HAR, "door", [HARUN, A("sari_p", "sari_door", None, "netral", prop="
 # ================================================================== 6. "Suster baru, ya?"
 SARI_H = A("sari_p", (-0.4, -0.6, 0), 120, "senyum", prop="papers", pose="papers")
 beat(6, 0, HAR, on("harun", "close", side=0.55), [dict(HARUN, talk=[["w0", "e2"]])])
-beat(6, 6, HAR, on("sari_p", "medium", side=0.2), [dict(SARI_H, talk=[["w6", "e9"]]), HARUN])
+beat(6, 6, HAR, on("sari_p", "close", side=0.2), [dict(SARI_H, talk=[["w6", "e9"]]), HARUN])
 beat(6, 10, HAR, on("harun", "xclose", side=0.45), [dict(HARUN, talk=[["w10", "e10"], ["w19", "e26"]], expr="cemas")], move="push")
 # ================================================================== 7. "Ibu." and the first knocks
 beat(7, 0, HAR, on("sari_p", "close", side=0.2), [dict(SARI_H, expr="cemas", talk=[["w0", "e1"]])])
@@ -122,7 +122,7 @@ beat(7, 2, HAR, "back", [dict(HARUN, keys=[("w9", "pose", "wallhand")])])
 beat(7, 14, HAR, on("harun", "xclose", side=0.4), [dict(HARUN, pose="wallhand", expr="cemas", talk=[["w14", "e14"]])], move="push")
 beat(7, 15, LOR_DARK, "clock", move="push", sfx=[("w21", "clock2")])
 beat(7, 28, LOR_DARK, "long", move="push_slow", music=[(0, "tension")])
-beat(7, 34, LOR_DARK, "chain", move="push_slow")
+beat(7, 34, LOR_DARK, "chain", move="push_slow", set_over=dict(exposure=2.4))
 beat(7, 39, LOR_DARK, "door", move="static", sfx=[("w40", "knock"), ("w41", "knock"), ("w42", "knock")],
      music=[("w40", "sting")])
 # ================================================================== 8. Ratna wants the door opened
@@ -158,7 +158,7 @@ beat(12, 21, BK(["!Saya tidak buka.", "!Tertanda,  W."]), "page", move="push", m
 beat(12, 23, JAGA, on("sari_p", "close", side=0.3), [A("sari_p", (0.2, 0.75, 0), 10, "takut", blink=False)], move="push_slow")
 # ================================================================== 13-16. in Bu Wiwik's car
 beat(13, 0, EXT_D, "car", [A("sari_p", "car_side", 150, "cemas", pose="give", prop="papers")], sfx=[(0, "evening")], music=[(0, "drone_low")])
-beat(13, 8, EXT_D, on("sari_p", "medium", side=0.5), [A("sari_p", "car_side", 150, "cemas", pose="give", prop="papers"),
+beat(13, 8, EXT_D, [[-0.6, 19.0, 1.45], [2.4, 22.3, 1.0], 32], [A("sari_p", "car_side", 150, "cemas", pose="give", prop="papers"),
                                                     A("wiwik", (2.1, 23.0, 0), -10, "netral")])
 beat(13, 16, EXT_D, on("wiwik", "close", side=0.3), [A("wiwik", (2.1, 23.0, 0), -10, "takut", blink=False)], move="push")
 beat(13, 20, CAR, "front", [WIW_CAR, SARI_CAR], sfx=[(0, "car_door")])
@@ -213,7 +213,7 @@ beat(19, 23, BANG, "entry", [A("sari_p", "entry", 180, "cemas", prop="torch", po
 beat(19, 30, BANG, "beds", move="pan_r", set_over=dict(exposure=3.4))
 beat(19, 40, BANG, "cal", move="push", set_over=dict(exposure=3.4))
 beat(19, 55, BANG, "wchair", move="push_slow", set_over=dict(exposure=3.6))
-beat(20, 0, BANG, "k4", [A("sari_p", (0.0, 8.0, 0), 180, "cemas", prop="torch", pose="torch", walk=[[0, 99]],
+beat(20, 0, BANG, "k4", set_over=dict(exposure=3.0), cast=[A("sari_p", (0.0, 8.0, 0), 180, "cemas", prop="torch", pose="torch", walk=[[0, 99]],
                           keys=[(0, "move", [0.0, 8.0, 0, 180]), (4.0, "move", [0.0, 10.8, 0, 180])])], move="static")
 beat(20, 5, K4, "side", [dict(SARI_K4, keys=[(0, "move", [0.15, 0.3, 0, 180]), (2.0, "move", [0.15, 0.7, 0, 180])], walk=[[0, 2.0]])], move="static")
 beat(20, 13, K4, on("sari_p", "close", side=0.3), [dict(SARI_K4, at=[0.15, 0.7, 0], rot=180, blink=False)], move="push")
@@ -230,7 +230,7 @@ beat(21, 27, K4, "corner", [RATNA_K4], move="push_slow", fx=[["fadein", 0, 2.5]]
 beat(21, 42, K4, on("ratna", "medium", side=0.3), [RATNA_K4], set_over=dict(exposure=1.2))
 beat(21, 56, K4, on("ratna", "close", side=0.6, up=-0.25), [RATNA_K4], move="push", set_over=dict(exposure=1.2))
 SARI_DARK = A("sari_p", (0.15, 0.7, 0), 210, "takut", pose="nervous")
-RATNA_UP = dict(RATNA_K4, pose="sit", look="sari_p")
+RATNA_UP = dict(RATNA_K4, pose="sit", look=[0.15, 0.7, 1.25])
 beat(22, 0, K4, on("sari_p", "close", side=0.25), [dict(SARI_DARK, talk=[["w0", "e0"]])], set_over=dict(exposure=1.2))
 beat(22, 3, K4, on("ratna", "close", side=0.3), [dict(RATNA_K4, keys=[("w5", "pose", "sit")])], move="push", set_over=dict(exposure=1.2))
 beat(22, 10, K4, on("ratna", "xclose", side=0.25), [dict(RATNA_UP, expr="nangis")], move="push_slow", set_over=dict(exposure=1.2))
