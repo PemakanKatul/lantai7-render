@@ -1,0 +1,8 @@
+worker 5/20 shots [62, 72, 98, 100, 106, 110, 125]
+probe 62 OK
+probe 72 OK
+probe 98 OK
+probe 100 OK
+probe 106 OK
+probe 110 OK
+probe 125 OK
