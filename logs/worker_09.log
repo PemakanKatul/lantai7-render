@@ -1,0 +1,8 @@
+worker 9/20 shots [22, 32, 55, 60, 88, 104, 123]
+probe 22 OK
+probe 32 OK
+probe 55 OK
+probe 60 OK
+probe 88 OK
+probe 104 OK
+probe 123 OK
