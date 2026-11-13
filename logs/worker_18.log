@@ -1,0 +1,8 @@
+worker 18/20 shots [5, 66, 76, 92, 117, 118, 120]
+probe 5 OK
+probe 66 OK
+probe 76 OK
+probe 92 OK
+probe 117 OK
+probe 118 OK
+probe 120 OK
