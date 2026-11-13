@@ -1,0 +1,42 @@
+worker 1/20 shots [12, 17, 27, 34, 81, 89, 121]
+probe 12 OK
+probe 17 OK
+probe 27 FAIL
+00:00.353  cycles           | WARNING CUEW initialization failed: Error opening the library
+
+Traceback (most recent call last):
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 845, in <module>
+    work, nfr = render_shot(shot, out, frames)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 787, in render_shot
+    sc, cam, dyn, actors = build(shot)
+                           ~~~~~^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 521, in build
+    animate(sc, shot, actors, cams, marks)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 720, in animate
+    o = bpy.data.objects[d["obj"]]
+        ~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'bpy_prop_collection[key]: key "kt_s1" not found'
+
+probe 34 OK
+probe 81 OK
+probe 89 FAIL
+00:00.348  cycles           | WARNING CUEW initialization failed: Error opening the library
+
+Traceback (most recent call last):
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 845, in <module>
+    work, nfr = render_shot(shot, out, frames)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 787, in render_shot
+    sc, cam, dyn, actors = build(shot)
+                           ~~~~~^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 521, in build
+    animate(sc, shot, actors, cams, marks)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 595, in animate
+    tgt = tuple(head_point(actors[tgt][0])) if tgt in actors else cams[tgt][0]
+                                                                  ~~~~^^^^^
+KeyError: 'laras'
+
+probe 121 OK
