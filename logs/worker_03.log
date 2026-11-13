@@ -1,0 +1,9 @@
+worker 3/20 shots [4, 15, 21, 26, 69, 101, 103, 124]
+probe 4 OK
+probe 15 OK
+probe 21 OK
+probe 26 OK
+probe 69 OK
+probe 101 OK
+probe 103 OK
+probe 124 OK
