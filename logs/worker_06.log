@@ -1,0 +1,8 @@
+worker 6/20 shots [42, 45, 77, 80, 90, 113, 136]
+probe 42 OK
+probe 45 OK
+probe 77 OK
+probe 80 OK
+probe 90 OK
+probe 113 OK
+probe 136 OK
