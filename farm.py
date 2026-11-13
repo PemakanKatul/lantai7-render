@@ -1,7 +1,7 @@
 """Split plan.json shots over N workers and render one worker's share.
 python3 farm.py run <i> <N>      (reads farm/trigger.txt: 'all' or 'shots=1,5,9')
 """
-import json, os, sys, subprocess, time
+import json, os, sys, subprocess, time, shutil
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 T0 = time.time()
@@ -43,7 +43,7 @@ def publish(i):
     pub = "/tmp/pub"
     if not os.path.isdir(pub):
         return
-    subprocess.run(f"cp -f out/shot_*.mp4 {pub}/ 2>/dev/null; cp -rf logs {pub}/; cd {pub} && git add -A && "
+    subprocess.run(f"cp -f out/shot_*.mp4 out/probe_*.png {pub}/ 2>/dev/null; cp -rf logs {pub}/; cd {pub} && git add -A && "
                    f"git commit -qm 'progress worker {i}' && git push -qf origin HEAD", shell=True)
 
 
@@ -66,6 +66,23 @@ if __name__ == "__main__":
     log = open(f"logs/worker_{i:02d}.log", "a")
     log.write(f"worker {i}/{N} shots {mine}\n"); log.flush()
     samples = os.environ.get("SAMPLES", "12")
+    probe = "probe" in open(os.path.join(HERE, "farm", "trigger.txt")).read()
+    if probe:          # one low-quality still per shot (70% into the shot) to check framing before the real render
+        byid = {s["id"]: s for s in plan["shots"]}
+        for sid in mine:
+            s = byid[sid]
+            n = max(1, round((s["t1"] - s["t0"]) * 12)); f = max(1, int(n * 0.7))
+            r = subprocess.run([sys.executable, "-I", os.path.join(HERE, "shots.py"), str(sid), "samples=4", f"frames={f}-{f}", "out=out", f"plan={PLAN}"],
+                               capture_output=True, text=True)
+            src = f"out/work_{sid:03d}/f_{f:04d}.png"
+            ok = os.path.exists(src)
+            if ok:
+                shutil.copyfile(src, f"out/probe_{sid:03d}.png")
+            log.write(f"probe {sid} {'OK' if ok else 'FAIL'}\n")
+            if not ok:
+                log.write(r.stdout[-2000:] + "\n" + r.stderr[-4000:] + "\n")
+            log.flush()
+        publish(i); sys.exit()
     for sid in mine:
         if os.path.exists(f"out/shot_{sid:03d}.mp4"):
             continue

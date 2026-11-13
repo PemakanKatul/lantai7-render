@@ -1,1 +1,1 @@
-shots=25,32,58,100,115,116,118,122,123,135,140,144,145,146,150,153,158,159,161,165,167,168,171,172,178 workers=20 tag=bm3 plan=plan_bm.json
+all workers=20 tag=rtp plan=plan_rt.json probe

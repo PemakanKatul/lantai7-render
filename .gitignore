@@ -1,3 +1,9 @@
 __pycache__/
 *.whl
 out/
+rt_audio/*.wav
+rt_audio/stems/
+rt_audio/*.mp3
+edit_tmp/
+final*.mp4
+out_rt/

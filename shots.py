@@ -14,7 +14,7 @@ import bpy
 import numpy as np
 from mathutils import Vector, Matrix, Quaternion, Euler
 from bpy_extras.object_utils import world_to_camera_view
-import lib, clay, fig, sets, sets_bm
+import lib, clay, fig, sets, sets_bm, sets_rt
 from toon import rbox
 
 FPS = 12
@@ -126,6 +126,40 @@ def pose(arm, name):
         for s, lr in ((1, "L"), (-1, "R")):
             pb(arm, f"upperarm.{lr}", P((0.175 * s, -0.085, 0.505)))
             pb(arm, f"forearm.{lr}", P((0.112 * s, -0.205, 0.575)))
+    elif name == "sitdesk":        # sitting on a chair at a desk, forearms on the desk
+        pb(arm, "leg.L", P((0.08, -0.32, 0.36)))
+        pb(arm, "leg.R", P((-0.08, -0.32, 0.36)))
+        pb(arm, "chest", P((0, -0.04, 0.64)))
+        pb(arm, "head", P((0, -0.10, 0.99)))
+        for s, lr in ((1, "L"), (-1, "R")):
+            pb(arm, f"upperarm.{lr}", P((0.17 * s, -0.12, 0.52)))
+            pb(arm, f"forearm.{lr}", P((0.08 * s, -0.27, 0.55)))
+    elif name == "sitwrite":       # sitting at a desk, right hand writing, left hand holding the page
+        pb(arm, "leg.L", P((0.08, -0.32, 0.36)))
+        pb(arm, "leg.R", P((-0.08, -0.32, 0.36)))
+        pb(arm, "chest", P((0, -0.05, 0.64)))
+        pb(arm, "head", P((0, -0.13, 0.97)))
+        pb(arm, "upperarm.L", P((0.17, -0.12, 0.52))); pb(arm, "forearm.L", P((0.10, -0.27, 0.55)))
+        pb(arm, "upperarm.R", P((-0.16, -0.14, 0.53))); pb(arm, "forearm.R", P((-0.05, -0.29, 0.56)))
+        pb(arm, "hand.R", P((-0.02, -0.33, 0.55)))
+    elif name == "sitstill":       # sitting upright, hands flat on the desk, looking ahead (the revised Laras)
+        pb(arm, "leg.L", P((0.08, -0.32, 0.36)))
+        pb(arm, "leg.R", P((-0.08, -0.32, 0.36)))
+        for s, lr in ((1, "L"), (-1, "R")):
+            pb(arm, f"upperarm.{lr}", P((0.16 * s, -0.10, 0.52)))
+            pb(arm, f"forearm.{lr}", P((0.09 * s, -0.27, 0.53)))
+    elif name == "hugstand":       # standing embrace: both arms around someone in front
+        for s, lr in ((1, "L"), (-1, "R")):
+            pb(arm, f"upperarm.{lr}", P((0.18 * s, -0.13, 0.58)))
+            pb(arm, f"forearm.{lr}", P((0.06 * s, -0.25, 0.64)))
+            pb(arm, f"hand.{lr}", P((-0.04 * s, -0.27, 0.66)))
+        pb(arm, "head", P((0.03, -0.06, 0.99)))
+    elif name == "sweep":          # holding a broom low, both hands on the stick
+        pb(arm, "upperarm.R", P((-0.17, -0.10, 0.50))); pb(arm, "forearm.R", P((-0.10, -0.22, 0.46)))
+        pb(arm, "upperarm.L", P((0.15, -0.12, 0.50))); pb(arm, "forearm.L", P((0.0, -0.22, 0.56)))
+        pb(arm, "chest", P((0, -0.05, 0.64)))
+    elif name == "headdown":       # standing, head bowed
+        pb(arm, "head", P((0, -0.14, 0.96)))
     elif name == "papers":         # hands on the desk
         for s, lr in ((1, "L"), (-1, "R")):
             pb(arm, f"upperarm.{lr}", P((0.17 * s, -0.10, 0.50)))
@@ -199,6 +233,33 @@ def pose(arm, name):
     return arm
 
 
+GESTURES = {
+    # right forearm forward, palm up, explaining
+    "ga": {"upperarm.R": (-0.19, -0.07, 0.51), "forearm.R": (-0.14, -0.22, 0.58), "hand.R": (-0.13, -0.29, 0.62)},
+    # both forearms forward, slightly open
+    "gb": {"upperarm.R": (-0.19, -0.06, 0.51), "forearm.R": (-0.15, -0.20, 0.57), "hand.R": (-0.16, -0.27, 0.60),
+           "upperarm.L": (0.19, -0.06, 0.51), "forearm.L": (0.15, -0.20, 0.57), "hand.L": (0.16, -0.27, 0.60)},
+    # left hand to the chest
+    "gc": {"upperarm.L": (0.18, -0.07, 0.50), "forearm.L": (0.05, -0.15, 0.60), "hand.L": (0.0, -0.16, 0.65)},
+    # right hand opens out to the side
+    "gd": {"upperarm.R": (-0.22, -0.04, 0.51), "forearm.R": (-0.27, -0.17, 0.56), "hand.R": (-0.29, -0.23, 0.58)},
+    # listening: hands loosely together in front
+    "la": {"upperarm.R": (-0.17, -0.05, 0.50), "forearm.R": (-0.07, -0.12, 0.42), "hand.R": (-0.02, -0.13, 0.38),
+           "upperarm.L": (0.17, -0.05, 0.50), "forearm.L": (0.07, -0.12, 0.42), "hand.L": (0.02, -0.13, 0.38)},
+    # listening: one hand holding the other arm
+    "lb": {"upperarm.R": (-0.18, -0.05, 0.50), "forearm.R": (-0.04, -0.12, 0.45), "hand.R": (0.06, -0.12, 0.44)},
+}
+GEST_BASE = ("idle", "nervous", "sitlap", "papers", "pocket", "sitdesk")
+
+
+def gesture(arm, base, g):
+    pose(arm, base)
+    if g and g in GESTURES:
+        P = lambda v: arm.matrix_world @ Vector(v)
+        for b, v in GESTURES[g].items():
+            clay.point_bone(arm, b, P(v))
+
+
 def look(arm, target, amount=0.75):
     """turn the head so the face points at a world target"""
     pbh = arm.pose.bones["head"]
@@ -247,6 +308,19 @@ def prop(arm, kind, text=None):
         mw = sp.matrix_world.copy(); sp.parent = arm; bpy.context.view_layer.update(); sp.matrix_world = mw
         objs = [o, g]
         bone = "hand.R"
+    elif kind == "toga":
+        c = M @ Vector((0.0, -0.01, 1.13))
+        board = lib.box("toga_board", (0.30 * s, 0.30 * s, 0.015 * s), c, _mat("toga_m", (0.02, 0.02, 0.025)))
+        board.rotation_euler = (0, 0, arm.rotation_euler.z + R(45))
+        capm = clay.blob("toga_cap", tuple(c - Vector((0, 0, 0.04 * s))), (0.11 * s, 0.11 * s, 0.05 * s), _mat("toga_m2", (0.02, 0.02, 0.025)))
+        tassel = lib.box("toga_tassel", (0.008 * s, 0.008 * s, 0.10 * s), c + M.to_3x3() @ Vector((0.12, -0.02, -0.05)), _mat("toga_t", (0.85, 0.65, 0.1)))
+        objs = [board, capm, tassel]
+        bone = "head"
+    elif kind == "book":
+        c = M @ Vector((0.0, -0.17, 0.42))
+        objs = [lib.box("book_held", (0.15 * s, 0.03 * s, 0.21 * s), c, _mat("book_m", (0.10, 0.20, 0.35)))]
+        objs[0].rotation_euler = (R(-60), 0, arm.rotation_euler.z)
+        bone = "hand.L"
     elif kind == "papers":
         c = M @ Vector((0.0, -0.20, 0.36))
         objs = [lib.box("paper_stack", (0.16 * s, 0.11 * s, 0.03 * s), c, _mat("paper_m", (0.75, 0.73, 0.66)))]
@@ -305,6 +379,8 @@ def build_set(spec):
         return sets.parking()
     if hasattr(sets_bm, n):
         return getattr(sets_bm, n)(**p)
+    if hasattr(sets_rt, n):
+        return getattr(sets_rt, n)(**p)
     raise ValueError(n)
 
 
@@ -519,6 +595,36 @@ def animate(sc, shot, actors, cams, marks):
                         tgt = tuple(head_point(actors[tgt][0])) if tgt in actors else cams[tgt][0]
                     look(arm, tgt)
                 key_bones(arm, ff)
+        # gestures: hands move while talking, small posture changes while listening (layered on the base pose)
+        base_pose = track[-1][1]["pose"] if len(track) == 1 else None
+        if c.get("gest", True) and base_pose in GEST_BASE and not c.get("walk") and not c.get("lie"):
+            rg = __import__("random").Random(hash(who) % 983 + 13 * shot["id"])
+            talk_sp = [(fr(shot, a), fr(shot, b)) for a, b in c.get("talk", [])]
+            tl = track[0][1].get("look")
+
+            def put(g, ff):
+                sc.frame_set(ff)
+                gesture(arm, base_pose, g)
+                if tl is not None:
+                    tgt = tuple(head_point(actors[tl][0])) if isinstance(tl, str) and tl in actors else (cams[tl][0] if isinstance(tl, str) else tl)
+                    look(arm, tgt)
+                key_bones(arm, ff)
+            for a, b in talk_sp:
+                if b - a < 10:
+                    continue
+                ff, cur = a + rg.randint(2, 5), None
+                while ff < b - 6:
+                    g = rg.choice([k for k in ("ga", "gb", "gc", "gd", None, "ga") if k != cur])
+                    put(cur, ff); put(g, ff + 4); cur = g
+                    ff += rg.randint(11, 19)
+                put(cur, b); put(None, b + 5)
+            if not talk_sp and nfr > 40 and base_pose in ("idle", "nervous") and c.get("fidget", True):
+                ff = rg.randint(14, 30)
+                cur = None
+                while ff < nfr - 8:
+                    g = rg.choice([k for k in ("la", "lb", None) if k != cur])
+                    put(cur, ff); put(g, ff + 6); cur = g
+                    ff += rg.randint(30, 54)
         # walking: alternate legs while moving
         if c.get("walk"):
             for a, b in c["walk"]:
@@ -544,8 +650,8 @@ def animate(sc, shot, actors, cams, marks):
                     if rnd.random() < 0.15:
                         blink.add(ff + 2)            # occasional double blink
                     ff += rnd.randint(28, 60)
-            mouth_open = set()
-            for a, b in talk:                        # open on syllables: ~2 frames open, 1 closed, a little irregular
+            mouth_open = set(c["mouth"]) if c.get("mouth") is not None else set()
+            for a, b in ([] if c.get("mouth") is not None else talk):                        # open on syllables: ~2 frames open, 1 closed, a little irregular
                 ff = a
                 while ff < b:
                     n_open = rnd.choice((1, 2, 2, 3))

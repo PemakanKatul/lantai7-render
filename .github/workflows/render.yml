@@ -41,6 +41,6 @@ jobs:
       - name: publish results
         if: always()
         run: |
-          mkdir -p logs; cp -f out/shot_*.mp4 /tmp/pub/ 2>/dev/null || true; cp -rf logs /tmp/pub/ || true
+          mkdir -p logs; cp -f out/shot_*.mp4 out/probe_*.png /tmp/pub/ 2>/dev/null || true; cp -rf logs /tmp/pub/ || true
           echo "run ${{ github.run_id }} commit ${{ github.sha }}" > /tmp/pub/RUN.txt
           cd /tmp/pub && git add -A && (git commit -qm "final worker ${{ matrix.i }}" || true) && git push -qf origin HEAD

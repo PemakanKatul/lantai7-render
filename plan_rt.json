@@ -1,0 +1,8096 @@
+{
+ "fps": 12,
+ "size": [
+  960,
+  540
+ ],
+ "out_size": [
+  1920,
+  1080
+ ],
+ "duration": 661.898,
+ "shots": [
+  {
+   "id": 1,
+   "seg": 1,
+   "w": 0,
+   "t0": 0.0,
+   "t1": 2.78,
+   "set": {
+    "name": "kampus_ext",
+    "night": true,
+    "exposure": 2.0
+   },
+   "cam": "road",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "crickets"
+    ],
+    [
+     0,
+     "wind"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "drone_in"
+    ]
+   ],
+   "fx": [],
+   "title": true,
+   "end": false,
+   "text": "Revisi Terakhir."
+  },
+  {
+   "id": 2,
+   "seg": 1,
+   "w": 2,
+   "t0": 2.78,
+   "t1": 7.17,
+   "set": {
+    "name": "kampus_ext",
+    "night": true,
+    "exposure": 2.0
+   },
+   "cam": "wide",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "pan_r",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Di sebuah kampus, ada gedung fakultas tua berlantai tiga."
+  },
+  {
+   "id": 3,
+   "seg": 1,
+   "w": 11,
+   "t0": 7.17,
+   "t1": 10.5,
+   "set": {
+    "name": "kampus_ext",
+    "night": true,
+    "exposure": 2.0
+   },
+   "cam": "facade",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [
+    [
+     0,
+     "chatter_far"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Lantai satu dan dua ramai sampai malam."
+  },
+  {
+   "id": 4,
+   "seg": 1,
+   "w": 18,
+   "t0": 10.5,
+   "t1": 14.19,
+   "set": {
+    "name": "kampus_ext",
+    "night": true,
+    "exposure": 2.0
+   },
+   "cam": "win3",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     1.706,
+     "sting_soft"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tapi lantai tiga selalu dikunci selepas magrib."
+  },
+  {
+   "id": 5,
+   "seg": 1,
+   "w": 25,
+   "t0": 14.19,
+   "t1": 16.84,
+   "set": {
+    "name": "tangga_rt",
+    "gate": "closed",
+    "light": 0.5,
+    "exposure": 2.0
+   },
+   "cam": "gate",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "hum"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dan setiap mahasiswa baru di sana..."
+  },
+  {
+   "id": 6,
+   "seg": 1,
+   "w": 31,
+   "t0": 16.84,
+   "t1": 20.82,
+   "set": {
+    "name": "kampus_ext",
+    "night": true,
+    "exposure": 2.0
+   },
+   "cam": "steps",
+   "cast": [
+    {
+     "who": "kating",
+     "at": "kating",
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "senyum",
+     "look": "maba1"
+    },
+    {
+     "who": "maba1",
+     "at": "maba1",
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "cemas",
+     "look": "kating"
+    },
+    {
+     "who": "maba2",
+     "at": "maba2",
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "cemas",
+     "look": "kating"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "pasti pernah mendengar satu pesan dari kakak tingkatnya."
+  },
+  {
+   "id": 7,
+   "seg": 2,
+   "w": 0,
+   "t0": 20.82,
+   "t1": 24.88,
+   "set": {
+    "name": "kampus_ext",
+    "night": true,
+    "exposure": 2.0
+   },
+   "cam": {
+    "on": "kating",
+    "kind": "close",
+    "side": 0.35
+   },
+   "cast": [
+    {
+     "who": "kating",
+     "at": "kating",
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "netral",
+     "look": "maba1",
+     "talk": [
+      [
+       0.45,
+       4.06
+      ]
+     ],
+     "mouth": [
+      7,
+      9,
+      11,
+      12,
+      13,
+      15,
+      16,
+      17,
+      19,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      32,
+      34,
+      35,
+      36,
+      37,
+      38,
+      42
+     ]
+    },
+    {
+     "who": "maba1",
+     "at": "maba1",
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "cemas"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "whisper_bed"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Jangan pernah tinggalkan skripsimu di ruang baca lantai tiga."
+  },
+  {
+   "id": 8,
+   "seg": 2,
+   "w": 9,
+   "t0": 24.88,
+   "t1": 28.91,
+   "set": {
+    "name": "kampus_ext",
+    "night": true,
+    "exposure": 2.0
+   },
+   "cam": {
+    "on": "maba1",
+    "kind": "close",
+    "side": -0.3
+   },
+   "cast": [
+    {
+     "who": "maba1",
+     "at": "maba1",
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "takut",
+     "blink": false,
+     "look": "kating"
+    },
+    {
+     "who": "kating",
+     "at": "kating",
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "netral"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Apalagi... halaman yang ada namamu."
+  },
+  {
+   "id": 9,
+   "seg": 2,
+   "w": 14,
+   "t0": 28.91,
+   "t1": 32.454,
+   "set": {
+    "name": "ruang_dosen",
+    "exposure": 0.7
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "dosen",
+     "at": "dosen",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "marah"
+    },
+    {
+     "who": "mbak",
+     "at": "laras_stand",
+     "pose": "headdown",
+     "keys": [],
+     "expr": "cemas",
+     "as": "laras2",
+     "over": {
+      "hair_style": "long",
+      "shirt": [
+       0.7,
+       0.68,
+       0.6
+      ],
+      "bottom": [
+       0.08,
+       0.08,
+       0.1
+      ],
+      "long_skirt": true,
+      "collar": [
+       0.8,
+       0.78,
+       0.7
+      ]
+     }
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "clock"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [
+    [
+     "old",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Ceritanya begini. Tahun sembilan puluhan, ada seorang"
+  },
+  {
+   "id": 10,
+   "seg": 2,
+   "w": 21,
+   "t0": 32.454,
+   "t1": 35.67,
+   "set": {
+    "name": "ruang_dosen",
+    "exposure": 0.7
+   },
+   "cam": {
+    "on": "mbak",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "dosen",
+     "at": "dosen",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "marah"
+    },
+    {
+     "who": "mbak",
+     "at": "laras_stand",
+     "pose": "headdown",
+     "keys": [],
+     "expr": "nangis",
+     "as": "laras2",
+     "over": {
+      "hair_style": "long",
+      "shirt": [
+       0.7,
+       0.68,
+       0.6
+      ],
+      "bottom": [
+       0.08,
+       0.08,
+       0.1
+      ],
+      "long_skirt": true,
+      "collar": [
+       0.8,
+       0.78,
+       0.7
+      ]
+     }
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [
+    [
+     "old",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "mahasiswi yang skripsinya ditolak tiga belas kali."
+  },
+  {
+   "id": 11,
+   "seg": 2,
+   "w": 28,
+   "t0": 35.67,
+   "t1": 41.09,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "#BAB IV  HASIL DAN PEMBAHASAN",
+     "~",
+     "~Hasil penelitian menunjukkan bahwa",
+     "~responden yang memiliki kebiasaan",
+     "~membaca cenderung lebih kritis",
+     "~dalam menilai sebuah informasi.",
+     "~Hal ini sejalan dengan temuan",
+     "~penelitian sebelumnya, yaitu",
+     "~bahwa literasi digital berperan",
+     "~penting terhadap minat baca."
+    ],
+    "kind": "tua",
+    "exposure": 1.2
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_s2",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       0.25,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s3",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       0.57,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s4",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       0.89,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s5",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       1.21,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s6",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       1.53,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s7",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       1.85,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s8",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       2.17,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s9",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       2.49,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push",
+   "sfx": [
+    [
+     0.2,
+     "pen_strikes"
+    ]
+   ],
+   "music": [],
+   "fx": [
+    [
+     "old",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Tiga belas kali, naskahnya dikembalikan penuh coretan tinta merah."
+  },
+  {
+   "id": 12,
+   "seg": 3,
+   "w": 0,
+   "t0": 41.09,
+   "t1": 48.39,
+   "set": {
+    "name": "tangga_rt",
+    "gate": "open",
+    "light": 0.4,
+    "exposure": 2.2
+   },
+   "cam": "up",
+   "cast": [
+    {
+     "who": "mbak",
+     "at": [
+      0.62,
+      -1.75,
+      0
+     ],
+     "rot": 180,
+     "pose": "papers",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0.62,
+        -1.75,
+        0,
+        180
+       ]
+      ],
+      [
+       0.3,
+       "move",
+       [
+        0.62,
+        -1.75,
+        0,
+        180
+       ]
+      ],
+      [
+       7.0,
+       "move",
+       [
+        0.62,
+        0.42,
+        1.0,
+        180
+       ]
+      ]
+     ],
+     "expr": "capek",
+     "prop": "papers",
+     "walk": [
+      [
+       0.3,
+       7.3
+      ]
+     ],
+     "as": "laras2",
+     "over": {
+      "hair_style": "long",
+      "shirt": [
+       0.7,
+       0.68,
+       0.6
+      ],
+      "bottom": [
+       0.08,
+       0.08,
+       0.1
+      ],
+      "long_skirt": true,
+      "collar": [
+       0.8,
+       0.78,
+       0.7
+      ]
+     }
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0.3,
+     "steps_stairs"
+    ]
+   ],
+   "music": [],
+   "fx": [
+    [
+     "old",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Malam sebelum pengajuan yang keempat belas, ia naik ke ruang baca lantai tiga, membawa naskahnya."
+  },
+  {
+   "id": 13,
+   "seg": 3,
+   "w": 15,
+   "t0": 48.39,
+   "t1": 51.68,
+   "set": {
+    "name": "tangga_rt",
+    "gate": "closed",
+    "light": 0.5,
+    "exposure": 2.0
+   },
+   "cam": "down",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "hum"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "sting_soft"
+    ]
+   ],
+   "fx": [
+    [
+     "old",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Ia tidak pernah terlihat turun."
+  },
+  {
+   "id": 14,
+   "seg": 3,
+   "w": 20,
+   "t0": 51.68,
+   "t1": 54.345,
+   "set": {
+    "name": "ruang_baca",
+    "light": "dawn",
+    "exposure": 1.5,
+    "chair_out": true
+   },
+   "cam": "long",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "birds_far"
+    ]
+   ],
+   "music": [],
+   "fx": [
+    [
+     "old",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Pagi harinya, penjaga gedung hanya menemukan"
+  },
+  {
+   "id": 15,
+   "seg": 3,
+   "w": 26,
+   "t0": 54.345,
+   "t1": 56.46,
+   "set": {
+    "name": "ruang_baca",
+    "light": "dawn",
+    "exposure": 1.5,
+    "chair_out": true
+   },
+   "cam": "corner",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [
+    [
+     "old",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "naskah itu di meja paling pojok."
+  },
+  {
+   "id": 16,
+   "seg": 3,
+   "w": 32,
+   "t0": 56.46,
+   "t1": 59.27,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "~#BAB IV  HASIL DAN PEMBAHASAN",
+     "~",
+     "~Hasil penelitian menunjukkan bahwa",
+     "~responden yang memiliki kebiasaan",
+     "~membaca cenderung lebih kritis",
+     "~dalam menilai sebuah informasi.",
+     "~Hal ini sejalan dengan temuan",
+     "~penelitian sebelumnya, yaitu",
+     "~bahwa literasi digital berperan",
+     "~penting terhadap minat baca."
+    ],
+    "kind": "tua",
+    "exposure": 1.2
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "pan_d",
+   "sfx": [
+    [
+     0,
+     "page"
+    ]
+   ],
+   "music": [],
+   "fx": [
+    [
+     "old",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Setiap halamannya sudah dicoret merah."
+  },
+  {
+   "id": 17,
+   "seg": 3,
+   "w": 37,
+   "t0": 59.27,
+   "t1": 65.3,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "#SKRIPSI",
+     "",
+     "TINJAUAN PENGARUH MEDIA CETAK",
+     "TERHADAP PERSEPSI MAHASISWA",
+     "",
+     "",
+     "Disusun oleh:",
+     "~RETNO WULANDARI",
+     "~NIM 91/0417/SP",
+     "",
+     "~FAKULTAS ILMU SOSIAL",
+     "~1994"
+    ],
+    "kind": "tua",
+    "exposure": 1.2,
+    "title_page": true
+   },
+   "cam": "top",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_s7",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       4.537,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     4.537,
+     "pen_strike"
+    ]
+   ],
+   "music": [],
+   "fx": [
+    [
+     "old",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Dari halaman judul... sampai daftar pustaka. Termasuk namanya sendiri."
+  },
+  {
+   "id": 18,
+   "seg": 3,
+   "w": 46,
+   "t0": 65.3,
+   "t1": 69.45,
+   "set": {
+    "name": "ruang_baca",
+    "light": "night",
+    "exposure": 1.8
+   },
+   "cam": "gap",
+   "cast": [
+    {
+     "who": "tigabelas",
+     "at": "gap",
+     "pose": "idle",
+     "keys": []
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "whisper"
+    ]
+   ],
+   "music": [
+    [
+     2.336,
+     "sting"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sejak itu, orang menyebutnya Mbak Tiga Belas."
+  },
+  {
+   "id": 19,
+   "seg": 4,
+   "w": 0,
+   "t0": 69.45,
+   "t1": 74.32,
+   "set": {
+    "name": "kampus_ext",
+    "night": true,
+    "exposure": 2.0
+   },
+   "cam": "steps",
+   "cast": [
+    {
+     "who": "kating",
+     "at": "kating",
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "senyum",
+     "look": "maba1"
+    },
+    {
+     "who": "maba1",
+     "at": "maba1",
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "cemas",
+     "look": "kating"
+    },
+    {
+     "who": "maba2",
+     "at": "maba2",
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "cemas",
+     "look": "kating"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Anehnya, cerita ini tidak diwariskan untuk menakut-nakuti."
+  },
+  {
+   "id": 20,
+   "seg": 4,
+   "w": 7,
+   "t0": 74.32,
+   "t1": 83.32,
+   "set": {
+    "name": "kampus_ext",
+    "night": true,
+    "exposure": 2.0
+   },
+   "cam": {
+    "on": "kating",
+    "kind": "xclose",
+    "side": 0.25
+   },
+   "cast": [
+    {
+     "who": "kating",
+     "at": "kating",
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "senyum",
+     "look": "maba1",
+     "talk": [
+      [
+       5.08,
+       8.8
+      ]
+     ],
+     "mouth": [
+      62,
+      63,
+      65,
+      68,
+      70,
+      72,
+      73,
+      75,
+      76,
+      77,
+      83,
+      84,
+      85,
+      86,
+      88,
+      89,
+      90,
+      91,
+      93,
+      94,
+      95,
+      96,
+      98,
+      100,
+      101,
+      103,
+      105
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Kakak tingkat menceritakannya sambil berbisik... seperti membagi bocoran. Kalau kamu sudah buntu, tinggalkan drafmu di meja pojok itu."
+  },
+  {
+   "id": 21,
+   "seg": 4,
+   "w": 25,
+   "t0": 83.32,
+   "t1": 84.66,
+   "set": {
+    "name": "ruang_baca",
+    "light": "dusk",
+    "exposure": 1.3
+   },
+   "cam": "desk_top",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "clock"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Semalam saja."
+  },
+  {
+   "id": 22,
+   "seg": 4,
+   "w": 27,
+   "t0": 84.66,
+   "t1": 88.68,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "#BAB IV  HASIL DAN PEMBAHASAN",
+     "",
+     "Hasil penelitian menunjukkan bahwa",
+     "responden yang memiliki kebiasaan",
+     "membaca cenderung lebih kritis",
+     "dalam menilai sebuah informasi.",
+     "!Lebih tepat: cenderung kritis."
+    ],
+    "kind": "a4",
+    "exposure": 1.2
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_l6",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       2.65,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push",
+   "sfx": [
+    [
+     2.65,
+     "pen_write"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Paginya, drafmu sudah dikoreksi. Pakai tinta merah."
+  },
+  {
+   "id": 23,
+   "seg": 4,
+   "w": 34,
+   "t0": 88.68,
+   "t1": 92.07,
+   "set": {
+    "name": "kampus_ext",
+    "night": true,
+    "exposure": 2.0
+   },
+   "cam": {
+    "on": "kating",
+    "kind": "xclose",
+    "side": 0.25
+   },
+   "cast": [
+    {
+     "who": "kating",
+     "at": "kating",
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "senyum",
+     "look": "maba1",
+     "talk": [
+      [
+       0.12,
+       2.49
+      ]
+     ],
+     "mouth": [
+      3,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [
+    [
+     1.62,
+     "sting_soft"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dan koreksinya... selalu benar."
+  },
+  {
+   "id": 24,
+   "seg": 5,
+   "w": 0,
+   "t0": 92.07,
+   "t1": 94.85,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": false,
+    "light": "night",
+    "exposure": 1.4
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitwrite",
+     "keys": [],
+     "expr": "capek"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "night_room"
+    ],
+    [
+     0,
+     "typing"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "sad"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Laras sudah semester empat belas."
+  },
+  {
+   "id": 25,
+   "seg": 5,
+   "w": 5,
+   "t0": 94.85,
+   "t1": 99.37,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "#SURAT PERINGATAN",
+     "",
+     "Kepada: Laras Pramesti",
+     "NIM 1518301142",
+     "",
+     "Batas masa studi: Semester 14",
+     "Status: TERANCAM DIKELUARKAN"
+    ],
+    "kind": "a4",
+    "exposure": 1.2,
+    "light": "cold"
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Semester terakhir, sebelum namanya dihapus dari daftar mahasiswa."
+  },
+  {
+   "id": 26,
+   "seg": 5,
+   "w": 13,
+   "t0": 99.37,
+   "t1": 103.11,
+   "set": {
+    "name": "ruang_dosen",
+    "exposure": 0.7
+   },
+   "cam": "over",
+   "cast": [
+    {
+     "who": "dosen",
+     "at": "dosen",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "netral"
+    },
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "capek"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "paper_slide"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Bab empatnya sudah enam kali dikembalikan dosen pembimbing."
+  },
+  {
+   "id": 27,
+   "seg": 5,
+   "w": 21,
+   "t0": 103.11,
+   "t1": 106.72,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "~#BAB IV  HASIL DAN PEMBAHASAN",
+     "~",
+     "~Hasil penelitian menunjukkan bahwa",
+     "~responden yang memiliki kebiasaan",
+     "~membaca cenderung lebih kritis",
+     "~dalam menilai sebuah informasi.",
+     "~Hal ini sejalan dengan temuan",
+     "~penelitian sebelumnya, yaitu"
+    ],
+    "kind": "a4",
+    "exposure": 1.2,
+    "light": "day"
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_s0",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       0.2,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s1",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       0.38,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s2",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       0.56,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s3",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       0.74,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s4",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       0.92,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s5",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       1.1,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s6",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       1.28,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s7",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       1.46,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0.1,
+     "pen_strikes"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tanpa satu kata pun. Hanya coretan."
+  },
+  {
+   "id": 28,
+   "seg": 5,
+   "w": 27,
+   "t0": 106.72,
+   "t1": 110.61,
+   "set": {
+    "name": "hp",
+    "mode": "call",
+    "bubbles": [],
+    "typing": "",
+    "exposure": 1.0
+   },
+   "cam": "top",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "phone_vibe"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dan setiap Minggu malam, ibunya menelepon dari kampung,"
+  },
+  {
+   "id": 29,
+   "seg": 5,
+   "w": 35,
+   "t0": 110.61,
+   "t1": 114.96,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": false,
+    "light": "night",
+    "exposure": 1.4
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "rot": 200,
+     "pose": "phone",
+     "keys": [],
+     "expr": "capek",
+     "prop": "phone"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "dengan pertanyaan yang sama. Kapan wisuda, Ras?"
+  },
+  {
+   "id": 30,
+   "seg": 6,
+   "w": 0,
+   "t0": 114.96,
+   "t1": 118.98,
+   "set": {
+    "name": "tangga_rt",
+    "gate": "open",
+    "light": 0.9,
+    "exposure": 1.6
+   },
+   "cam": "up",
+   "cast": [
+    {
+     "who": "laras",
+     "at": [
+      0.62,
+      -1.75,
+      0
+     ],
+     "rot": 180,
+     "pose": "papers",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0.62,
+        -1.75,
+        0,
+        180
+       ]
+      ],
+      [
+       0.2,
+       "move",
+       [
+        0.62,
+        -1.75,
+        0,
+        180
+       ]
+      ],
+      [
+       5.0,
+       "move",
+       [
+        0.62,
+        -0.2,
+        0.55,
+        180
+       ]
+      ]
+     ],
+     "expr": "capek",
+     "prop": "papers",
+     "walk": [
+      [
+       0.2,
+       4.02
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0.2,
+     "steps_stairs"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Jadi suatu sore, Laras naik ke lantai tiga."
+  },
+  {
+   "id": 31,
+   "seg": 6,
+   "w": 8,
+   "t0": 118.98,
+   "t1": 124.83,
+   "set": {
+    "name": "tangga_rt",
+    "gate": "open",
+    "light": 0.9,
+    "exposure": 1.6
+   },
+   "cam": "down",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "b",
+     "pose": "papers",
+     "keys": [
+      [
+       3.824,
+       "move",
+       [
+        0.72,
+        -0.39,
+        0.66,
+        180
+       ]
+      ],
+      [
+       4.898,
+       "move",
+       [
+        0.72,
+        -0.39,
+        0.66,
+        0
+       ]
+      ]
+     ],
+     "expr": "capek",
+     "prop": "papers"
+    },
+    {
+     "who": "dimas",
+     "at": [
+      0.65,
+      -2.9,
+      0
+     ],
+     "rot": 180,
+     "pose": "idle",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0.65,
+        -2.9,
+        0,
+        180
+       ]
+      ],
+      [
+       1.6,
+       "move",
+       [
+        0.65,
+        -2.4,
+        0,
+        180
+       ]
+      ]
+     ],
+     "expr": "cemas",
+     "walk": [
+      [
+       0,
+       1.6
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "steps"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dimas, teman seangkatannya yang kini sudah jadi asisten dosen, sempat menahannya di tangga."
+  },
+  {
+   "id": 32,
+   "seg": 6,
+   "w": 21,
+   "t0": 124.83,
+   "t1": 131.22,
+   "set": {
+    "name": "tangga_rt",
+    "gate": "open",
+    "light": 0.9,
+    "exposure": 1.6
+   },
+   "cam": [
+    [
+     0.3,
+     -0.85,
+     1.65
+    ],
+    [
+     0.65,
+     -2.4,
+     1.15
+    ],
+    42
+   ],
+   "cast": [
+    {
+     "who": "laras",
+     "at": [
+      0.72,
+      -0.39,
+      0.66
+     ],
+     "rot": 0,
+     "pose": "papers",
+     "keys": [],
+     "expr": "capek",
+     "prop": "papers"
+    },
+    {
+     "who": "dimas",
+     "at": [
+      0.65,
+      -2.4,
+      0
+     ],
+     "rot": 180,
+     "pose": "idle",
+     "keys": [],
+     "expr": "cemas",
+     "look": "laras",
+     "talk": [
+      [
+       0.12,
+       5.99
+      ]
+     ],
+     "mouth": [
+      3,
+      4,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      21,
+      28,
+      29,
+      30,
+      31,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      52,
+      53,
+      54,
+      56,
+      57,
+      59,
+      60,
+      61,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ras, kalau memang nekat... lepas dulu halaman judulnya. Jangan sampai dia tahu namamu."
+  },
+  {
+   "id": 33,
+   "seg": 6,
+   "w": 34,
+   "t0": 131.22,
+   "t1": 132.48,
+   "set": {
+    "name": "tangga_rt",
+    "gate": "open",
+    "light": 0.9,
+    "exposure": 1.6
+   },
+   "cam": [
+    [
+     0.95,
+     -2.25,
+     1.15
+    ],
+    [
+     0.72,
+     -0.39,
+     1.55
+    ],
+    40
+   ],
+   "cast": [
+    {
+     "who": "laras",
+     "at": [
+      0.72,
+      -0.39,
+      0.66
+     ],
+     "rot": 0,
+     "pose": "papers",
+     "keys": [],
+     "expr": "cemas",
+     "prop": "papers",
+     "look": "dimas"
+    },
+    {
+     "who": "dimas",
+     "at": [
+      0.65,
+      -2.4,
+      0
+     ],
+     "rot": 180,
+     "pose": "idle",
+     "keys": [],
+     "expr": "cemas"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Laras menurut."
+  },
+  {
+   "id": 34,
+   "seg": 6,
+   "w": 36,
+   "t0": 132.48,
+   "t1": 134.2,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "#SKRIPSI",
+     "",
+     "ANALISIS PENGARUH LITERASI DIGITAL",
+     "TERHADAP MINAT BACA MAHASISWA",
+     "",
+     "",
+     "Disusun oleh:",
+     "LARAS PRAMESTI",
+     "NIM 1518301142",
+     "",
+     "PROGRAM STUDI SARJANA",
+     "2026"
+    ],
+    "kind": "a4",
+    "exposure": 1.2,
+    "title_page": true,
+    "light": "day"
+   },
+   "cam": "top",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "pull",
+   "sfx": [
+    [
+     0,
+     "paper_tear"
+    ],
+    [
+     1.5,
+     "zipper"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ia melepas halaman judul, menyelipkannya ke dalam tas..."
+  },
+  {
+   "id": 35,
+   "seg": 6,
+   "w": 44,
+   "t0": 134.2,
+   "t1": 139.14,
+   "set": {
+    "name": "ruang_baca",
+    "light": "dusk",
+    "exposure": 1.3
+   },
+   "cam": "long",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "desk",
+     "pose": "give",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        1.9,
+        7.5,
+        0,
+        180
+       ]
+      ],
+      [
+       2.0,
+       "move",
+       [
+        1.75,
+        10.35,
+        0,
+        165
+       ]
+      ],
+      [
+       2.4,
+       "pose",
+       "papers"
+      ]
+     ],
+     "expr": "capek",
+     "prop": "papers",
+     "walk": [
+      [
+       0,
+       2.0
+      ]
+     ]
+    },
+    {
+     "who": "tigabelas",
+     "at": "shelf",
+     "pose": "idle",
+     "keys": []
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0,
+     "steps"
+    ],
+    [
+     2.4,
+     "paper_drop"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "tension"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "lalu meletakkan sisanya di meja pojok."
+  },
+  {
+   "id": 36,
+   "seg": 7,
+   "w": 0,
+   "t0": 139.14,
+   "t1": 143.21,
+   "set": {
+    "name": "ruang_baca",
+    "light": "dawn",
+    "exposure": 1.5
+   },
+   "cam": "desk_top",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "birds_far"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Besok paginya, draf itu masih di tempat yang sama."
+  },
+  {
+   "id": 37,
+   "seg": 7,
+   "w": 9,
+   "t0": 143.21,
+   "t1": 146.65,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "#BAB IV  HASIL DAN PEMBAHASAN",
+     "",
+     "~Hasil penelitian menunjukkan bahwa",
+     "!Hasil penelitian menunjukkan,",
+     "~responden yang memiliki kebiasaan",
+     "!responden yang terbiasa membaca",
+     "membaca cenderung lebih kritis",
+     "dalam menilai sebuah informasi."
+    ],
+    "kind": "a4",
+    "exposure": 1.2
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_s2",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       0.3,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_l3",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       0.6,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s4",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       1.0,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_l5",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       1.3,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push",
+   "sfx": [
+    [
+     0.3,
+     "pen_write"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tapi setiap halamannya penuh tinta merah."
+  },
+  {
+   "id": 38,
+   "seg": 7,
+   "w": 15,
+   "t0": 146.65,
+   "t1": 151.95,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "",
+     "!Hasil penelitian menunjukkan,",
+     "!responden yang terbiasa membaca",
+     "!lebih kritis menilai informasi."
+    ],
+    "kind": "a4",
+    "exposure": 1.2
+   },
+   "cam": "midline",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "musicbox"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tulisannya tegak bersambung. Rapi sekali. Seperti tulisan orang zaman dulu."
+  },
+  {
+   "id": 39,
+   "seg": 7,
+   "w": 25,
+   "t0": 151.95,
+   "t1": 156.52,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "#Persamaan regresi",
+     "",
+     "~Y = a + bX",
+     "!Y = a + b1X1 + b2X2 + e",
+     "",
+     "~yang mana dimana hal tersebut",
+     "!yang"
+    ],
+    "kind": "a4",
+    "exposure": 1.2
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "pan_d",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Rumus yang salah dibetulkan. Kalimat yang berbelit diluruskan."
+  },
+  {
+   "id": 40,
+   "seg": 7,
+   "w": 33,
+   "t0": 156.52,
+   "t1": 161.26,
+   "set": {
+    "name": "ruang_dosen",
+    "exposure": 0.7
+   },
+   "cam": "desk",
+   "cast": [
+    {
+     "who": "dosen",
+     "at": "dosen",
+     "pose": "sitdesk",
+     "keys": [
+      [
+       3.41,
+       "expr",
+       "senyum"
+      ]
+     ],
+     "expr": "netral"
+    },
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "sitlap",
+     "keys": [],
+     "expr": "cemas"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "page"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Siang itu, untuk pertama kalinya dalam dua tahun, dosennya mengangguk."
+  },
+  {
+   "id": 41,
+   "seg": 7,
+   "w": 43,
+   "t0": 161.26,
+   "t1": 164.48,
+   "set": {
+    "name": "ruang_dosen",
+    "exposure": 0.7
+   },
+   "cam": {
+    "on": "dosen",
+    "kind": "close",
+    "side": 0.25
+   },
+   "cast": [
+    {
+     "who": "dosen",
+     "at": "dosen",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum",
+     "talk": [
+      [
+       0.12,
+       2.07
+      ]
+     ],
+     "mouth": [
+      3,
+      4,
+      13,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Nah. Ini baru benar."
+  },
+  {
+   "id": 42,
+   "seg": 8,
+   "w": 0,
+   "t0": 164.48,
+   "t1": 169.45,
+   "set": {
+    "name": "tangga_rt",
+    "gate": "open",
+    "light": 0.9,
+    "exposure": 1.6
+   },
+   "cam": "up",
+   "cast": [
+    {
+     "who": "laras",
+     "at": [
+      0.62,
+      -1.75,
+      0
+     ],
+     "rot": 180,
+     "pose": "papers",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0.62,
+        -1.75,
+        0,
+        180
+       ]
+      ],
+      [
+       4.5,
+       "move",
+       [
+        0.62,
+        0.0,
+        0.66,
+        180
+       ]
+      ]
+     ],
+     "expr": "netral",
+     "prop": "papers",
+     "walk": [
+      [
+       0.0,
+       4.97
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0,
+     "steps_stairs"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Laras kembali lagi. Bab lima. Lalu bab enam."
+  },
+  {
+   "id": 43,
+   "seg": 8,
+   "w": 8,
+   "t0": 169.45,
+   "t1": 172.34,
+   "set": {
+    "name": "ruang_baca",
+    "light": "dawn",
+    "exposure": 1.5
+   },
+   "cam": "desk_top",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Setiap pagi, koreksinya sudah menunggu."
+  },
+  {
+   "id": 44,
+   "seg": 8,
+   "w": 13,
+   "t0": 172.34,
+   "t1": 180.22,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "Hasil penelitian menunjukkan bahwa",
+     "responden yang memiliki kebiasaan",
+     "membaca cenderung lebih kritis",
+     "dalam menilai sebuah informasi.",
+     "Hal ini sejalan dengan temuan",
+     "penelitian sebelumnya, yaitu",
+     "",
+     "^Bagus.",
+     "^Sedikit lagi.",
+     "^Kamu bisa."
+    ],
+    "kind": "a4",
+    "exposure": 1.2
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_l7",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       4.26,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_l8",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       5.54,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_l9",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       6.75,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     4.26,
+     "pen_write"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "musicbox"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dan di pinggir halaman, mulai muncul catatan-catatan kecil. Bagus. Sedikit lagi. Kamu bisa."
+  },
+  {
+   "id": 45,
+   "seg": 8,
+   "w": 26,
+   "t0": 180.22,
+   "t1": 182.44,
+   "set": {
+    "name": "ruang_baca",
+    "light": "dawn",
+    "exposure": 1.5
+   },
+   "cam": "corner",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "nangis"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "sob"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Laras menangis membacanya."
+  },
+  {
+   "id": 46,
+   "seg": 8,
+   "w": 29,
+   "t0": 182.44,
+   "t1": 187.69,
+   "set": {
+    "name": "ruang_baca",
+    "light": "dawn",
+    "exposure": 1.5
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "xclose",
+    "side": 0.3,
+    "up": 0.05
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "nangis"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sudah lama sekali... tidak ada yang membaca tulisannya sampai habis."
+  },
+  {
+   "id": 47,
+   "seg": 9,
+   "w": 0,
+   "t0": 187.69,
+   "t1": 192.78,
+   "set": {
+    "name": "ruang_baca",
+    "light": "dawn",
+    "exposure": 1.5
+   },
+   "cam": "corner",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "desk",
+     "pose": "papers",
+     "keys": [],
+     "expr": "netral"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Lalu suatu pagi, ia menemukan coretan di halaman ucapan terima kasih."
+  },
+  {
+   "id": 48,
+   "seg": 9,
+   "w": 11,
+   "t0": 192.78,
+   "t1": 200.69,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "#UCAPAN TERIMA KASIH",
+     "",
+     "Puji syukur penulis panjatkan atas",
+     "selesainya skripsi ini. Penulis",
+     "mengucapkan terima kasih kepada:",
+     "",
+     "1. Dr. Suryo, selaku pembimbing.",
+     "~2. Ibu, yang selalu sabar menunggu.",
+     "3. Teman-teman seangkatan.",
+     "",
+     "!Tidak jujur.",
+     "!Kamu membencinya, setiap kali ia bertanya."
+    ],
+    "kind": "a4",
+    "exposure": 1.2
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_s7",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       6.863,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_l10",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       12.51,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_l11",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       13.78,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     6.863,
+     "pen_strike"
+    ],
+    [
+     12.51,
+     "pen_write"
+    ]
+   ],
+   "music": [
+    [
+     12.51,
+     "sting_soft"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ia pernah menulis di sana: terima kasih untuk Ibu, yang selalu sabar menunggu. Kalimat itu dicoret."
+  },
+  {
+   "id": 49,
+   "seg": 9,
+   "w": 27,
+   "t0": 200.69,
+   "t1": 210.47,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "#UCAPAN TERIMA KASIH",
+     "",
+     "Puji syukur penulis panjatkan atas",
+     "selesainya skripsi ini. Penulis",
+     "mengucapkan terima kasih kepada:",
+     "",
+     "1. Dr. Suryo, selaku pembimbing.",
+     "~2. Ibu, yang selalu sabar menunggu.",
+     "3. Teman-teman seangkatan.",
+     "",
+     "!Tidak jujur.",
+     "!Kamu membencinya, setiap kali ia bertanya."
+    ],
+    "kind": "a4",
+    "exposure": 1.2
+   },
+   "cam": "botline",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_l10",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       4.6,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_l11",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       5.87,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Satu garis merah. Lurus. Di pinggirnya tertulis... Tidak jujur. Kamu membencinya, setiap kali ia bertanya."
+  },
+  {
+   "id": 50,
+   "seg": 10,
+   "w": 0,
+   "t0": 210.47,
+   "t1": 214.03,
+   "set": {
+    "name": "ruang_baca",
+    "light": "dusk",
+    "exposure": 1.3
+   },
+   "cam": "long",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "capek"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Laras duduk lama sekali di meja pojok itu."
+  },
+  {
+   "id": 51,
+   "seg": 10,
+   "w": 8,
+   "t0": 214.03,
+   "t1": 218.17,
+   "set": {
+    "name": "ruang_baca",
+    "light": "dusk",
+    "exposure": 1.3
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "close",
+    "side": 0.35
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "cemas"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Seharusnya ia takut. Seharusnya ia berhenti."
+  },
+  {
+   "id": 52,
+   "seg": 10,
+   "w": 14,
+   "t0": 218.17,
+   "t1": 222.06,
+   "set": {
+    "name": "ruang_baca",
+    "light": "dusk",
+    "exposure": 1.3
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "xclose",
+    "side": 0.2
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitdesk",
+     "keys": [
+      [
+       2.71,
+       "expr",
+       "senyum"
+      ]
+     ],
+     "expr": "cemas"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tapi yang ia rasakan justru... lega."
+  },
+  {
+   "id": 53,
+   "seg": 10,
+   "w": 20,
+   "t0": 222.06,
+   "t1": 227.5,
+   "set": {
+    "name": "ruang_baca",
+    "light": "dusk",
+    "exposure": 1.3
+   },
+   "cam": "behind",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum"
+    },
+    {
+     "who": "tigabelas",
+     "at": "corner_far",
+     "pose": "idle",
+     "keys": []
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "breath"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "tension"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Karena catatan itu benar. Dan belum pernah ada yang sejujur itu kepadanya."
+  },
+  {
+   "id": 54,
+   "seg": 10,
+   "w": 32,
+   "t0": 227.5,
+   "t1": 231.35,
+   "set": {
+    "name": "ruang_baca",
+    "light": "night",
+    "exposure": 1.8
+   },
+   "cam": "door",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "desk",
+     "rot": 0,
+     "pose": "idle",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        1.75,
+        10.35,
+        0,
+        0
+       ]
+      ],
+      [
+       0.3,
+       "move",
+       [
+        1.75,
+        10.35,
+        0,
+        20
+       ]
+      ],
+      [
+       4.0,
+       "move",
+       [
+        -0.2,
+        2.0,
+        0,
+        10
+       ]
+      ]
+     ],
+     "expr": "netral",
+     "walk": [
+      [
+       0.3,
+       3.85
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0.3,
+     "steps"
+    ],
+    [
+     3.8,
+     "door_close"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Malam itu, ia meninggalkan drafnya lagi."
+  },
+  {
+   "id": 55,
+   "seg": 11,
+   "w": 0,
+   "t0": 231.35,
+   "t1": 235.62,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": false,
+    "light": "night",
+    "exposure": 1.4
+   },
+   "cam": "desk",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitwrite",
+     "keys": [],
+     "expr": "capek"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "night_room"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Seminggu kemudian, coretan itu mulai muncul di tempat lain."
+  },
+  {
+   "id": 56,
+   "seg": 11,
+   "w": 9,
+   "t0": 235.62,
+   "t1": 237.92,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "*Senin - metpen",
+     "*- revisi bab 5 !!!",
+     "*- fotokopi kuesioner",
+     "*- telp ibu",
+     "",
+     "!Urutkan menurut prioritas."
+    ],
+    "kind": "buku",
+    "exposure": 1.2
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_l5",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       0.6,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Di buku catatannya di kamar kos."
+  },
+  {
+   "id": 57,
+   "seg": 11,
+   "w": 15,
+   "t0": 237.92,
+   "t1": 239.22,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "*indomie 2",
+     "*telur 1/4",
+     "*sabun",
+     "*kopi sachet",
+     "~",
+     "!kopi hitam, tanpa gula"
+    ],
+    "kind": "belanja",
+    "exposure": 1.2
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_l5",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       0.5,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Di daftar belanja."
+  },
+  {
+   "id": 58,
+   "seg": 11,
+   "w": 18,
+   "t0": 239.22,
+   "t1": 241.07,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "FOTOKOPI SINAR JAYA",
+     "Jl. Kaliurang",
+     "------------------",
+     "Fotokopi 120 x 200",
+     "Jilid 1 x 5000",
+     "TOTAL   29.000",
+     "",
+     "!Belum tepat."
+    ],
+    "kind": "struk",
+    "exposure": 1.2
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_l7",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       0.4,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Di balik struk fotokopi."
+  },
+  {
+   "id": 59,
+   "seg": 11,
+   "w": 22,
+   "t0": 241.07,
+   "t1": 245.34,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "",
+     "!Belum tepat.",
+     "!Urutkan menurut prioritas.",
+     "!Kamu bisa."
+    ],
+    "kind": "a4",
+    "exposure": 1.2,
+    "light": "cold"
+   },
+   "cam": "midline",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "tension"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tinta merah yang sama. Tulisan tegak bersambung yang sama."
+  },
+  {
+   "id": 60,
+   "seg": 11,
+   "w": 31,
+   "t0": 245.34,
+   "t1": 250.56,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": false,
+    "light": "night",
+    "exposure": 1.4
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "mid",
+     "pose": "scared",
+     "keys": [],
+     "expr": "takut",
+     "look": "desk"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [
+    [
+     3.451,
+     "sting_soft"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Padahal, kertas-kertas itu tidak pernah ia bawa ke lantai tiga."
+  },
+  {
+   "id": 61,
+   "seg": 12,
+   "w": 0,
+   "t0": 250.56,
+   "t1": 256.44,
+   "set": {
+    "name": "hp",
+    "mode": "chat",
+    "bubbles": [
+     [
+      "in",
+      "Kapan wisuda, Ras?"
+     ]
+    ],
+    "typing": "",
+    "exposure": 1.0
+   },
+   "cam": "top",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "msg_recv"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Lalu, di ponselnya. Minggu malam, ibunya mengirim pesan seperti biasa."
+  },
+  {
+   "id": 62,
+   "seg": 12,
+   "w": 10,
+   "t0": 256.44,
+   "t1": 258.92,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": false,
+    "light": "night",
+    "exposure": 1.4
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "rot": 200,
+     "pose": "phone",
+     "keys": [],
+     "expr": "cemas",
+     "prop": "phone"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     1.66,
+     "typing_phone"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Laras ingat betul, ia mengetik..."
+  },
+  {
+   "id": 63,
+   "seg": 12,
+   "w": 15,
+   "t0": 258.92,
+   "t1": 261.17,
+   "set": {
+    "name": "hp",
+    "mode": "chat",
+    "bubbles": [
+     [
+      "in",
+      "Kapan wisuda, Ras?"
+     ]
+    ],
+    "typing": "iya Bu, sebentar lagi",
+    "exposure": 1.0
+   },
+   "cam": "close",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "iya Bu, sebentar lagi."
+  },
+  {
+   "id": 64,
+   "seg": 12,
+   "w": 19,
+   "t0": 261.17,
+   "t1": 270.88,
+   "set": {
+    "name": "hp",
+    "mode": "chat",
+    "bubbles": [
+     [
+      "in",
+      "Kapan wisuda, Ras?"
+     ],
+     [
+      "out",
+      "Jangan tanya-tanya lagi."
+     ],
+     [
+      "in",
+      "maaf ya, Nak."
+     ]
+    ],
+    "typing": "",
+    "exposure": 1.0
+   },
+   "cam": "close",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "hp_b1",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       4.18,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "hp_bt1",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       4.18,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "hp_bk1",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       4.18,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "hp_b2",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       8.25,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "hp_bt2",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       8.25,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "hp_bk2",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       8.25,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     4.18,
+     "msg_send"
+    ],
+    [
+     8.25,
+     "msg_recv"
+    ]
+   ],
+   "music": [
+    [
+     4.18,
+     "sting_soft"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tapi di layar, pesan yang terkirim berbunyi lain. Jangan tanya-tanya lagi. Ibunya hanya membalas... maaf ya, Nak."
+  },
+  {
+   "id": 65,
+   "seg": 12,
+   "w": 36,
+   "t0": 270.88,
+   "t1": 275.51,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": false,
+    "light": "night",
+    "exposure": 1.4
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "xclose",
+    "side": 0.25
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "rot": 200,
+     "pose": "phone",
+     "keys": [],
+     "expr": "takut",
+     "prop": "phone",
+     "blink": false
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "sad"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dan sejak malam itu, ibunya berhenti menelepon."
+  },
+  {
+   "id": 66,
+   "seg": 13,
+   "w": 0,
+   "t0": 275.51,
+   "t1": 279.73,
+   "set": {
+    "name": "kantin",
+    "exposure": 0.5
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "netral",
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     }
+    },
+    {
+     "who": "dimas",
+     "at": "dimas",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "netral"
+    },
+    {
+     "who": "teman1",
+     "at": "ex1",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum",
+     "gest": false
+    },
+    {
+     "who": "teman2",
+     "at": "ex2",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum",
+     "gest": false
+    },
+    {
+     "who": "maba1",
+     "at": "ex3",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "netral",
+     "gest": false
+    },
+    {
+     "who": "kating",
+     "at": "ex4",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum",
+     "gest": false
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "canteen"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dimas yang pertama menyadarinya. Mereka sedang duduk di kantin,"
+  },
+  {
+   "id": 67,
+   "seg": 13,
+   "w": 9,
+   "t0": 279.73,
+   "t1": 282.49,
+   "set": {
+    "name": "kantin",
+    "exposure": 0.5
+   },
+   "cam": "book",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "dan ia melirik buku catatan Laras."
+  },
+  {
+   "id": 68,
+   "seg": 13,
+   "w": 15,
+   "t0": 282.49,
+   "t1": 285.85,
+   "set": {
+    "name": "kantin",
+    "exposure": 0.5
+   },
+   "cam": {
+    "on": "dimas",
+    "kind": "close",
+    "side": 0.3,
+    "up": 0.05
+   },
+   "cast": [
+    {
+     "who": "dimas",
+     "at": "dimas",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "cemas",
+     "look": "laras",
+     "talk": [
+      [
+       0.12,
+       2.97
+      ]
+     ],
+     "mouth": [
+      4,
+      5,
+      14,
+      15,
+      16,
+      18,
+      19,
+      21,
+      23,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+     ]
+    },
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "netral",
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     }
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ras... sejak kapan tulisanmu jadi begini?"
+  },
+  {
+   "id": 69,
+   "seg": 13,
+   "w": 21,
+   "t0": 285.85,
+   "t1": 287.37,
+   "set": {
+    "name": "kantin",
+    "exposure": 0.5
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "close",
+    "side": -0.3,
+    "up": 0.05
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "sitdesk",
+     "keys": [
+      [
+       0.3,
+       "pose",
+       "headdown"
+      ]
+     ],
+     "expr": "netral",
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     },
+     "hold": 0.6
+    },
+    {
+     "who": "dimas",
+     "at": "dimas",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "cemas",
+     "hold": 0.6
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Laras menunduk."
+  },
+  {
+   "id": 70,
+   "seg": 13,
+   "w": 23,
+   "t0": 287.37,
+   "t1": 294.84,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "=Senin, kuliah metode penelitian.",
+     "=Dosen menjelaskan tentang",
+     "=validitas dan reliabilitas.",
+     "=Catatan: baca ulang bab 3."
+    ],
+    "kind": "buku",
+    "exposure": 1.2,
+    "light": "day",
+    "desk": "table"
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "musicbox"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tulisan di bukunya tegak bersambung. Rapi sekali. Seperti tulisan orang zaman dulu."
+  },
+  {
+   "id": 71,
+   "seg": 13,
+   "w": 35,
+   "t0": 294.84,
+   "t1": 299.19,
+   "set": {
+    "name": "kantin",
+    "exposure": 0.5
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "xclose",
+    "side": -0.2
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "netral",
+     "blink": false,
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     }
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ia tidak ingat... kapan tulisannya berubah."
+  },
+  {
+   "id": 72,
+   "seg": 14,
+   "w": 0,
+   "t0": 299.19,
+   "t1": 303.07,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": true,
+    "light": "day",
+    "exposure": 0.8
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "mid",
+     "pose": "idle",
+     "keys": [
+      [
+       1.2,
+       "look",
+       "shelf"
+      ],
+      [
+       3.0,
+       "look",
+       "door"
+      ]
+     ],
+     "expr": "cemas",
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     }
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "day_room"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Setelah itu, ia mulai memperhatikan hal-hal kecil."
+  },
+  {
+   "id": 73,
+   "seg": 14,
+   "w": 7,
+   "t0": 303.07,
+   "t1": 309.59,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": true,
+    "light": "day",
+    "exposure": 0.8
+   },
+   "cam": "desk",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "netral",
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     }
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [
+    [
+     0,
+     "cup"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dulu ia tidak suka kopi. Sekarang ia minum kopi hitam, tanpa gula, setiap pagi."
+  },
+  {
+   "id": 74,
+   "seg": 14,
+   "w": 21,
+   "t0": 309.59,
+   "t1": 311.36,
+   "set": {
+    "name": "kantin",
+    "exposure": 0.5
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "teman1",
+     "at": "ex1",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum",
+     "talk": [
+      [
+       0.2,
+       1.77
+      ]
+     ],
+     "mouth": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16
+     ]
+    },
+    {
+     "who": "teman2",
+     "at": "ex2",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum"
+    },
+    {
+     "who": "laras",
+     "at": [
+      -3.3,
+      0.38,
+      -0.02
+     ],
+     "rot": 180,
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum",
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     }
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "laugh"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dulu tawanya keras."
+  },
+  {
+   "id": 75,
+   "seg": 14,
+   "w": 24,
+   "t0": 311.36,
+   "t1": 313.44,
+   "set": {
+    "name": "kantin",
+    "exposure": 0.5
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": [
+      -3.3,
+      0.38,
+      -0.02
+     ],
+     "rot": 180,
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum",
+     "blink": false,
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     }
+    },
+    {
+     "who": "teman2",
+     "at": "ex2",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sekarang ia hanya tersenyum."
+  },
+  {
+   "id": 76,
+   "seg": 14,
+   "w": 28,
+   "t0": 313.44,
+   "t1": 319.03,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": true,
+    "light": "day",
+    "exposure": 0.8
+   },
+   "cam": "shelf",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "pan_r",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dulu kamarnya berantakan. Sekarang semua bukunya tersusun menurut abjad."
+  },
+  {
+   "id": 77,
+   "seg": 14,
+   "w": 37,
+   "t0": 319.03,
+   "t1": 322.86,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": true,
+    "light": "day",
+    "exposure": 0.8
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "mid",
+     "pose": "idle",
+     "keys": [],
+     "expr": "cemas",
+     "look": "shelf",
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     }
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dan ia tidak ingat pernah menyusunnya."
+  },
+  {
+   "id": 78,
+   "seg": 15,
+   "w": 0,
+   "t0": 322.86,
+   "t1": 327.31,
+   "set": {
+    "name": "kantin",
+    "exposure": 0.5
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum",
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     }
+    },
+    {
+     "who": "teman1",
+     "at": "dimas",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum"
+    },
+    {
+     "who": "teman2",
+     "at": "ex2",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum",
+     "gest": false
+    },
+    {
+     "who": "maba1",
+     "at": "ex3",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "netral",
+     "gest": false
+    },
+    {
+     "who": "kating",
+     "at": "ex4",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum",
+     "gest": false
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Yang paling menakutkan, tidak ada yang keberatan."
+  },
+  {
+   "id": 79,
+   "seg": 15,
+   "w": 7,
+   "t0": 327.31,
+   "t1": 331.04,
+   "set": {
+    "name": "kantin",
+    "exposure": 0.5
+   },
+   "cam": {
+    "on": "teman1",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "teman1",
+     "at": "dimas",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum",
+     "look": "laras",
+     "talk": [
+      [
+       1.7,
+       3.44
+      ]
+     ],
+     "mouth": [
+      22,
+      24,
+      26,
+      27,
+      29,
+      30,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+     ]
+    },
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum",
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     }
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Teman-temannya bilang, Kamu sekarang lebih kalem, Ras."
+  },
+  {
+   "id": 80,
+   "seg": 15,
+   "w": 14,
+   "t0": 331.04,
+   "t1": 335.88,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": true,
+    "light": "day",
+    "exposure": 0.8
+   },
+   "cam": {
+    "on": "ibukos",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "ibukos",
+     "at": [
+      1.2,
+      -0.6,
+      0
+     ],
+     "rot": 120,
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum",
+     "look": "laras",
+     "talk": [
+      [
+       1.55,
+       4.64
+      ]
+     ],
+     "mouth": [
+      20,
+      22,
+      23,
+      24,
+      25,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      36,
+      37,
+      38,
+      45,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55
+     ]
+    },
+    {
+     "who": "laras",
+     "at": [
+      0.6,
+      -0.2,
+      0
+     ],
+     "rot": -70,
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum",
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     }
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ibu kosnya bilang, Mbak Laras sekarang rajin, ya."
+  },
+  {
+   "id": 81,
+   "seg": 15,
+   "w": 22,
+   "t0": 335.88,
+   "t1": 338.87,
+   "set": {
+    "name": "ruang_dosen",
+    "exposure": 0.7
+   },
+   "cam": {
+    "on": "dosen",
+    "kind": "close",
+    "side": 0.25
+   },
+   "cast": [
+    {
+     "who": "dosen",
+     "at": "dosen",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "senyum",
+     "talk": [
+      [
+       0.813,
+       1.76
+      ]
+     ],
+     "mouth": [
+      10,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dosennya bilang, Akhirnya kamu berubah."
+  },
+  {
+   "id": 82,
+   "seg": 15,
+   "w": 27,
+   "t0": 338.87,
+   "t1": 343.82,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": true,
+    "light": "day",
+    "exposure": 0.8
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "xclose",
+    "side": 0.15
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": [
+      0.6,
+      -0.2,
+      0
+     ],
+     "rot": -70,
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum",
+     "blink": false,
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     }
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     2.254,
+     "sting_soft"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Semua orang... lebih suka Laras yang sudah direvisi."
+  },
+  {
+   "id": 83,
+   "seg": 16,
+   "w": 0,
+   "t0": 343.82,
+   "t1": 349.88,
+   "set": {
+    "name": "koridor_k",
+    "light": "dusk",
+    "exposure": 1.0
+   },
+   "cam": "long",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras_walk0",
+     "pose": "idle",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0.2,
+        1.5,
+        0,
+        180
+       ]
+      ],
+      [
+       6.0,
+       "move",
+       [
+        -0.35,
+        7.3,
+        0,
+        160
+       ]
+      ]
+     ],
+     "expr": "netral",
+     "walk": [
+      [
+       0.2,
+       6.0
+      ]
+     ],
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     }
+    },
+    {
+     "who": "karto",
+     "at": "karto",
+     "pose": "sweep",
+     "keys": [],
+     "expr": "capek",
+     "prop": "broom"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0,
+     "broom"
+    ],
+    [
+     0.2,
+     "steps"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Laras mendatangi Pak Karto, penjaga gedung yang sudah bekerja di sana sejak tahun delapan puluhan."
+  },
+  {
+   "id": 84,
+   "seg": 16,
+   "w": 15,
+   "t0": 349.88,
+   "t1": 354.94,
+   "set": {
+    "name": "koridor_k",
+    "light": "dusk",
+    "exposure": 1.0
+   },
+   "cam": "two",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "idle",
+     "keys": [],
+     "expr": "netral",
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     }
+    },
+    {
+     "who": "karto",
+     "at": "karto",
+     "pose": "sweep",
+     "keys": [
+      [
+       3.32,
+       "pose",
+       "idle"
+      ],
+      [
+       3.32,
+       "look",
+       "laras"
+      ]
+     ],
+     "expr": "capek",
+     "prop": "broom"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "broom"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Lelaki tua itu mendengarkan sambil menyapu. Lalu ia berhenti."
+  },
+  {
+   "id": 85,
+   "seg": 16,
+   "w": 24,
+   "t0": 354.94,
+   "t1": 361.17,
+   "set": {
+    "name": "koridor_k",
+    "light": "dusk",
+    "exposure": 1.0
+   },
+   "cam": {
+    "on": "karto",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "karto",
+     "at": "karto",
+     "pose": "idle",
+     "keys": [
+      [
+       3.931,
+       "look",
+       [
+        -1.2,
+        7.0,
+        1.2
+       ]
+      ],
+      [
+       4.681,
+       "look",
+       [
+        1.0,
+        7.6,
+        1.2
+       ]
+      ],
+      [
+       4.691,
+       "look",
+       [
+        -1.0,
+        7.0,
+        1.2
+       ]
+      ],
+      [
+       5.11,
+       "look",
+       "laras"
+      ]
+     ],
+     "expr": "cemas",
+     "prop": "broom",
+     "look": "laras",
+     "talk": [
+      [
+       0.12,
+       3.09
+      ]
+     ],
+     "mouth": [
+      3,
+      4,
+      7,
+      8,
+      10,
+      11,
+      18,
+      19,
+      23,
+      24,
+      25,
+      26,
+      27,
+      29,
+      30,
+      32,
+      36
+     ],
+     "hold": 0.25
+    },
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "idle",
+     "keys": [],
+     "expr": "netral",
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     },
+     "hold": 0.25
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Mbak kira, dia itu mengoreksi skripsi? Ia menggeleng pelan."
+  },
+  {
+   "id": 86,
+   "seg": 17,
+   "w": 0,
+   "t0": 361.17,
+   "t1": 367.82,
+   "set": {
+    "name": "koridor_k",
+    "light": "dusk",
+    "exposure": 1.0
+   },
+   "cam": {
+    "on": "karto",
+    "kind": "close",
+    "side": 0.25
+   },
+   "cast": [
+    {
+     "who": "karto",
+     "at": "karto",
+     "pose": "idle",
+     "keys": [],
+     "expr": "cemas",
+     "prop": "broom",
+     "look": "laras",
+     "talk": [
+      [
+       0.45,
+       6.23
+      ]
+     ],
+     "mouth": [
+      6,
+      7,
+      8,
+      14,
+      16,
+      18,
+      22,
+      23,
+      24,
+      25,
+      27,
+      28,
+      29,
+      31,
+      33,
+      43,
+      44,
+      45,
+      46,
+      47,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      65,
+      66,
+      67,
+      68,
+      71,
+      72
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dulu, tiga belas kali dia menghadap. Tiga belas kali dosennya bilang hal yang sama."
+  },
+  {
+   "id": 87,
+   "seg": 17,
+   "w": 14,
+   "t0": 367.82,
+   "t1": 372.92,
+   "set": {
+    "name": "ruang_dosen",
+    "exposure": 0.7
+   },
+   "cam": {
+    "on": "dosen",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "dosen",
+     "at": "dosen",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "marah",
+     "talk": [
+      [
+       0.12,
+       4.62
+      ]
+     ],
+     "mouth": [
+      5,
+      6,
+      9,
+      10,
+      11,
+      12,
+      13,
+      16,
+      17,
+      19,
+      20,
+      22,
+      23,
+      25,
+      26,
+      27,
+      28,
+      29,
+      37,
+      38,
+      40,
+      41,
+      42,
+      44,
+      47,
+      50,
+      51,
+      52,
+      53,
+      54
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "sting_soft"
+    ]
+   ],
+   "fx": [
+    [
+     "old",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Yang salah bukan tulisanmu. Yang salah itu kamu."
+  },
+  {
+   "id": 88,
+   "seg": 17,
+   "w": 22,
+   "t0": 372.92,
+   "t1": 375.29,
+   "set": {
+    "name": "koridor_k",
+    "light": "dusk",
+    "exposure": 1.0
+   },
+   "cam": "end",
+   "cast": [
+    {
+     "who": "karto",
+     "at": [
+      0.0,
+      11.0,
+      0
+     ],
+     "rot": 160,
+     "pose": "idle",
+     "keys": [
+      [
+       0.4,
+       "move",
+       [
+        0.0,
+        11.0,
+        0,
+        160
+       ]
+      ],
+      [
+       1.6,
+       "move",
+       [
+        0.0,
+        11.0,
+        0,
+        175
+       ]
+      ]
+     ],
+     "expr": "capek",
+     "prop": "broom",
+     "look": [
+      0.3,
+      16.4,
+      1.6
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Pak Karto menatap ke arah tangga."
+  },
+  {
+   "id": 89,
+   "seg": 17,
+   "w": 28,
+   "t0": 375.29,
+   "t1": 384.3,
+   "set": {
+    "name": "koridor_k",
+    "light": "dusk",
+    "exposure": 1.0
+   },
+   "cam": {
+    "on": "karto",
+    "kind": "xclose",
+    "side": 0.25
+   },
+   "cast": [
+    {
+     "who": "karto",
+     "at": "karto",
+     "pose": "idle",
+     "keys": [],
+     "expr": "cemas",
+     "prop": "broom",
+     "look": "laras",
+     "talk": [
+      [
+       0.12,
+       7.62
+      ]
+     ],
+     "mouth": [
+      3,
+      4,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      23,
+      26,
+      27,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      37,
+      38,
+      50,
+      51,
+      52,
+      53,
+      55,
+      56,
+      57,
+      59,
+      60,
+      62,
+      63,
+      64,
+      65,
+      72,
+      73,
+      74,
+      77,
+      80,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      90,
+      91
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dia percaya, Mbak. Jadi itu yang dia pelajari. Kalau naskahnya salah terus... yang dibetulkan ya penulisnya."
+  },
+  {
+   "id": 90,
+   "seg": 18,
+   "w": 0,
+   "t0": 384.3,
+   "t1": 386.77,
+   "set": {
+    "name": "koridor_k",
+    "light": "dusk",
+    "exposure": 1.0
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "close",
+    "side": -0.3
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "idle",
+     "keys": [],
+     "expr": "cemas",
+     "look": "karto",
+     "talk": [
+      [
+       0.45,
+       2.11
+      ]
+     ],
+     "over": {
+      "hair_style": "bun",
+      "shirt": [
+       0.52,
+       0.5,
+       0.48
+      ],
+      "bottom": [
+       0.12,
+       0.12,
+       0.14
+      ]
+     },
+     "mouth": [
+      6,
+      7,
+      10,
+      11,
+      13,
+      14,
+      17,
+      18,
+      20,
+      22
+     ]
+    },
+    {
+     "who": "karto",
+     "at": "karto",
+     "pose": "idle",
+     "keys": [],
+     "expr": "capek",
+     "prop": "broom"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sudah berapa mahasiswa, Pak?"
+  },
+  {
+   "id": 91,
+   "seg": 18,
+   "w": 4,
+   "t0": 386.77,
+   "t1": 391.93,
+   "set": {
+    "name": "koridor_k",
+    "light": "dusk",
+    "exposure": 1.0
+   },
+   "cam": {
+    "on": "karto",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "karto",
+     "at": "karto",
+     "pose": "idle",
+     "keys": [],
+     "expr": "capek",
+     "prop": "broom",
+     "look": "laras",
+     "talk": [
+      [
+       0.12,
+       4.51
+      ]
+     ],
+     "mouth": [
+      3,
+      5,
+      6,
+      7,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      25,
+      26,
+      27,
+      28,
+      37,
+      38,
+      39,
+      42,
+      45,
+      46,
+      48,
+      50,
+      51
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Yang lulus karena dia? Banyak. Nilainya bagus-bagus semua."
+  },
+  {
+   "id": 92,
+   "seg": 18,
+   "w": 12,
+   "t0": 391.93,
+   "t1": 397.15,
+   "set": {
+    "name": "wisuda",
+    "exposure": 0.45
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "g1",
+     "at": "g1",
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum",
+     "as": "teman1",
+     "prop": "toga",
+     "over": {
+      "shirt": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "bottom": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "long_skirt": true
+     }
+    },
+    {
+     "who": "g2",
+     "at": "g2",
+     "pose": "idle",
+     "keys": [],
+     "expr": "netral",
+     "as": "teman2",
+     "prop": "toga",
+     "over": {
+      "shirt": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "bottom": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "long_skirt": true
+     }
+    },
+    {
+     "who": "o1",
+     "at": "g3",
+     "pose": "idle",
+     "keys": [],
+     "expr": "cemas",
+     "as": "ibukos"
+    },
+    {
+     "who": "g3",
+     "at": "g4",
+     "pose": "idle",
+     "keys": [],
+     "expr": "netral",
+     "as": "maba2",
+     "prop": "toga",
+     "over": {
+      "shirt": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "bottom": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "long_skirt": true
+     }
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "crowd"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "musicbox"
+    ]
+   ],
+   "fx": [
+    [
+     "desat",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Tapi tiap wisuda, saya selalu dengar orang tua mereka ngomong begini."
+  },
+  {
+   "id": 93,
+   "seg": 18,
+   "w": 23,
+   "t0": 397.15,
+   "t1": 405.25,
+   "set": {
+    "name": "wisuda",
+    "exposure": 0.45
+   },
+   "cam": "two",
+   "cast": [
+    {
+     "who": "o1",
+     "at": "ibu",
+     "pose": "idle",
+     "keys": [],
+     "expr": "cemas",
+     "as": "ibukos",
+     "talk": [
+      [
+       0.12,
+       6.54
+      ]
+     ],
+     "look": "g2",
+     "mouth": [
+      8,
+      9,
+      12,
+      13,
+      14,
+      16,
+      17,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28,
+      37,
+      39,
+      40,
+      41,
+      42,
+      43,
+      55,
+      56,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      73,
+      74,
+      75,
+      76,
+      77
+     ]
+    },
+    {
+     "who": "g2",
+     "at": "laras",
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum",
+     "as": "teman2",
+     "blink": false,
+     "prop": "toga",
+     "over": {
+      "shirt": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "bottom": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "long_skirt": true
+     }
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [
+    [
+     "desat",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Anak saya sekarang kok pendiam, ya. Kok penurut. Kok... kayak bukan anak saya."
+  },
+  {
+   "id": 94,
+   "seg": 19,
+   "w": 0,
+   "t0": 405.25,
+   "t1": 413.09,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": true,
+    "light": "night",
+    "exposure": 1.4
+   },
+   "cam": "door",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "door",
+     "pose": "papers",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        1.25,
+        -1.0,
+        0,
+        90
+       ]
+      ],
+      [
+       0.4,
+       "move",
+       [
+        1.25,
+        -1.0,
+        0,
+        90
+       ]
+      ],
+      [
+       3.2,
+       "move",
+       [
+        0.3,
+        0.1,
+        0,
+        160
+       ]
+      ],
+      [
+       4.2,
+       "move",
+       [
+        0.3,
+        0.1,
+        0,
+        60
+       ]
+      ],
+      [
+       4.6,
+       "pose",
+       "knock"
+      ]
+     ],
+     "expr": "cemas",
+     "prop": "papers",
+     "walk": [
+      [
+       0.4,
+       3.2
+      ]
+     ],
+     "as": "laras2"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0.2,
+     "door_open"
+    ],
+    [
+     3.4,
+     "door_close"
+    ],
+    [
+     4.8,
+     "lock"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Malam itu, Laras memutuskan berhenti. Ia membawa pulang semua drafnya, dan mengunci pintu kamar kos."
+  },
+  {
+   "id": 95,
+   "seg": 19,
+   "w": 15,
+   "t0": 413.09,
+   "t1": 418.92,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": true,
+    "light": "night",
+    "exposure": 1.4
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": [
+      0.3,
+      0.1,
+      0
+     ],
+     "rot": 160,
+     "pose": "idle",
+     "keys": [
+      [
+       1.147,
+       "expr",
+       "takut"
+      ]
+     ],
+     "expr": "cemas",
+     "as": "laras2"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Lalu ia teringat halaman judul. Halaman yang tidak pernah ia tinggalkan di lantai tiga."
+  },
+  {
+   "id": 96,
+   "seg": 19,
+   "w": 29,
+   "t0": 418.92,
+   "t1": 422.32,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": true,
+    "light": "night",
+    "exposure": 1.4
+   },
+   "cam": "desk",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "takut",
+     "as": "laras2"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [
+    [
+     0,
+     "zipper"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ia mengeluarkannya dari dalam tas."
+  },
+  {
+   "id": 97,
+   "seg": 19,
+   "w": 34,
+   "t0": 422.32,
+   "t1": 431.41,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "#SKRIPSI",
+     "",
+     "ANALISIS PENGARUH LITERASI DIGITAL",
+     "TERHADAP MINAT BACA MAHASISWA",
+     "",
+     "",
+     "Disusun oleh:",
+     "~LARAS PRAMESTI",
+     "NIM 1518301142",
+     "",
+     "",
+     "^Belum tepat."
+    ],
+    "kind": "a4",
+    "exposure": 1.2,
+    "title_page": true
+   },
+   "cam": "top",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_s7",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       1.09,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_l11",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       6.88,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     1.09,
+     "pen_strike"
+    ]
+   ],
+   "music": [
+    [
+     6.88,
+     "sting"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Namanya sudah dicoret. Satu garis merah. Lurus. Di pinggirnya tertulis... Belum tepat."
+  },
+  {
+   "id": 98,
+   "seg": 20,
+   "w": 0,
+   "t0": 431.41,
+   "t1": 437.65,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": true,
+    "light": "night",
+    "exposure": 1.4
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "mid",
+     "pose": "nervous",
+     "keys": [
+      [
+       0.8,
+       "look",
+       "shelf"
+      ],
+      [
+       2.2,
+       "look",
+       "bed"
+      ],
+      [
+       3.4,
+       "look",
+       "desk"
+      ]
+     ],
+     "expr": "takut",
+     "as": "laras2",
+     "hold": 0.3
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "rummage"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Laras mencari-cari, dari mana tinta itu datang. Ia tidak perlu mencari jauh."
+  },
+  {
+   "id": 99,
+   "seg": 20,
+   "w": 12,
+   "t0": 437.65,
+   "t1": 441.87,
+   "set": {
+    "name": "tangan",
+    "exposure": 1.2
+   },
+   "cam": "case",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [
+    [
+     0,
+     "zipper"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Pulpen merah itu ada di dalam kotak pensilnya sendiri."
+  },
+  {
+   "id": 100,
+   "seg": 20,
+   "w": 21,
+   "t0": 441.87,
+   "t1": 444.64,
+   "set": {
+    "name": "tangan",
+    "exposure": 1.2
+   },
+   "cam": "pen",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tintanya tinggal separuh."
+  },
+  {
+   "id": 101,
+   "seg": 20,
+   "w": 24,
+   "t0": 444.64,
+   "t1": 452.92,
+   "set": {
+    "name": "tangan",
+    "exposure": 1.2
+   },
+   "cam": "finger",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     3.173,
+     "sting_soft"
+    ],
+    [
+     0,
+     "heartbeat"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dan di jari tengah tangan kanannya... ada noda merah yang sudah mengering. Sudah berhari-hari."
+  },
+  {
+   "id": 102,
+   "seg": 21,
+   "w": 0,
+   "t0": 452.92,
+   "t1": 460.65,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "",
+     "",
+     "@Siapa kamu?"
+    ],
+    "kind": "a4",
+    "exposure": 1.2,
+    "light": "cold",
+    "pencil": true,
+    "pen": false
+   },
+   "cam": "midline",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_l2",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       6.05,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     4.019,
+     "pencil_write"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dengan tangan gemetar, ia mengambil selembar kertas kosong, dan menulis dengan pensil. Siapa kamu?"
+  },
+  {
+   "id": 103,
+   "seg": 21,
+   "w": 14,
+   "t0": 460.65,
+   "t1": 464.44,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": true,
+    "light": "night",
+    "exposure": 1.4
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "xclose",
+    "side": 0.2
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "takut",
+     "blink": false,
+     "as": "laras2"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "clock"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ia tidak tidur. Ia yakin, ia tidak tidur."
+  },
+  {
+   "id": 104,
+   "seg": 21,
+   "w": 22,
+   "t0": 464.44,
+   "t1": 467.64,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": true,
+    "light": "night",
+    "exposure": 1.4
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "xclose",
+    "side": 0.2
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitdesk",
+     "keys": [
+      [
+       1.49,
+       "expr",
+       "tidur"
+      ],
+      [
+       2.21,
+       "expr",
+       "takut"
+      ]
+     ],
+     "expr": "takut",
+     "blink": false,
+     "as": "laras2"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [],
+   "music": [],
+   "fx": [
+    [
+     "black",
+     1.49,
+     2.21
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Ia hanya... berkedip."
+  },
+  {
+   "id": 105,
+   "seg": 21,
+   "w": 25,
+   "t0": 467.64,
+   "t1": 471.96,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": true,
+    "light": "dawn",
+    "exposure": 1.2,
+    "lamp": true
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "takut",
+     "as": "laras2"
+    },
+    {
+     "who": "tigabelas",
+     "at": [
+      0.25,
+      0.55,
+      0
+     ],
+     "rot": 200,
+     "pose": "idle",
+     "keys": [
+      [
+       0.0,
+       "show",
+       1
+      ],
+      [
+       0.35,
+       "show",
+       0
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0,
+     "birds_far"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "sting"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ketika ia melihat kertas itu lagi, di luar sudah terang."
+  },
+  {
+   "id": 106,
+   "seg": 21,
+   "w": 35,
+   "t0": 471.96,
+   "t1": 476.36,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "",
+     "",
+     "@Siapa kamu?",
+     "!Pertanyaan kurang tepat."
+    ],
+    "kind": "a4",
+    "exposure": 1.2,
+    "light": "day",
+    "pencil": true
+   },
+   "cam": "midline",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_l3",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       1.76,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dan di bawah tulisannya, ada tinta merah."
+  },
+  {
+   "id": 107,
+   "seg": 22,
+   "w": 0,
+   "t0": 476.36,
+   "t1": 482.98,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "",
+     "",
+     "@Siapa kamu?",
+     "!Pertanyaan kurang tepat.",
+     "!Yang benar...",
+     "!siapa kamu, sebelum aku?"
+    ],
+    "kind": "a4",
+    "exposure": 1.2,
+    "light": "day",
+    "pencil": true
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_l4",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       2.03,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_l5",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       3.45,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     3.45,
+     "sting"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Pertanyaan kurang tepat. Yang benar... siapa kamu, sebelum aku?"
+  },
+  {
+   "id": 108,
+   "seg": 22,
+   "w": 9,
+   "t0": 482.98,
+   "t1": 485.07,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": true,
+    "light": "dawn",
+    "exposure": 1.2,
+    "lamp": true
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "xclose",
+    "side": 0.25
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "cemas",
+     "as": "laras2"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Laras mencoba menjawab."
+  },
+  {
+   "id": 109,
+   "seg": 22,
+   "w": 12,
+   "t0": 485.07,
+   "t1": 492.58,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "=Makanan kesukaan: mie ayam Pak No.",
+     "=Lagu: yang selalu kuputar waktu SMA.",
+     "=Masuk jurusan ini karena ingin",
+     "=jadi penulis.",
+     "",
+     "=- Laras, 2019"
+    ],
+    "kind": "buku",
+    "exposure": 1.2,
+    "light": "day"
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "pan_d",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "musicbox"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ia mencoba mengingat makanan kesukaannya. Lagu yang dulu sering ia putar. Alasan ia memilih jurusan ini."
+  },
+  {
+   "id": 110,
+   "seg": 22,
+   "w": 28,
+   "t0": 492.58,
+   "t1": 498.83,
+   "set": {
+    "name": "kamar_laras",
+    "tidy": true,
+    "light": "dawn",
+    "exposure": 1.2,
+    "lamp": true
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "close",
+    "side": -0.3
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitdesk",
+     "keys": [],
+     "expr": "netral",
+     "blink": false,
+     "as": "laras2"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Semuanya masih ada. Tapi rasanya seperti membaca tulisan orang lain."
+  },
+  {
+   "id": 111,
+   "seg": 23,
+   "w": 0,
+   "t0": 498.83,
+   "t1": 503.97,
+   "set": {
+    "name": "kampung",
+    "exposure": 0.7
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "ibu",
+     "at": "ibu",
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum"
+    },
+    {
+     "who": "kecil",
+     "at": "kecil",
+     "pose": "idle",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        0.4,
+        1.2,
+        0,
+        170
+       ]
+      ],
+      [
+       3.0,
+       "move",
+       [
+        0.3,
+        2.3,
+        0,
+        180
+       ]
+      ]
+     ],
+     "expr": "senyum",
+     "walk": [
+      [
+       0.5,
+       3.0
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "evening_village"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "memory"
+    ]
+   ],
+   "fx": [
+    [
+     "dream",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Lalu ia mencoba mengingat suara ibunya, memanggilnya pulang waktu kecil."
+  },
+  {
+   "id": 112,
+   "seg": 23,
+   "w": 10,
+   "t0": 503.97,
+   "t1": 508.26,
+   "set": {
+    "name": "kampung",
+    "exposure": 0.7
+   },
+   "cam": "door",
+   "cast": [
+    {
+     "who": "ibu",
+     "at": "ibu",
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum",
+     "talk": [
+      [
+       0.2,
+       1.4
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [
+    [
+     "dream",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Suaranya masih ada. Halaman rumahnya masih ada."
+  },
+  {
+   "id": 113,
+   "seg": 23,
+   "w": 17,
+   "t0": 508.26,
+   "t1": 511.25,
+   "set": {
+    "name": "kampung",
+    "exposure": 0.7
+   },
+   "cam": "low",
+   "cast": [
+    {
+     "who": "kecil",
+     "at": [
+      0.3,
+      2.3,
+      0
+     ],
+     "rot": 180,
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "pan_r",
+   "sfx": [],
+   "music": [],
+   "fx": [
+    [
+     "dream",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Langit sorenya masih ada."
+  },
+  {
+   "id": 114,
+   "seg": 23,
+   "w": 21,
+   "t0": 511.25,
+   "t1": 520.1,
+   "set": {
+    "name": "kampung",
+    "exposure": 0.7
+   },
+   "cam": "door",
+   "cast": [
+    {
+     "who": "ibu",
+     "at": "ibu",
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum",
+     "talk": [
+      [
+       1.291,
+       3.09
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [
+    [
+     3.64,
+     "cut"
+    ],
+    [
+     4.859,
+     "sting"
+    ]
+   ],
+   "fx": [
+    [
+     "dream",
+     0,
+     999
+    ],
+    [
+     "redline",
+     4.426,
+     1.0
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Tapi di bagian ibunya menyebut namanya... yang ada cuma garis. Merah. Lurus."
+  },
+  {
+   "id": 115,
+   "seg": 24,
+   "w": 0,
+   "t0": 520.1,
+   "t1": 522.92,
+   "set": {
+    "name": "sidang",
+    "exposure": 0.8
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum",
+     "talk": [
+      [
+       1.5,
+       2.82
+      ]
+     ],
+     "as": "laras2"
+    },
+    {
+     "who": "penguji1",
+     "at": "p1",
+     "pose": "sitdesk",
+     "keys": []
+    },
+    {
+     "who": "penguji2",
+     "at": "p2",
+     "pose": "sitdesk",
+     "keys": []
+    },
+    {
+     "who": "penguji3",
+     "at": "p3",
+     "pose": "sitdesk",
+     "keys": []
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "room_tone"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Sebulan kemudian, Laras maju sidang."
+  },
+  {
+   "id": 116,
+   "seg": 24,
+   "w": 5,
+   "t0": 522.92,
+   "t1": 528.78,
+   "set": {
+    "name": "sidang",
+    "exposure": 0.8
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum",
+     "talk": [
+      [
+       0.1,
+       5.86
+      ]
+     ],
+     "blink": false,
+     "as": "laras2"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ia menjawab semua pertanyaan dengan tenang. Runtut. Tanpa satu pun kesalahan."
+  },
+  {
+   "id": 117,
+   "seg": 24,
+   "w": 16,
+   "t0": 528.78,
+   "t1": 531.91,
+   "set": {
+    "name": "sidang",
+    "exposure": 0.8
+   },
+   "cam": "laras",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras_s",
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum",
+     "as": "laras2"
+    },
+    {
+     "who": "penguji1",
+     "at": "p1s",
+     "pose": "give",
+     "keys": [],
+     "expr": "senyum"
+    },
+    {
+     "who": "penguji2",
+     "at": "p2s",
+     "pose": "give",
+     "keys": [],
+     "expr": "senyum"
+    },
+    {
+     "who": "penguji3",
+     "at": "p3s",
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "applause_small"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Para penguji berdiri, dan menyalaminya."
+  },
+  {
+   "id": 118,
+   "seg": 24,
+   "w": 21,
+   "t0": 531.91,
+   "t1": 535.2,
+   "set": {
+    "name": "sidang",
+    "exposure": 0.8
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "xclose",
+    "side": 0.2
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras_s",
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum",
+     "blink": false,
+     "as": "laras2"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Lulus, dengan pujian."
+  },
+  {
+   "id": 119,
+   "seg": 24,
+   "w": 24,
+   "t0": 535.2,
+   "t1": 541.29,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "#BERITA ACARA SIDANG SKRIPSI",
+     "",
+     "Nama        : ~Laras Pramesti",
+     "!Seseorang",
+     "Predikat    : Dengan Pujian",
+     "",
+     "Penguji I   : ................",
+     "Penguji II  : ................"
+    ],
+    "kind": "a4",
+    "exposure": 1.2,
+    "light": "day"
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_l3",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       1.49,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [
+    [
+     0.12,
+     "sting"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Koreksi. Seseorang... lulus dengan pujian."
+  },
+  {
+   "id": 120,
+   "seg": 25,
+   "w": 0,
+   "t0": 541.29,
+   "t1": 543.12,
+   "set": {
+    "name": "wisuda",
+    "exposure": 0.45
+   },
+   "cam": "wide",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum",
+     "prop": "toga",
+     "over": {
+      "shirt": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "bottom": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "long_skirt": true
+     },
+     "as": "laras2"
+    },
+    {
+     "who": "ibu",
+     "at": [
+      -1.5,
+      1.2,
+      0
+     ],
+     "rot": -60,
+     "pose": "idle",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        -1.5,
+        1.2,
+        0,
+        -60
+       ]
+      ],
+      [
+       2.6,
+       "move",
+       [
+        -0.32,
+        2.35,
+        0,
+        -90
+       ]
+      ]
+     ],
+     "expr": "senyum",
+     "walk": [
+      [
+       0.0,
+       1.83
+      ]
+     ]
+    },
+    {
+     "who": "g1",
+     "at": "g1",
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum",
+     "as": "teman1",
+     "prop": "toga",
+     "over": {
+      "shirt": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "bottom": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "long_skirt": true
+     }
+    },
+    {
+     "who": "g2",
+     "at": "g2",
+     "pose": "idle",
+     "keys": [],
+     "expr": "senyum",
+     "as": "teman2",
+     "prop": "toga",
+     "over": {
+      "shirt": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "bottom": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "long_skirt": true
+     }
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "crowd"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "sad"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ibunya datang waktu wisuda."
+  },
+  {
+   "id": 121,
+   "seg": 25,
+   "w": 4,
+   "t0": 543.12,
+   "t1": 546.06,
+   "set": {
+    "name": "wisuda",
+    "exposure": 0.45
+   },
+   "cam": "two",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "hugstand",
+     "keys": [],
+     "expr": "senyum",
+     "prop": "toga",
+     "over": {
+      "shirt": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "bottom": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "long_skirt": true
+     },
+     "as": "laras2"
+    },
+    {
+     "who": "ibu",
+     "at": "ibu",
+     "pose": "hugstand",
+     "keys": [],
+     "expr": "nangis"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ia memeluk anaknya lama sekali."
+  },
+  {
+   "id": 122,
+   "seg": 25,
+   "w": 9,
+   "t0": 546.06,
+   "t1": 550.29,
+   "set": {
+    "name": "wisuda",
+    "exposure": 0.45
+   },
+   "cam": {
+    "on": "ibu",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "ibu",
+     "at": "ibu",
+     "pose": "hugstand",
+     "keys": [],
+     "expr": "nangis",
+     "talk": [
+      [
+       0.12,
+       3.19
+      ]
+     ],
+     "mouth": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      30,
+      31,
+      34,
+      35,
+      36,
+      37,
+      38
+     ]
+    },
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "hugstand",
+     "keys": [],
+     "expr": "senyum",
+     "prop": "toga",
+     "over": {
+      "shirt": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "bottom": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "long_skirt": true
+     },
+     "as": "laras2"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Kamu berubah, Ras. Ibu senang."
+  },
+  {
+   "id": 123,
+   "seg": 25,
+   "w": 14,
+   "t0": 550.29,
+   "t1": 556.01,
+   "set": {
+    "name": "wisuda",
+    "exposure": 0.45
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "xclose",
+    "side": 0.2
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "hugstand",
+     "keys": [],
+     "expr": "senyum",
+     "prop": "toga",
+     "over": {
+      "shirt": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "bottom": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "long_skirt": true
+     },
+     "as": "laras2",
+     "blink": false
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [
+    [
+     3.46,
+     "scream_muffled"
+    ]
+   ],
+   "music": [
+    [
+     3.46,
+     "sting"
+    ]
+   ],
+   "fx": [
+    [
+     "red",
+     3.46,
+     1.4
+    ],
+    [
+     "flicker",
+     3.46,
+     1.4
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Di dalam, ada sesuatu yang ingin berteriak. Bu, ini bukan aku!"
+  },
+  {
+   "id": 124,
+   "seg": 25,
+   "w": 25,
+   "t0": 556.01,
+   "t1": 562.98,
+   "set": {
+    "name": "wisuda",
+    "exposure": 0.45
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "close",
+    "side": 0.3
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "hugstand",
+     "keys": [],
+     "expr": "senyum",
+     "prop": "toga",
+     "over": {
+      "shirt": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "bottom": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "long_skirt": true
+     },
+     "as": "laras2",
+     "talk": [
+      [
+       4.39,
+       5.24
+      ]
+     ],
+     "blink": false,
+     "mouth": [
+      54,
+      55,
+      57,
+      59,
+      60,
+      61,
+      62
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Tapi mulut itu hanya tersenyum, dan menjawab dengan sopan. Terima kasih, Bu."
+  },
+  {
+   "id": 125,
+   "seg": 26,
+   "w": 0,
+   "t0": 562.98,
+   "t1": 566.83,
+   "set": {
+    "name": "wisuda",
+    "exposure": 0.45
+   },
+   "cam": {
+    "on": "laras",
+    "kind": "xclose",
+    "side": 0.15
+   },
+   "cast": [
+    {
+     "who": "laras",
+     "at": "laras",
+     "pose": "hugstand",
+     "keys": [],
+     "expr": "senyum",
+     "prop": "toga",
+     "over": {
+      "shirt": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "bottom": [
+       0.02,
+       0.02,
+       0.025
+      ],
+      "long_skirt": true
+     },
+     "as": "laras2",
+     "blink": false
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [
+    [
+     "vignette",
+     0,
+     999
+    ]
+   ],
+   "title": false,
+   "end": false,
+   "text": "Dan sesuatu di dalam itu makin lama makin kecil."
+  },
+  {
+   "id": 126,
+   "seg": 26,
+   "w": 9,
+   "t0": 566.83,
+   "t1": 571.76,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "~Aku suka mie ayam Pak No.",
+     "~Aku suka tertawa keras.",
+     "~Aku benci kopi hitam.",
+     "~Aku ingin jadi penulis.",
+     "~Aku Laras."
+    ],
+    "kind": "buku",
+    "exposure": 1.2,
+    "light": "cold"
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_s0",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       0.3,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s1",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       0.85,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s2",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       1.4,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s3",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       1.95,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_s4",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       2.5,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0.3,
+     "pen_strikes"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Seperti kalimat yang dicoret... kata demi kata."
+  },
+  {
+   "id": 127,
+   "seg": 26,
+   "w": 16,
+   "t0": 571.76,
+   "t1": 575.25,
+   "set": {
+    "name": "ruang_baca",
+    "light": "night",
+    "exposure": 1.8
+   },
+   "cam": "long",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "hum"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Skripsinya sekarang disimpan di ruang baca lantai tiga."
+  },
+  {
+   "id": 128,
+   "seg": 26,
+   "w": 24,
+   "t0": 575.25,
+   "t1": 580.32,
+   "set": {
+    "name": "kertas",
+    "lines": [],
+    "kind": "jilid",
+    "exposure": 1.2
+   },
+   "cam": "top",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "page"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Kalau kamu membukanya, di halaman ucapan terima kasih, hanya ada satu baris."
+  },
+  {
+   "id": 129,
+   "seg": 26,
+   "w": 36,
+   "t0": 580.32,
+   "t1": 588.17,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "#UCAPAN TERIMA KASIH",
+     "",
+     "",
+     "",
+     "=Untuk Laras.",
+     "=Yang sudah saya perbaiki."
+    ],
+    "kind": "jilid",
+    "exposure": 1.2
+   },
+   "cam": "right",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_l4",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       3.34,
+       0
+      ]
+     ]
+    },
+    {
+     "obj": "kt_l5",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       4.84,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     3.34,
+     "sting"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ditulis rapi, tegak bersambung. Untuk Laras. Yang sudah saya perbaiki."
+  },
+  {
+   "id": 130,
+   "seg": 27,
+   "w": 0,
+   "t0": 588.17,
+   "t1": 590.16,
+   "set": {
+    "name": "kampus_ext",
+    "night": true,
+    "exposure": 2.0
+   },
+   "cam": "road",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "crickets"
+    ],
+    [
+     0,
+     "wind"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "drone_in"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Gedung itu masih ada sampai sekarang."
+  },
+  {
+   "id": 131,
+   "seg": 27,
+   "w": 6,
+   "t0": 590.16,
+   "t1": 593.17,
+   "set": {
+    "name": "kampus_ext",
+    "night": true,
+    "exposure": 2.0
+   },
+   "cam": "up3",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Lantai tiganya masih dikunci selepas magrib."
+  },
+  {
+   "id": 132,
+   "seg": 27,
+   "w": 12,
+   "t0": 593.17,
+   "t1": 597.55,
+   "set": {
+    "name": "tangga_rt",
+    "gate": "closed",
+    "light": 0.5,
+    "exposure": 2.0
+   },
+   "cam": "gate",
+   "cast": [
+    {
+     "who": "maba2",
+     "at": [
+      -0.6,
+      3.3,
+      1.49
+     ],
+     "rot": 0,
+     "pose": "papers",
+     "keys": [
+      [
+       0,
+       "move",
+       [
+        -0.6,
+        3.3,
+        1.49,
+        0
+       ]
+      ],
+      [
+       3.0,
+       "move",
+       [
+        -0.6,
+        2.2,
+        1.49,
+        0
+       ]
+      ]
+     ],
+     "expr": "cemas",
+     "prop": "papers",
+     "walk": [
+      [
+       0.2,
+       3.0
+      ]
+     ]
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "static",
+   "sfx": [
+    [
+     0.2,
+     "steps"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Dan setiap tahun, selalu ada saja mahasiswa yang naik ke sana."
+  },
+  {
+   "id": 133,
+   "seg": 27,
+   "w": 23,
+   "t0": 597.55,
+   "t1": 602.92,
+   "set": {
+    "name": "ruang_baca",
+    "light": "night",
+    "exposure": 1.8
+   },
+   "cam": "corner",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "clock"
+    ]
+   ],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Bukan karena tidak tahu ceritanya. Justru karena tahu."
+  },
+  {
+   "id": 134,
+   "seg": 27,
+   "w": 31,
+   "t0": 602.92,
+   "t1": 611.3,
+   "set": {
+    "name": "ruang_baca",
+    "light": "night",
+    "exposure": 1.8
+   },
+   "cam": "behind",
+   "cast": [
+    {
+     "who": "tigabelas",
+     "at": "corner_far",
+     "pose": "idle",
+     "keys": []
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "tension"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Karena jauh di dalam hati, hampir semua orang pernah berharap... ada yang mau memperbaiki dirinya."
+  },
+  {
+   "id": 135,
+   "seg": 28,
+   "w": 0,
+   "t0": 611.3,
+   "t1": 615.22,
+   "set": {
+    "name": "meja_kosong",
+    "exposure": 1.4
+   },
+   "cam": "wide",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [
+    [
+     0,
+     "room_tone"
+    ]
+   ],
+   "music": [
+    [
+     0,
+     "drone_low"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Jadi malam ini, sebelum tidur, coba ingat satu hal."
+  },
+  {
+   "id": 136,
+   "seg": 28,
+   "w": 9,
+   "t0": 615.22,
+   "t1": 620.97,
+   "set": {
+    "name": "meja_kosong",
+    "exposure": 1.4
+   },
+   "cam": "chair",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Satu hal yang dulu sangat kamu sukai... dan sekarang tidak lagi."
+  },
+  {
+   "id": 137,
+   "seg": 28,
+   "w": 20,
+   "t0": 620.97,
+   "t1": 626.64,
+   "set": {
+    "name": "meja_kosong",
+    "exposure": 1.4
+   },
+   "cam": "wide",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Satu pendirian yang dulu kamu pegang... dan sekarang sudah kamu lepas."
+  },
+  {
+   "id": 138,
+   "seg": 28,
+   "w": 31,
+   "t0": 626.64,
+   "t1": 634.66,
+   "set": {
+    "name": "meja_kosong",
+    "exposure": 1.4
+   },
+   "cam": "paper",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "tension"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Kamu ingat, kapan persisnya kamu berubah? Kamu yakin... itu kamu yang memutuskan?"
+  },
+  {
+   "id": 139,
+   "seg": 29,
+   "w": 0,
+   "t0": 634.66,
+   "t1": 643.53,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "*NAMA: LARAS",
+     "*KELAS: 4B",
+     "*Cita-citaku: jadi penulis!"
+    ],
+    "kind": "buku",
+    "exposure": 1.2,
+    "light": "lamp"
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0,
+     "musicbox"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Kalau masih ragu, caranya gampang. Cari tulisan tanganmu yang lama. Buku catatan sekolah. Surat. Apa saja."
+  },
+  {
+   "id": 140,
+   "seg": 29,
+   "w": 16,
+   "t0": 643.53,
+   "t1": 648.87,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "=Nama: Laras Pramesti",
+     "=Kelas: -",
+     "=Cita-cita: -"
+    ],
+    "kind": "buku",
+    "exposure": 1.2,
+    "light": "cold"
+   },
+   "cam": "page",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [
+    [
+     3.75,
+     "sting_soft"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Lalu bandingkan dengan tulisanmu yang sekarang. Masih sama?"
+  },
+  {
+   "id": 141,
+   "seg": 29,
+   "w": 24,
+   "t0": 648.87,
+   "t1": 651.73,
+   "set": {
+    "name": "ruang_baca",
+    "light": "night",
+    "exposure": 1.8
+   },
+   "cam": "corner",
+   "cast": [
+    {
+     "who": "laras",
+     "at": "chair",
+     "pose": "sitstill",
+     "keys": [],
+     "expr": "senyum",
+     "blink": false,
+     "as": "laras2"
+    }
+   ],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Ini tadi cerita tentang Laras."
+  },
+  {
+   "id": 142,
+   "seg": 29,
+   "w": 29,
+   "t0": 651.73,
+   "t1": 653.14,
+   "set": {
+    "name": "meja_kosong",
+    "exposure": 1.4
+   },
+   "cam": "paper",
+   "cast": [],
+   "dyn": [],
+   "extras": [],
+   "move": "push_slow",
+   "sfx": [],
+   "music": [
+    [
+     0.12,
+     "sting"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": false,
+   "text": "Koreksi."
+  },
+  {
+   "id": 143,
+   "seg": 29,
+   "w": 30,
+   "t0": 653.14,
+   "t1": 661.898,
+   "set": {
+    "name": "kertas",
+    "lines": [
+     "#SKRIPSI",
+     "",
+     "",
+     "",
+     "",
+     "Disusun oleh:",
+     "...................................",
+     "!kamu"
+    ],
+    "kind": "a4",
+    "exposure": 1.2,
+    "title_page": true,
+    "light": "lamp"
+   },
+   "cam": "top",
+   "cast": [],
+   "dyn": [
+    {
+     "obj": "kt_l7",
+     "prop": "hide",
+     "keys": [
+      [
+       0.0,
+       1
+      ],
+      [
+       1.91,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "move": "push",
+   "sfx": [],
+   "music": [
+    [
+     1.91,
+     "end"
+    ]
+   ],
+   "fx": [],
+   "title": false,
+   "end": true,
+   "text": "Ini cerita tentang kamu."
+  }
+ ]
+}

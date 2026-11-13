@@ -1,0 +1,2 @@
+Fonts from github.com/google/fonts: Dancing Script, Caveat, Courier Prime, Pinyon Script (SIL Open Font License 1.1); Special Elite, Tinos (Apache License 2.0).
+DejaVu Serif (Bitstream Vera / DejaVu license, free to redistribute).
