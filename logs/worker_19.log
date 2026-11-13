@@ -1,0 +1,25 @@
+worker 19/20 shots [13, 23, 65, 70, 79, 112, 135]
+probe 13 OK
+probe 23 FAIL
+00:00.504  cycles           | WARNING CUEW initialization failed: Error opening the library
+
+Traceback (most recent call last):
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 845, in <module>
+    work, nfr = render_shot(shot, out, frames)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 787, in render_shot
+    sc, cam, dyn, actors = build(shot)
+                           ~~~~~^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 521, in build
+    animate(sc, shot, actors, cams, marks)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 595, in animate
+    tgt = tuple(head_point(actors[tgt][0])) if tgt in actors else cams[tgt][0]
+                                                                  ~~~~^^^^^
+KeyError: 'maba1'
+
+probe 65 OK
+probe 70 OK
+probe 79 OK
+probe 112 OK
+probe 135 OK
