@@ -1,0 +1,48 @@
+name: render-l7-help
+# Lantai Tujuh (lives in l7/, separate from the Bangsal Melati render in the repo root)
+on:
+  push:
+    branches: [main]
+    paths: ["l7/farm/help.txt"]
+permissions:
+  contents: write
+concurrency:
+  group: render-l7-help
+  cancel-in-progress: true
+jobs:
+  worker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        i: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: deps
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libxi6 libxkbcommon0 libsm6 libgl1 libegl1 >/dev/null
+          pip install -q -r requirements.txt
+      - name: result branch
+        run: |
+          TAG=l7h4
+          git config --global user.name render-bot
+          git config --global user.email render-bot@users.noreply.github.com
+          git worktree add --orphan -b out-$TAG-${{ matrix.i }} /tmp/pub
+      - name: render share
+        working-directory: l7
+        env:
+          SAMPLES: "12"
+        run: |
+          python3 help.py ${{ matrix.i }}
+      - name: publish results
+        if: always()
+        working-directory: l7
+        run: |
+          mkdir -p logs; cp -f out/shot_*.mp4 /tmp/pub/ 2>/dev/null || true; cp -rf logs /tmp/pub/ || true
+          echo "run ${{ github.run_id }} commit ${{ github.sha }}" > /tmp/pub/RUN.txt
+          cd /tmp/pub && git add -A && (git commit -qm "final worker ${{ matrix.i }}" || true) && git push -qf origin HEAD
