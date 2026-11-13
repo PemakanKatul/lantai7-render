@@ -1,0 +1,8 @@
+worker 15/20 shots [11, 25, 29, 44, 67, 87, 139]
+probe 11 OK
+probe 25 OK
+probe 29 OK
+probe 44 OK
+probe 67 OK
+probe 87 OK
+probe 139 OK
