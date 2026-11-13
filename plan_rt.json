@@ -19,7 +19,7 @@
    "set": {
     "name": "kampus_ext",
     "night": true,
-    "exposure": 2.0
+    "exposure": 0.95
    },
    "cam": "road",
    "cast": [],
@@ -56,7 +56,7 @@
    "set": {
     "name": "kampus_ext",
     "night": true,
-    "exposure": 2.0
+    "exposure": 0.95
    },
    "cam": "wide",
    "cast": [],
@@ -79,7 +79,7 @@
    "set": {
     "name": "kampus_ext",
     "night": true,
-    "exposure": 2.0
+    "exposure": 0.95
    },
    "cam": "facade",
    "cast": [],
@@ -107,7 +107,7 @@
    "set": {
     "name": "kampus_ext",
     "night": true,
-    "exposure": 2.0
+    "exposure": 0.95
    },
    "cam": "win3",
    "cast": [],
@@ -164,7 +164,7 @@
    "set": {
     "name": "kampus_ext",
     "night": true,
-    "exposure": 2.0
+    "exposure": 0.95
    },
    "cam": "steps",
    "cast": [
@@ -212,7 +212,7 @@
    "set": {
     "name": "kampus_ext",
     "night": true,
-    "exposure": 2.0
+    "exposure": 0.95
    },
    "cam": {
     "on": "kating",
@@ -292,7 +292,7 @@
    "set": {
     "name": "kampus_ext",
     "night": true,
-    "exposure": 2.0
+    "exposure": 0.95
    },
    "cam": {
     "on": "maba1",
@@ -996,7 +996,7 @@
    "set": {
     "name": "kampus_ext",
     "night": true,
-    "exposure": 2.0
+    "exposure": 0.95
    },
    "cam": "steps",
    "cast": [
@@ -1049,7 +1049,7 @@
    "set": {
     "name": "kampus_ext",
     "night": true,
-    "exposure": 2.0
+    "exposure": 0.95
    },
    "cam": {
     "on": "kating",
@@ -1200,7 +1200,7 @@
    "set": {
     "name": "kampus_ext",
     "night": true,
-    "exposure": 2.0
+    "exposure": 0.95
    },
    "cam": {
     "on": "kating",
@@ -1386,13 +1386,13 @@
     "name": "kertas",
     "lines": [
      "~#BAB IV  HASIL DAN PEMBAHASAN",
-     "~",
      "~Hasil penelitian menunjukkan bahwa",
      "~responden yang memiliki kebiasaan",
      "~membaca cenderung lebih kritis",
      "~dalam menilai sebuah informasi.",
      "~Hal ini sejalan dengan temuan",
-     "~penelitian sebelumnya, yaitu"
+     "~penelitian sebelumnya, yaitu",
+     "~bahwa literasi digital berperan"
     ],
     "kind": "a4",
     "exposure": 1.2,
@@ -1578,8 +1578,8 @@
    "cast": [
     {
      "who": "laras",
-     "at": "chair",
-     "rot": 200,
+     "at": "mid",
+     "rot": -20,
      "pose": "phone",
      "keys": [],
      "expr": "capek",
@@ -1688,7 +1688,19 @@
     "light": 0.9,
     "exposure": 1.6
    },
-   "cam": "down",
+   "cam": [
+    [
+     0.25,
+     -3.0,
+     1.55
+    ],
+    [
+     0.7,
+     -0.4,
+     1.3
+    ],
+    30
+   ],
    "cast": [
     {
      "who": "laras",
@@ -2566,7 +2578,7 @@
     "light": "dawn",
     "exposure": 1.5
    },
-   "cam": "corner",
+   "cam": "front",
    "cast": [
     {
      "who": "laras",
@@ -2868,7 +2880,9 @@
    "cam": {
     "on": "laras",
     "kind": "close",
-    "side": 0.35
+    "side": 0.35,
+    "dist": 0.85,
+    "lens": 40
    },
    "cast": [
     {
@@ -3360,8 +3374,8 @@
    "cast": [
     {
      "who": "laras",
-     "at": "chair",
-     "rot": 200,
+     "at": "mid",
+     "rot": -20,
      "pose": "phone",
      "keys": [],
      "expr": "cemas",
@@ -3570,8 +3584,8 @@
    "cast": [
     {
      "who": "laras",
-     "at": "chair",
-     "rot": 200,
+     "at": "mid",
+     "rot": -20,
      "pose": "phone",
      "keys": [],
      "expr": "takut",
@@ -3721,7 +3735,8 @@
    "cam": {
     "on": "dimas",
     "kind": "close",
-    "side": 0.3,
+    "side": 0.55,
+    "dist": 1.0,
     "up": 0.05
    },
    "cast": [
@@ -4149,7 +4164,8 @@
    "cam": {
     "on": "laras",
     "kind": "close",
-    "side": 0.3
+    "side": 0.55,
+    "dist": 1.0
    },
    "cast": [
     {
@@ -4362,7 +4378,8 @@
    "cam": {
     "on": "teman1",
     "kind": "close",
-    "side": 0.3
+    "side": 0.55,
+    "dist": 1.0
    },
    "cast": [
     {
@@ -4450,7 +4467,7 @@
       -0.6,
       0
      ],
-     "rot": 120,
+     "rot": -124,
      "pose": "idle",
      "keys": [],
      "expr": "senyum",
@@ -4496,7 +4513,7 @@
       -0.2,
       0
      ],
-     "rot": -70,
+     "rot": 56,
      "pose": "idle",
      "keys": [],
      "expr": "senyum",
@@ -4589,7 +4606,8 @@
    "cam": {
     "on": "laras",
     "kind": "xclose",
-    "side": 0.15
+    "side": 0.15,
+    "dist": 0.9
    },
    "cast": [
     {
@@ -4599,7 +4617,7 @@
       -0.2,
       0
      ],
-     "rot": -70,
+     "rot": 56,
      "pose": "idle",
      "keys": [],
      "expr": "senyum",
@@ -6013,7 +6031,7 @@
     "pencil": true,
     "pen": false
    },
-   "cam": "midline",
+   "cam": "topline",
    "cast": [],
    "dyn": [
     {
@@ -6065,7 +6083,9 @@
    "cam": {
     "on": "laras",
     "kind": "xclose",
-    "side": 0.2
+    "side": 0.2,
+    "dist": 0.72,
+    "lens": 38
    },
    "cast": [
     {
@@ -6108,7 +6128,9 @@
    "cam": {
     "on": "laras",
     "kind": "xclose",
-    "side": 0.2
+    "side": 0.2,
+    "dist": 0.72,
+    "lens": 38
    },
    "cast": [
     {
@@ -6233,7 +6255,7 @@
     "light": "day",
     "pencil": true
    },
-   "cam": "midline",
+   "cam": "topline",
    "cast": [],
    "dyn": [
     {
@@ -6343,7 +6365,9 @@
    "cam": {
     "on": "laras",
     "kind": "xclose",
-    "side": 0.25
+    "side": 0.25,
+    "dist": 0.72,
+    "lens": 38
    },
    "cast": [
     {
@@ -6418,7 +6442,9 @@
    "cam": {
     "on": "laras",
     "kind": "close",
-    "side": -0.3
+    "side": -0.3,
+    "dist": 0.8,
+    "lens": 35
    },
    "cast": [
     {
@@ -6777,7 +6803,7 @@
     "name": "sidang",
     "exposure": 0.8
    },
-   "cam": "laras",
+   "cam": "wide",
    "cast": [
     {
      "who": "laras",
@@ -7114,11 +7140,19 @@
     "name": "wisuda",
     "exposure": 0.45
    },
-   "cam": {
-    "on": "ibu",
-    "kind": "close",
-    "side": 0.3
-   },
+   "cam": [
+    [
+     0.55,
+     1.55,
+     1.3
+    ],
+    [
+     -0.24,
+     2.35,
+     1.12
+    ],
+    40
+   ],
    "cast": [
     {
      "who": "ibu",
@@ -7403,7 +7437,7 @@
     "exposure": 1.2,
     "light": "cold"
    },
-   "cam": "page",
+   "cam": "top",
    "cast": [],
    "dyn": [
     {
@@ -7622,7 +7656,7 @@
    "set": {
     "name": "kampus_ext",
     "night": true,
-    "exposure": 2.0
+    "exposure": 0.95
    },
    "cam": "road",
    "cast": [],
@@ -7659,7 +7693,7 @@
    "set": {
     "name": "kampus_ext",
     "night": true,
-    "exposure": 2.0
+    "exposure": 0.95
    },
    "cam": "up3",
    "cast": [],
@@ -7690,21 +7724,21 @@
     {
      "who": "maba2",
      "at": [
-      -0.6,
-      3.3,
-      1.49
+      0.3,
+      2.55,
+      1.485
      ],
-     "rot": 0,
+     "rot": 20,
      "pose": "papers",
      "keys": [
       [
        0,
        "move",
        [
-        -0.6,
-        3.3,
-        1.49,
-        0
+        0.3,
+        2.55,
+        1.485,
+        20
        ]
       ],
       [
@@ -7712,8 +7746,8 @@
        "move",
        [
         -0.6,
-        2.2,
-        1.49,
+        2.05,
+        1.485,
         0
        ]
       ]
@@ -7926,7 +7960,7 @@
     "exposure": 1.2,
     "light": "lamp"
    },
-   "cam": "page",
+   "cam": "top",
    "cast": [],
    "dyn": [],
    "extras": [],
@@ -7960,7 +7994,7 @@
     "exposure": 1.2,
     "light": "cold"
    },
-   "cam": "page",
+   "cam": "top",
    "cast": [],
    "dyn": [],
    "extras": [],
@@ -7988,7 +8022,7 @@
     "light": "night",
     "exposure": 1.8
    },
-   "cam": "corner",
+   "cam": "front",
    "cast": [
     {
      "who": "laras",

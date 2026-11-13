@@ -233,10 +233,10 @@ def m_end(d=10.0):
     return norm(y, 0.95)
 
 
-MUSIC = {"drone_in": lambda: m_drone(45, 55), "drone_low": lambda: m_drone(28, 41.2, 1.4), "sting": m_sting,
+MUSIC = {"drone_in": lambda: m_drone(30, 55), "drone_low": lambda: m_drone(22, 41.2, 1.4), "sting": m_sting,
          "sting_soft": lambda: m_sting(4.5, soft=True), "tension": m_tension, "musicbox": m_musicbox, "sad": m_sad,
          "memory": m_memory, "whisper_bed": m_whisper_bed, "heartbeat": m_heartbeat, "end": m_end}
-MUSIC_GAIN = {"drone_in": 0.55, "drone_low": 0.55, "sting": 0.8, "sting_soft": 0.55, "tension": 0.45, "musicbox": 0.42, "sad": 0.4,
+MUSIC_GAIN = {"drone_in": 0.4, "drone_low": 0.4, "sting": 0.8, "sting_soft": 0.55, "tension": 0.4, "musicbox": 0.4, "sad": 0.4,
               "memory": 0.45, "whisper_bed": 0.4, "heartbeat": 0.55, "end": 0.9}
 PRE = {"sting": 0.0, "end": 1.2}     # seconds of pre-roll (reverse swell) before the hit time
 
@@ -583,7 +583,7 @@ if __name__ == "__main__":
         music *= ramp[:, None]; sfx *= ramp[:, None]
     # duck music/sfx under the voice
     venv = np.sqrt(np.maximum(signal.sosfilt(signal.butter(2, 6, "lowpass", fs=SR, output="sos"), vo ** 2), 0))
-    duck = 1.0 - 0.45 * np.clip(venv / (np.percentile(venv, 90) + 1e-9), 0, 1)
+    duck = 1.0 - 0.6 * np.clip(venv / (np.percentile(venv, 90) + 1e-9), 0, 1)
     duck = signal.sosfilt(signal.butter(1, 3, "lowpass", fs=SR, output="sos"), duck)
     music *= duck[:, None]; sfx *= (0.5 + 0.5 * duck)[:, None]
     vo_st = np.stack([vo, vo], 1)
@@ -591,7 +591,7 @@ if __name__ == "__main__":
     meter = pyln.Meter(SR)
     lv = meter.integrated_loudness(vo_st)
     vo_st = pyln.normalize.loudness(vo_st, lv, -16.0)
-    lm = meter.integrated_loudness(music + 1e-7); music = pyln.normalize.loudness(music, lm, -27.0)
+    lm = meter.integrated_loudness(music + 1e-7); music = pyln.normalize.loudness(music, lm, -28.5)
     ls = meter.integrated_loudness(sfx + 1e-7); sfx = pyln.normalize.loudness(sfx, ls, -26.0)
     mix = vo_st + music + sfx
     for _ in range(3):            # loudness to -14 LUFS with a soft limiter keeping peaks under -0.5 dBFS

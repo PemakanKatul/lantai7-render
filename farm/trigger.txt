@@ -1,1 +1,1 @@
-all workers=20 tag=rtp plan=plan_rt.json probe
+all workers=20 tag=rt1 plan=plan_rt.json

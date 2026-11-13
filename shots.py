@@ -260,6 +260,20 @@ def gesture(arm, base, g):
             clay.point_bone(arm, b, P(v))
 
 
+def look_target(tgt, actors, cams, marks=None):
+    """actor name -> its head; camera name -> the point that camera looks at; mark -> 1 m above it; xyz -> itself"""
+    if isinstance(tgt, str):
+        if tgt in actors:
+            return tuple(head_point(actors[tgt][0]))
+        if tgt in cams:
+            return tuple(cams[tgt][1])
+        if marks and tgt in marks:
+            p = marks[tgt][0]
+            return (p[0], p[1], p[2] + 1.0)
+        return None
+    return tuple(tgt)
+
+
 def look(arm, target, amount=0.75):
     """turn the head so the face points at a world target"""
     pbh = arm.pose.bones["head"]
@@ -590,10 +604,9 @@ def animate(sc, shot, actors, cams, marks):
                 sc.frame_set(ff)
                 pose(arm, prev["pose"])
                 if prev.get("look") is not None:
-                    tgt = prev["look"]
-                    if isinstance(tgt, str):
-                        tgt = tuple(head_point(actors[tgt][0])) if tgt in actors else cams[tgt][0]
-                    look(arm, tgt)
+                    tgt = look_target(prev["look"], actors, cams, marks)
+                    if tgt is not None:
+                        look(arm, tgt)
                 key_bones(arm, ff)
         # gestures: hands move while talking, small posture changes while listening (layered on the base pose)
         base_pose = track[-1][1]["pose"] if len(track) == 1 else None
@@ -605,8 +618,8 @@ def animate(sc, shot, actors, cams, marks):
             def put(g, ff):
                 sc.frame_set(ff)
                 gesture(arm, base_pose, g)
-                if tl is not None:
-                    tgt = tuple(head_point(actors[tl][0])) if isinstance(tl, str) and tl in actors else (cams[tl][0] if isinstance(tl, str) else tl)
+                tgt = look_target(tl, actors, cams, marks) if tl is not None else None
+                if tgt is not None:
                     look(arm, tgt)
                 key_bones(arm, ff)
             for a, b in talk_sp:
@@ -812,6 +825,8 @@ def render_shot(shot, out, frames=None):
         if sig == last_sig and last_img is not None:
             shutil.copyfile(last_img, fp); continue
         reg = region(sc, cam, dyn)
+        if reg is not None and shot["set"]["name"] in FULLFRAME_SETS:
+            reg = (0.0, 1.0, 0.0, 1.0)      # cheap close-up sets: render the whole frame so no seam shows
         if reg is None:
             Image.fromarray(plate.astype(np.uint8)).save(fp)
         else:
@@ -834,6 +849,7 @@ def encode(work, nfr, out_mp4):
                    check=True)
 
 
+FULLFRAME_SETS = ("kertas", "hp", "tangan", "meja_kosong")
 SAMPLES = 16
 if __name__ == "__main__":
     args = dict(a.split("=", 1) for a in sys.argv[2:] if "=" in a)
