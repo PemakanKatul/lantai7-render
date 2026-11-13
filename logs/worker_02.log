@@ -1,0 +1,8 @@
+worker 2/20 shots [6, 9, 31, 74, 85, 128, 130]
+probe 6 OK
+probe 9 OK
+probe 31 OK
+probe 74 OK
+probe 85 OK
+probe 128 OK
+probe 130 OK
