@@ -1,0 +1,9 @@
+worker 10/20 shots [10, 30, 41, 48, 63, 96, 122, 142]
+probe 10 OK
+probe 30 OK
+probe 41 OK
+probe 48 OK
+probe 63 OK
+probe 96 OK
+probe 122 OK
+probe 142 OK
