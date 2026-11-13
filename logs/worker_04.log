@@ -1,0 +1,25 @@
+worker 4/20 shots [14, 24, 35, 54, 83, 86, 107]
+probe 14 OK
+probe 24 OK
+probe 35 OK
+probe 54 OK
+probe 83 OK
+probe 86 FAIL
+00:00.365  cycles           | WARNING CUEW initialization failed: Error opening the library
+
+Traceback (most recent call last):
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 845, in <module>
+    work, nfr = render_shot(shot, out, frames)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 787, in render_shot
+    sc, cam, dyn, actors = build(shot)
+                           ~~~~~^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 521, in build
+    animate(sc, shot, actors, cams, marks)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/lantai7-render/lantai7-render/shots.py", line 595, in animate
+    tgt = tuple(head_point(actors[tgt][0])) if tgt in actors else cams[tgt][0]
+                                                                  ~~~~^^^^^
+KeyError: 'laras'
+
+probe 107 OK
