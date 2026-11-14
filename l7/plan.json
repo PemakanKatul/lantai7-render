@@ -6400,7 +6400,7 @@
       1.28,
       1.35
      ],
-     "rot": 0,
+     "rot": 150,
      "pose": "sit",
      "keys": [],
      "expr": "capek"
@@ -6475,7 +6475,7 @@
       1.28,
       1.35
      ],
-     "rot": 0,
+     "rot": 150,
      "pose": "sit",
      "keys": [],
      "expr": "capek",
@@ -6576,7 +6576,7 @@
       1.28,
       1.35
      ],
-     "rot": 0,
+     "rot": 150,
      "pose": "sit",
      "keys": [],
      "expr": "capek",
@@ -7051,7 +7051,7 @@
       1.28,
       1.35
      ],
-     "rot": 0,
+     "rot": 150,
      "pose": "sit",
      "keys": [],
      "expr": "netral"
@@ -7146,7 +7146,7 @@
       1.28,
       1.35
      ],
-     "rot": 0,
+     "rot": 150,
      "pose": "sit",
      "keys": [],
      "expr": "capek",
@@ -7347,7 +7347,7 @@
       1.28,
       1.35
      ],
-     "rot": 0,
+     "rot": 150,
      "pose": "sit",
      "keys": [],
      "expr": "capek",

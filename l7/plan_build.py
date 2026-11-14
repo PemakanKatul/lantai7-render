@@ -253,7 +253,7 @@ beat(31, 0, STAIRS, "s_down", [down_walk(n, 0.0, i0, i0 - 4) for n, i0 in (("sar
 beat(31, 9, STAIRS, "s_up", [A(n, stepA(i), 0, "cemas") for (n, _), i in zip(T3, (3, 5, 7))], move="push_slow")
 beat(31, 15, STAIRS, on("sari", "medium", side=0.2), [A(n, stepA(i), 0, "cemas") for (n, _), i in zip(T3, (3, 5, 7))],
      move="push_slow", sfx=[(0, "heartbeat")])
-RES = A("penghuni", [-0.65, 1.55 - 0.27, TOP + 0.165 - 0.3], 0, "capek", pose="sit")
+RES = A("penghuni", [-0.65, 1.55 - 0.27, TOP + 0.165 - 0.3], 150, "capek", pose="sit")
 T3L = [A("sari", [0.2, 2.9, TOP], -30, "cemas"), A("bagas", [1.0, 2.35, TOP], -55, "cemas"), A("reza", [0.75, 2.85, TOP], -45, "netral")]
 beat(32, 0, STAIRS, "s_meet", [RES] + T3L, move="push_slow", focus="penghuni")
 beat(32, 7, STAIRS, on("penghuni", "close", side=0.2), [dict(RES, talk=[(32, 20, None)])], move="push_slow")
