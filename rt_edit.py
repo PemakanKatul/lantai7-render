@@ -91,7 +91,7 @@ def redline_layer(p, seed):
         img = np.zeros((H, W), np.uint8)
         cv2.polylines(img, [np.array(pts, np.int32)], False, 255, thickness=max(2, int(H * 0.022)), lineType=cv2.LINE_AA)
         img = cv2.GaussianBlur(img, (0, 0), 1.2).astype(np.float32) / 255
-        lay[..., 0] = 0.55 * 255; lay[..., 1] = 0.02 * 255; lay[..., 2] = 0.02 * 255; lay[..., 3] = img * 0.95
+        lay[..., 0] = 0.55 * 255; lay[..., 1] = 0.02 * 255; lay[..., 2] = 0.02 * 255; lay[..., 3] = img * 0.95 * 255
     return lay
 
 
