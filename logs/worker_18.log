@@ -2,3 +2,4 @@ worker 18/20 shots [36, 45, 60, 64, 76, 78, 79]
 shot 36 OK 187s
 shot 45 OK 1399s
 shot 60 OK 3578s
+shot 64 OK 23s
