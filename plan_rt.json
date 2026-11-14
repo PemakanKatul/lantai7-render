@@ -1795,8 +1795,8 @@
    "set": {
     "name": "tangga_rt",
     "gate": "open",
-    "light": 0.9,
-    "exposure": 1.6
+    "light": 1.6,
+    "exposure": 2.6
    },
    "cam": [
     [
@@ -1910,8 +1910,8 @@
    "set": {
     "name": "tangga_rt",
     "gate": "open",
-    "light": 0.9,
-    "exposure": 1.6
+    "light": 1.6,
+    "exposure": 2.6
    },
    "cam": [
     [
@@ -2617,7 +2617,7 @@
    "cam": {
     "on": "laras",
     "kind": "xclose",
-    "side": 0.3,
+    "side": -0.3,
     "up": 0.05
    },
    "cast": [
@@ -2880,7 +2880,7 @@
    "cam": {
     "on": "laras",
     "kind": "close",
-    "side": 0.35,
+    "side": -0.38,
     "dist": 0.85,
     "lens": 40
    },
@@ -2917,7 +2917,7 @@
    "cam": {
     "on": "laras",
     "kind": "xclose",
-    "side": 0.2
+    "side": -0.2
    },
    "cast": [
     {
@@ -3735,8 +3735,8 @@
    "cam": {
     "on": "dimas",
     "kind": "close",
-    "side": 0.55,
-    "dist": 1.0,
+    "side": 0.8,
+    "dist": 1.25,
     "up": 0.05
    },
    "cast": [
@@ -4454,11 +4454,19 @@
     "light": "day",
     "exposure": 0.8
    },
-   "cam": {
-    "on": "ibukos",
-    "kind": "close",
-    "side": 0.3
-   },
+   "cam": [
+    [
+     0.2,
+     -0.45,
+     1.25
+    ],
+    [
+     1.2,
+     -0.62,
+     1.13
+    ],
+    40
+   ],
    "cast": [
     {
      "who": "ibukos",
@@ -4467,11 +4475,15 @@
       -0.6,
       0
      ],
-     "rot": -124,
+     "rot": -110,
      "pose": "idle",
      "keys": [],
      "expr": "senyum",
-     "look": "laras",
+     "look": [
+      0.2,
+      -0.45,
+      1.2
+     ],
      "talk": [
       [
        1.55,
@@ -4505,31 +4517,6 @@
       54,
       55
      ]
-    },
-    {
-     "who": "laras",
-     "at": [
-      0.6,
-      -0.2,
-      0
-     ],
-     "rot": 56,
-     "pose": "idle",
-     "keys": [],
-     "expr": "senyum",
-     "over": {
-      "hair_style": "bun",
-      "shirt": [
-       0.52,
-       0.5,
-       0.48
-      ],
-      "bottom": [
-       0.12,
-       0.12,
-       0.14
-      ]
-     }
     }
    ],
    "dyn": [],
@@ -5266,7 +5253,8 @@
    "cam": {
     "on": "laras",
     "kind": "close",
-    "side": -0.3
+    "side": -0.55,
+    "dist": 1.25
    },
    "cast": [
     {
@@ -5275,7 +5263,6 @@
      "pose": "idle",
      "keys": [],
      "expr": "cemas",
-     "look": "karto",
      "talk": [
       [
        0.45,
@@ -6031,7 +6018,7 @@
     "pencil": true,
     "pen": false
    },
-   "cam": "topline",
+   "cam": "page",
    "cast": [],
    "dyn": [
     {
@@ -6255,7 +6242,7 @@
     "light": "day",
     "pencil": true
    },
-   "cam": "topline",
+   "cam": "page",
    "cast": [],
    "dyn": [
     {
@@ -7719,26 +7706,38 @@
     "light": 0.5,
     "exposure": 2.0
    },
-   "cam": "gate",
+   "cam": [
+    [
+     1.0,
+     2.95,
+     3.0
+    ],
+    [
+     -0.6,
+     1.6,
+     2.45
+    ],
+    26
+   ],
    "cast": [
     {
      "who": "maba2",
      "at": [
-      0.3,
-      2.55,
+      0.55,
+      2.35,
       1.485
      ],
-     "rot": 20,
+     "rot": 30,
      "pose": "papers",
      "keys": [
       [
        0,
        "move",
        [
-        0.3,
-        2.55,
+        0.55,
+        2.35,
         1.485,
-        20
+        30
        ]
       ],
       [

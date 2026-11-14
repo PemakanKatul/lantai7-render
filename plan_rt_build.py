@@ -172,9 +172,11 @@ beat(6, 8, TG_O, [[0.25, -3.0, 1.55], [0.7, -0.4, 1.3], 30], [LA(L1, "b", expr="
                             keys=[(0, "move", [0.65, -2.9, 0, 180]), (1.6, "move", [0.65, -2.4, 0, 180])])],
      move="push_slow", sfx=[(0, "steps")])
 beat(6, 21, TG_O, [[0.3, -0.85, 1.65], [0.65, -2.4, 1.15], 42], [LA(L1, (0.72, -0.39, 0.66), 0, expr="capek", pose="papers", prop="papers"),
-                                                               A("dimas", (0.65, -2.4, 0), 180, expr="cemas", look="laras", talk=[["w21", "e33"]])])
+                                                               A("dimas", (0.65, -2.4, 0), 180, expr="cemas", look="laras", talk=[["w21", "e33"]])],
+     set_over=dict(light=1.6, exposure=2.6))
 beat(6, 34, TG_O, [[0.95, -2.25, 1.15], [0.72, -0.39, 1.55], 40], [LA(L1, (0.72, -0.39, 0.66), 0, expr="cemas", pose="papers", prop="papers",
-                                                                   look="dimas"), A("dimas", (0.65, -2.4, 0), 180, expr="cemas")])
+                                                                   look="dimas"), A("dimas", (0.65, -2.4, 0), 180, expr="cemas")],
+     set_over=dict(light=1.6, exposure=2.6))
 beat(6, 36, KT(TITLE_L, "a4", title_page=True, light="day"), "top", move="pull", sfx=[(0, "paper_tear"), (1.5, "zipper")])
 beat(6, 44, RB_DUSK, "long", [LA(L1, "desk", expr="capek", pose="give", prop="papers", walk=[[0, 2.0]],
                                    keys=[(0, "move", [1.9, 7.5, 0, 180]), (2.0, "move", [1.75, 10.35, 0, 165]), (2.4, "pose", "papers")]),
@@ -198,7 +200,7 @@ beat(8, 8, RB_DAWN, "desk_top", move="push_slow")
 beat(8, 13, KT(BAB4[2:8] + ["", "^Bagus.", "^Sedikit lagi.", "^Kamu bisa."], "a4"), "page", move="push_slow",
      dyn=[hide("kt_l7", "w21"), hide("kt_l8", "w22"), hide("kt_l9", "w24")], sfx=[("w21", "pen_write")], music=[(0, "musicbox")])
 beat(8, 26, RB_DAWN, "front", [LA(L1, "chair", expr="nangis", pose="sitdesk")], move="push_slow", sfx=[(0, "sob")])
-beat(8, 29, RB_DAWN, on("laras", "xclose", side=0.3, up=0.05), [LA(L1, "chair", expr="nangis", pose="sitdesk")], move="push_slow")
+beat(8, 29, RB_DAWN, on("laras", "xclose", side=-0.3, up=0.05), [LA(L1, "chair", expr="nangis", pose="sitdesk")], move="push_slow")
 # ================================================================== 9. the thank-you page
 UCAP = ["#UCAPAN TERIMA KASIH", "", "Puji syukur penulis panjatkan atas", "selesainya skripsi ini. Penulis", "mengucapkan terima kasih kepada:",
         "", "1. Dr. Suryo, selaku pembimbing.", "~2. Ibu, yang selalu sabar menunggu.", "3. Teman-teman seangkatan.", "",
@@ -209,8 +211,8 @@ beat(9, 11, KT(UCAP, "a4"), "page", move="push_slow", dyn=[hide("kt_s7", "w26"),
 beat(9, 27, KT(UCAP, "a4"), "botline", move="push", dyn=[hide("kt_l10", "w34"), hide("kt_l11", "w36")])
 # ================================================================== 10. relief
 beat(10, 0, RB_DUSK, "long", [LA(L1, "chair", expr="capek", pose="sitdesk")], move="push_slow", music=[(0, "drone_low")])
-beat(10, 8, RB_DUSK, on("laras", "close", side=0.35, dist=0.85, lens=40), [LA(L1, "chair", expr="cemas", pose="sitdesk")], move="push_slow")
-beat(10, 14, RB_DUSK, on("laras", "xclose", side=0.2), [LA(L1, "chair", expr="cemas", pose="sitdesk", keys=[("w19", "expr", "senyum")])],
+beat(10, 8, RB_DUSK, on("laras", "close", side=-0.38, dist=0.85, lens=40), [LA(L1, "chair", expr="cemas", pose="sitdesk")], move="push_slow")
+beat(10, 14, RB_DUSK, on("laras", "xclose", side=-0.2), [LA(L1, "chair", expr="cemas", pose="sitdesk", keys=[("w19", "expr", "senyum")])],
      move="push_slow")
 beat(10, 20, RB_DUSK, "behind", [LA(L1, "chair", expr="senyum", pose="sitdesk"), GHOST("corner_far")], move="push_slow",
      music=[(0, "tension")], sfx=[(0, "breath")])
@@ -244,7 +246,7 @@ KANTIN_EX = [A("teman1", "ex1", pose="sitdesk", expr="senyum", gest=False), A("t
 beat(13, 0, KN, "wide", [LA(L2, "laras", expr="netral", pose="sitdesk"), A("dimas", "dimas", expr="netral", pose="sitdesk")] + KANTIN_EX,
      move="push_slow", sfx=[(0, "canteen")], music=[(0, "drone_low")])
 beat(13, 9, KN, "book", move="push")
-beat(13, 15, KN, on("dimas", "close", side=0.55, dist=1.0, up=0.05), [A("dimas", "dimas", expr="cemas", pose="sitdesk", look="laras", talk=[["w15", "e20"]]),
+beat(13, 15, KN, on("dimas", "close", side=0.8, dist=1.25, up=0.05), [A("dimas", "dimas", expr="cemas", pose="sitdesk", look="laras", talk=[["w15", "e20"]]),
                                                          LA(L2, "laras", expr="netral", pose="sitdesk")])
 beat(13, 21, KN, on("laras", "close", side=-0.3, up=0.05), [LA(L2, "laras", expr="netral", pose="sitdesk", keys=[(0.3, "pose", "headdown")]),
                                                           A("dimas", "dimas", expr="cemas", pose="sitdesk")], hold=0.6)
@@ -266,8 +268,8 @@ beat(15, 0, KN, "wide", [LA(L2, "laras", expr="senyum", pose="sitdesk"), A("tema
      move="push_slow", music=[(0, "drone_low")])
 beat(15, 7, KN, on("teman1", "close", side=0.55, dist=1.0), [A("teman1", "dimas", expr="senyum", pose="sitdesk", look="laras", talk=[["w9", "e13"]]),
                                                  LA(L2, "laras", expr="senyum", pose="sitdesk")])
-beat(15, 14, KL_TD, on("ibukos", "close", side=0.3), [A("ibukos", (1.2, -0.6, 0), -124, expr="senyum", look="laras", talk=[["w17", "e21"]]),
-                                                     LA(L2, (0.6, -0.2, 0), 56, expr="senyum")])
+beat(15, 14, KL_TD, [[0.2, -0.45, 1.25], [1.2, -0.62, 1.13], 40], [A("ibukos", (1.2, -0.6, 0), -110, expr="senyum", look=[0.2, -0.45, 1.2],
+                                                                  talk=[["w17", "e21"]])])
 beat(15, 22, RD, on("dosen", "close", side=0.25), [A("dosen", "dosen", pose="sitdesk", expr="senyum", talk=[["w24", "e26"]])])
 beat(15, 27, KL_TD, on("laras", "xclose", side=0.15, dist=0.9), [LA(L2, (0.6, -0.2, 0), 56, expr="senyum", blink=False)], move="push_slow",
      music=[("w31", "sting_soft")])
@@ -290,7 +292,7 @@ beat(17, 22, KK, "end", [A("karto", (0.0, 11.0, 0), 160, expr="capek", prop="bro
                            look=[0.3, 16.4, 1.6])], move="push_slow")
 beat(17, 28, KK, on("karto", "xclose", side=0.25), [A("karto", "karto", expr="cemas", prop="broom", look="laras", talk=[["w28", "e43"]])],
      move="push_slow")
-beat(18, 0, KK, on("laras", "close", side=-0.3), [LA(L2, "laras", expr="cemas", look="karto", talk=[["w0", "e3"]]),
+beat(18, 0, KK, on("laras", "close", side=-0.55, dist=1.25), [LA(L2, "laras", expr="cemas", talk=[["w0", "e3"]]),
                                                  A("karto", "karto", expr="capek", prop="broom")])
 beat(18, 4, KK, on("karto", "close", side=0.3), [A("karto", "karto", expr="capek", prop="broom", look="laras", talk=[["w4", "e11"]])])
 GRAD = dict(prop="toga", over=dict(shirt=[0.02, 0.02, 0.025], bottom=[0.02, 0.02, 0.025], long_skirt=True))
@@ -313,7 +315,7 @@ beat(20, 0, KL_T, "wide", [LA(L3, "mid", expr="takut", pose="nervous", keys=[(0.
 beat(20, 12, TGN, "case", move="push", sfx=[(0, "zipper")])
 beat(20, 21, TGN, "pen", move="push_slow")
 beat(20, 24, TGN, "finger", move="push_slow", music=[("w31", "sting_soft"), (0, "heartbeat")])
-beat(21, 0, KT(["", "", "@Siapa kamu?"], "a4", light="cold", pencil=True, pen=False), "topline", move="push_slow",
+beat(21, 0, KT(["", "", "@Siapa kamu?"], "a4", light="cold", pencil=True, pen=False), "page", move="push_slow",
      dyn=[hide("kt_l2", "w12")], sfx=[("w9", "pencil_write")], music=[(0, "drone_low")])
 beat(21, 14, KL_T, on("laras", "xclose", side=0.2, dist=0.72, lens=38), [LA(L3, "chair", expr="takut", pose="sitdesk", blink=False)], move="push_slow",
      sfx=[(0, "clock")])
@@ -323,7 +325,7 @@ beat(21, 22, KL_T, on("laras", "xclose", side=0.2, dist=0.72, lens=38), [LA(L3, 
 beat(21, 25, KL_DAWN, "wide", [LA(L3, "chair", expr="takut", pose="sitdesk"),
                                GHOST((0.25, 0.55, 0), 200, keys=[(0.0, "show", 1), (0.35, "show", 0)])],
      move="static", sfx=[(0, "birds_far")], music=[(0, "sting")])
-beat(21, 35, KT(["", "", "@Siapa kamu?", "!Pertanyaan kurang tepat."], "a4", light="day", pencil=True), "topline", move="push",
+beat(21, 35, KT(["", "", "@Siapa kamu?", "!Pertanyaan kurang tepat."], "a4", light="day", pencil=True), "page", move="push",
      dyn=[hide("kt_l3", "w39")])
 # ================================================================== 22-23. who were you before me
 beat(22, 0, KT(["", "", "@Siapa kamu?", "!Pertanyaan kurang tepat.", "!Yang benar...", "!siapa kamu, sebelum aku?"], "a4", light="day", pencil=True),
@@ -371,8 +373,8 @@ beat(26, 36, KT(["#UCAPAN TERIMA KASIH", "", "", "", "=Untuk Laras.", "=Yang sud
 # ================================================================== 27-29. the building still stands; you
 beat(27, 0, EXT_N, "road", move="push_slow", sfx=[(0, "crickets"), (0, "wind")], music=[(0, "drone_in")])
 beat(27, 6, EXT_N, "up3", move="push_slow")
-beat(27, 12, TG_C, "gate", [A("maba2", (0.3, 2.55, 1.485), 20, expr="cemas", prop="papers", pose="papers", walk=[[0.2, 3.0]],
-                             keys=[(0, "move", [0.3, 2.55, 1.485, 20]), (3.0, "move", [-0.6, 2.05, 1.485, 0])])], move="static",
+beat(27, 12, TG_C, [[1.0, 2.95, 3.0], [-0.6, 1.6, 2.45], 26], [A("maba2", (0.55, 2.35, 1.485), 30, expr="cemas", prop="papers", pose="papers",
+                             walk=[[0.2, 3.0]], keys=[(0, "move", [0.55, 2.35, 1.485, 30]), (3.0, "move", [-0.6, 2.05, 1.485, 0])])], move="static",
      sfx=[(0.2, "steps")])
 beat(27, 23, RB_NIGHT, "corner", move="push_slow", sfx=[(0, "clock")])
 beat(27, 31, RB_NIGHT, "behind", [GHOST("corner_far")], move="push_slow", music=[(0, "tension")])

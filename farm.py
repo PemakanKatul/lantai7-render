@@ -9,7 +9,7 @@ LIMIT = 5.3 * 3600   # GitHub jobs are killed at 6 h
 
 
 def shots_wanted(plan):
-    trig = open(os.path.join(HERE, "farm", "trigger.txt")).read().strip().splitlines()[0].split()[0]
+    trig = open(os.path.join(HERE, os.environ.get("TRIGGER", "farm/trigger.txt"))).read().strip().splitlines()[0].split()[0]
     ids = [s["id"] for s in plan["shots"]]
     if trig.startswith("shots="):
         want = []
@@ -49,7 +49,7 @@ def publish(i):
 
 def plan_file():
     import re
-    m = re.search(r"plan=(\S+)", open(os.path.join(HERE, "farm", "trigger.txt")).read())
+    m = re.search(r"plan=(\S+)", open(os.path.join(HERE, os.environ.get("TRIGGER", "farm/trigger.txt"))).read())
     return os.path.join(HERE, m.group(1) if m else "plan.json")
 
 
@@ -66,7 +66,7 @@ if __name__ == "__main__":
     log = open(f"logs/worker_{i:02d}.log", "a")
     log.write(f"worker {i}/{N} shots {mine}\n"); log.flush()
     samples = os.environ.get("SAMPLES", "12")
-    probe = "probe" in open(os.path.join(HERE, "farm", "trigger.txt")).read()
+    probe = "probe" in open(os.path.join(HERE, os.environ.get("TRIGGER", "farm/trigger.txt"))).read()
     if probe:          # one low-quality still per shot (70% into the shot) to check framing before the real render
         byid = {s["id"]: s for s in plan["shots"]}
         for sid in mine:

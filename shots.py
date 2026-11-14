@@ -281,6 +281,8 @@ def look(arm, target, amount=0.75):
     tail = arm.matrix_world @ pbh.tail
     f = (arm.matrix_world.to_3x3() @ Vector((0, -1, 0))).normalized()
     d = (Vector(target) - h).normalized()
+    d.z = max(-0.28, min(0.22, d.z))          # never crane the neck too far up or down
+    d = d.normalized()
     q = Quaternion().slerp(f.rotation_difference(d), amount)
     clay.point_bone(arm, "head", h + q @ (tail - h))
 

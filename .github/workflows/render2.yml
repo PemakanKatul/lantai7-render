@@ -1,0 +1,47 @@
+name: render2
+on:
+  push:
+    branches: [main]
+    paths: ["farm/trigger2.txt"]
+permissions:
+  contents: write
+concurrency:
+  group: render2
+  cancel-in-progress: true
+jobs:
+  worker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        i: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: deps
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libxi6 libxkbcommon0 libsm6 libgl1 libegl1 >/dev/null
+          pip install -q -r requirements.txt
+      - name: result branch
+        run: |
+          TAG=$(grep -oP '(?<=tag=)\w+' farm/trigger2.txt || echo w)
+          git config --global user.name render-bot
+          git config --global user.email render-bot@users.noreply.github.com
+          git worktree add --orphan -b out-$TAG-${{ matrix.i }} /tmp/pub
+      - name: render share
+        env:
+          SAMPLES: "12"
+          TRIGGER: farm/trigger2.txt
+        run: |
+          N=$(grep -oP '(?<=workers=)\d+' farm/trigger2.txt || echo 20)
+          if [ "${{ matrix.i }}" -lt "$N" ]; then python3 farm.py run ${{ matrix.i }} $N; else echo idle; mkdir -p logs out; echo idle > logs/worker_${{ matrix.i }}.log; fi
+      - name: publish results
+        if: always()
+        run: |
+          mkdir -p logs; cp -f out/shot_*.mp4 out/probe_*.png /tmp/pub/ 2>/dev/null || true; cp -rf logs /tmp/pub/ || true
+          echo "run ${{ github.run_id }} commit ${{ github.sha }}" > /tmp/pub/RUN.txt
+          cd /tmp/pub && git add -A && (git commit -qm "final worker ${{ matrix.i }}" || true) && git push -qf origin HEAD

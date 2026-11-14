@@ -1,0 +1,1 @@
+shots=32,33,45,46,51,68,80,90,102,106,122,132,141 workers=13 tag=rt2 plan=plan_rt.json
