@@ -1,1 +1,1 @@
-all workers=20 tag=rt1 plan=plan_rt.json
+shots=122 workers=1 tag=rt3 plan=plan_rt.json

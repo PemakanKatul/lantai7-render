@@ -358,7 +358,7 @@ beat(25, 0, WS, "wide", [dict(WS_L, pose="idle"), A("ibu", (-1.5, 1.2, 0), -60, 
                          A("g1", "g1", **{"as": "teman1"}, expr="senyum", **GRAD), A("g2", "g2", **{"as": "teman2"}, expr="senyum", **GRAD)],
      move="push_slow", sfx=[(0, "crowd")], music=[(0, "sad")])
 beat(25, 4, WS, "two", [WS_L, A("ibu", "ibu", expr="nangis", pose="hugstand")], move="push_slow")
-beat(25, 9, WS, [[0.55, 1.55, 1.3], [-0.24, 2.35, 1.12], 40], [A("ibu", "ibu", expr="nangis", pose="hugstand", talk=[["w9", "e13"]]), WS_L])
+beat(25, 9, WS, [[-0.2, 1.15, 1.22], [-0.2, 2.35, 1.1], 42], [A("ibu", "ibu", expr="nangis", pose="hugstand", talk=[["w9", "e13"]]), WS_L])
 beat(25, 14, WS, on("laras", "xclose", side=0.2), [dict(WS_L, blink=False)], move="push", fx=[["red", "w21", 1.4], ["flicker", "w21", 1.4]],
      music=[("w21", "sting")], sfx=[("w21", "scream_muffled")])
 beat(25, 25, WS, on("laras", "close", side=0.3), [dict(WS_L, talk=[["w34", "e36"]], blink=False)], move="push_slow")
