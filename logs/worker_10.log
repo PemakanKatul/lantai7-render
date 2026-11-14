@@ -1,3 +1,4 @@
 worker 10/20 shots [32, 46, 67, 102, 108, 120, 139]
 shot 32 OK 4145s
 shot 46 OK 3295s
+shot 67 OK 44s
