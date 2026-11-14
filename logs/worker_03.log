@@ -2,3 +2,4 @@ worker 3/20 shots [4, 6, 15, 26, 31, 69, 124]
 shot 4 OK 28s
 shot 6 OK 1823s
 shot 15 OK 171s
+shot 26 OK 2683s
